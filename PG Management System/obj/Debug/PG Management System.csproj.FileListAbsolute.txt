@@ -1,0 +1,16 @@
+E:\PG Management System\PG Management System\bin\Debug\PG Management System.exe.config
+E:\PG Management System\PG Management System\bin\Debug\PG Management System.exe
+E:\PG Management System\PG Management System\bin\Debug\PG Management System.pdb
+E:\PG Management System\PG Management System\obj\Debug\PG Management System.csproj.AssemblyReference.cache
+E:\PG Management System\PG Management System\obj\Debug\PG Management System.csproj.SuggestedBindingRedirects.cache
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.LoginForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.Properties.Resources.resources
+E:\PG Management System\PG Management System\obj\Debug\PG Management System.csproj.GenerateResource.cache
+E:\PG Management System\PG Management System\obj\Debug\PG Management System.csproj.CoreCompileInputs.cache
+E:\PG Management System\PG Management System\obj\Debug\PG Management System.exe
+E:\PG Management System\PG Management System\obj\Debug\PG Management System.pdb
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AdmissionForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BedsForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BuidlingsForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.FloorsForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.RoomsForm.resources
