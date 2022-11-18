@@ -34,7 +34,7 @@
             // 
             // Button_AddBuilding
             // 
-            this.Button_AddBuilding.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Button_AddBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Button_AddBuilding.FlatAppearance.BorderSize = 0;
             this.Button_AddBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Button_AddBuilding.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -47,7 +47,8 @@
             // 
             // Label_BUILDINGS
             // 
-            this.Label_BUILDINGS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_BUILDINGS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_BUILDINGS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_BUILDINGS.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_BUILDINGS.Location = new System.Drawing.Point(224, 9);
@@ -66,6 +67,7 @@
             this.Controls.Add(this.Button_AddBuilding);
             this.Name = "BuidlingsForm";
             this.Text = "PGMS - Buidlings";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }

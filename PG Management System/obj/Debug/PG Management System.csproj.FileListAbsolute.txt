@@ -14,3 +14,27 @@ E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.Beds
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BuidlingsForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.FloorsForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.RoomsForm.resources
+E:\PG Management System\PG Management System\bin\Debug\BouncyCastle.Crypto.dll
+E:\PG Management System\PG Management System\bin\Debug\Google.Protobuf.dll
+E:\PG Management System\PG Management System\bin\Debug\K4os.Compression.LZ4.dll
+E:\PG Management System\PG Management System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\PG Management System\PG Management System\bin\Debug\K4os.Hash.xxHash.dll
+E:\PG Management System\PG Management System\bin\Debug\MySql.Data.dll
+E:\PG Management System\PG Management System\bin\Debug\System.Buffers.dll
+E:\PG Management System\PG Management System\bin\Debug\System.Memory.dll
+E:\PG Management System\PG Management System\bin\Debug\System.Numerics.Vectors.dll
+E:\PG Management System\PG Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\PG Management System\PG Management System\bin\Debug\ZstdNet.dll
+E:\PG Management System\PG Management System\bin\Debug\BouncyCastle.Crypto.xml
+E:\PG Management System\PG Management System\bin\Debug\Google.Protobuf.pdb
+E:\PG Management System\PG Management System\bin\Debug\Google.Protobuf.xml
+E:\PG Management System\PG Management System\bin\Debug\K4os.Compression.LZ4.xml
+E:\PG Management System\PG Management System\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\PG Management System\PG Management System\bin\Debug\K4os.Hash.xxHash.xml
+E:\PG Management System\PG Management System\bin\Debug\MySql.Data.xml
+E:\PG Management System\PG Management System\bin\Debug\System.Buffers.xml
+E:\PG Management System\PG Management System\bin\Debug\System.Memory.xml
+E:\PG Management System\PG Management System\bin\Debug\System.Numerics.Vectors.xml
+E:\PG Management System\PG Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\PG Management System\PG Management System\obj\Debug\PG Management System.csproj.CopyComplete
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.PasswordResetForm.resources
