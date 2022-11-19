@@ -52,6 +52,9 @@ namespace PG_Management_System
                     {
                         ErrorProvider_LogInForm.Clear();
                         SaveCredentials();
+
+                        MainForm mainForm = new MainForm();
+                        mainForm.Show();
                     }
                     else
                     {
@@ -59,10 +62,6 @@ namespace PG_Management_System
                         TextBox_PWD.Focus();
                     }
                     con.Close();
-
-                    this.Hide();
-                    BuidlingsForm buidlingsForm = new BuidlingsForm();
-                    buidlingsForm.ShowDialog();
                 }
                 catch (Exception Err)
                 {
@@ -96,7 +95,7 @@ namespace PG_Management_System
 
         private void Button_FormClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void Button_FormMinimize_Click(object sender, EventArgs e)

@@ -38,3 +38,4 @@ E:\PG Management System\PG Management System\bin\Debug\System.Numerics.Vectors.x
 E:\PG Management System\PG Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\PG Management System\PG Management System\obj\Debug\PG Management System.csproj.CopyComplete
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.PasswordResetForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.MainForm.resources
