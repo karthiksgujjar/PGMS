@@ -19,7 +19,11 @@ namespace PG_Management_System
 
         private void Button_FormClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+           DialogResult res = MessageBox.Show("Do you really want to exit?", "CONFIRMATION",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2);
+            if(res==DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void Button_FormMinimize_Click(object sender, EventArgs e)

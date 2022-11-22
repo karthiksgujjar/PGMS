@@ -59,16 +59,16 @@ namespace PG_Management_System
                 ErrorProvider_PasswordResetForm.Clear();
                 try
                 {
-                    MySqlConnection con = new MySqlConnection(LoginForm.constring);
+                    MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
                     string query = "UPDATE login SET password=@NewPWD WHERE username=@UN";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@NewPWD",TextBox_NewPWD.Text);
-                    cmd.Parameters.AddWithValue("@UN", LoginForm.SelectedUserName);
+                    cmd.Parameters.AddWithValue("@UN", Properties.Settings.Default.SelectedUser);
                     con.Open();
                     int res = cmd.ExecuteNonQuery();
                     if (res == 1)
                     {
-                        MessageBox.Show("PASWORD RESET SUCCESSFULL.\nYour new Password for " + LoginForm.SelectedUserName + " is: " + TextBox_NewPWD.Text.ToString(), "SUCCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("PASWORD RESET SUCCESSFULL.\nYour new Password for " + Properties.Settings.Default.SelectedUser + " is: " + TextBox_NewPWD.Text.ToString(), "SUCCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     }
                     else
                     {

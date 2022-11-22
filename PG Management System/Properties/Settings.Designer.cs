@@ -58,5 +58,41 @@ namespace PG_Management_System.Properties {
                 this["Staff2Password"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SERVER=localhost;DATABASE=pgms;UID=PGMS;Password=pgms123")]
+        public string constring {
+            get {
+                return ((string)(this["constring"]));
+            }
+            set {
+                this["constring"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SelectedUser {
+            get {
+                return ((string)(this["SelectedUser"]));
+            }
+            set {
+                this["SelectedUser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool FirstRunStatus {
+            get {
+                return ((bool)(this["FirstRunStatus"]));
+            }
+            set {
+                this["FirstRunStatus"] = value;
+            }
+        }
     }
 }

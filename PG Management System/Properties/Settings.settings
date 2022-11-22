@@ -11,5 +11,14 @@
     <Setting Name="Staff2Password" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="constring" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=localhost;DATABASE=pgms;UID=PGMS;Password=pgms123</Value>
+    </Setting>
+    <Setting Name="SelectedUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FirstRunStatus" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -18,8 +18,6 @@ namespace PG_Management_System
     public partial class LoginForm : Form
     {
         public static LoginForm loginFormInstance;
-        public static string constring = "SERVER=localhost;DATABASE=pgms;UID=PGMS;Password=pgms123";
-        public static string SelectedUserName;
 
         public LoginForm()
         {
@@ -39,8 +37,7 @@ namespace PG_Management_System
             {
                 try
                 {
-                    string constring = "SERVER=localhost;DATABASE=pgms;UID=PGMS;Password=pgms123";
-                    MySqlConnection con = new MySqlConnection(constring);
+                    MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
                     string query = "SELECT password from login where username = @UN and password = @PWD";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@UN", ComboBox_UN.SelectedItem);
@@ -52,6 +49,8 @@ namespace PG_Management_System
                     {
                         ErrorProvider_LogInForm.Clear();
                         SaveCredentials();
+
+                        Properties.Settings.Default.SelectedUser = ComboBox_UN.SelectedItem.ToString();
 
                         MainForm mainForm = new MainForm();
                         mainForm.Show();
@@ -73,24 +72,41 @@ namespace PG_Management_System
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            try
+            if(Properties.Settings.Default.FirstRunStatus)
             {
-                MySqlConnection con = new MySqlConnection(constring);
-                string query = "SELECT username from login";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                con.Open();
-                MySqlDataReader DB_UserNames = cmd.ExecuteReader();
-                while(DB_UserNames.Read())
+                try
                 {
-                    ComboBox_UN.Items.Add(DB_UserNames["username"]);
+                    MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
+                    string query = "SELECT username from login";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    con.Open();
+                    MySqlDataReader DB_UserNames = cmd.ExecuteReader();
+                    while (DB_UserNames.Read())
+                    {
+                        ComboBox_UN.Items.Add(DB_UserNames["username"]);
+                    }
+                    ComboBox_UN.SelectedIndex = 0;
+                    con.Close();
                 }
-                ComboBox_UN.SelectedIndex = 0;
-                con.Close();
+                catch (Exception Err)
+                {
+                    MessageBox.Show("Unable to make connection to Database\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    //Run Database Connection Details Collector Form
+                }
             }
-            catch (Exception Err)
+            else
             {
-                MessageBox.Show("Unable to make connection to Database\n"+Err.Message,"DATABASE ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                //Run FirstRunSetup Form, To collect 
+                //1. admin password and save it in properties.settings.default.AdminPassword;
+                //2. database connection details;
+                //3. 
+                
+                // The Form should have 2 panels:
+                // 1st panel should display progression of setup
+                // 2nd panel should host diffrent forms 
             }
+            
         }
 
         private void Button_FormClose_Click(object sender, EventArgs e)
@@ -202,7 +218,7 @@ namespace PG_Management_System
         private void LinkLabel_ForgotPWD_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            SelectedUserName = ComboBox_UN.SelectedItem.ToString();
+            Properties.Settings.Default.SelectedUser = ComboBox_UN.SelectedItem.ToString();
             PasswordResetForm passwordResetForm = new PasswordResetForm();
             passwordResetForm.Show();
         }
