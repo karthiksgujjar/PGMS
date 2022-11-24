@@ -15,7 +15,7 @@ namespace PG_Management_System
 {
     public partial class PasswordResetForm : Form
     {
-        int GeneratedOTP = OTPGenerator();
+        private int GeneratedOTP = OTPGenerator();
         public PasswordResetForm()
         {
             InitializeComponent();

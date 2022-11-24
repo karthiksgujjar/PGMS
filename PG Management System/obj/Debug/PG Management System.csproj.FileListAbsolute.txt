@@ -11,7 +11,6 @@ E:\PG Management System\PG Management System\obj\Debug\PG Management System.exe
 E:\PG Management System\PG Management System\obj\Debug\PG Management System.pdb
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AdmissionForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BedsForm.resources
-E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BuidlingsForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.FloorsForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.RoomsForm.resources
 E:\PG Management System\PG Management System\bin\Debug\BouncyCastle.Crypto.dll
@@ -39,3 +38,5 @@ E:\PG Management System\PG Management System\bin\Debug\System.Runtime.CompilerSe
 E:\PG Management System\PG Management System\obj\Debug\PG Management System.csproj.CopyComplete
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.PasswordResetForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.MainForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AddBuildingForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BuildingsForm.resources

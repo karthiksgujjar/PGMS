@@ -59,11 +59,10 @@
             this.ComboBox_UN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_UN.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_UN.FormattingEnabled = true;
-            this.ComboBox_UN.Location = new System.Drawing.Point(213, 359);
-            this.ComboBox_UN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComboBox_UN.Location = new System.Drawing.Point(161, 292);
             this.ComboBox_UN.MaxDropDownItems = 3;
             this.ComboBox_UN.Name = "ComboBox_UN";
-            this.ComboBox_UN.Size = new System.Drawing.Size(184, 27);
+            this.ComboBox_UN.Size = new System.Drawing.Size(139, 23);
             this.ComboBox_UN.TabIndex = 0;
             this.ComboBox_UN.SelectedIndexChanged += new System.EventHandler(this.ComboBox_UN_SelectedIndexChanged);
             // 
@@ -73,10 +72,9 @@
             this.TextBox_PWD.BackColor = System.Drawing.Color.White;
             this.TextBox_PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBox_PWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_PWD.Location = new System.Drawing.Point(213, 420);
-            this.TextBox_PWD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_PWD.Location = new System.Drawing.Point(161, 341);
             this.TextBox_PWD.Name = "TextBox_PWD";
-            this.TextBox_PWD.Size = new System.Drawing.Size(159, 20);
+            this.TextBox_PWD.Size = new System.Drawing.Size(119, 16);
             this.TextBox_PWD.TabIndex = 1;
             this.TextBox_PWD.UseSystemPasswordChar = true;
             // 
@@ -90,10 +88,9 @@
             this.Button_LogIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_LogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_LogIn.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_LogIn.Location = new System.Drawing.Point(176, 522);
-            this.Button_LogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_LogIn.Location = new System.Drawing.Point(133, 424);
             this.Button_LogIn.Name = "Button_LogIn";
-            this.Button_LogIn.Size = new System.Drawing.Size(100, 37);
+            this.Button_LogIn.Size = new System.Drawing.Size(75, 30);
             this.Button_LogIn.TabIndex = 2;
             this.Button_LogIn.Text = "LOGIN";
             this.Button_LogIn.UseVisualStyleBackColor = false;
@@ -108,10 +105,9 @@
             this.Button_FormClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Button_FormClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_FormClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_FormClose.Location = new System.Drawing.Point(424, 0);
-            this.Button_FormClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_FormClose.Location = new System.Drawing.Point(320, 0);
             this.Button_FormClose.Name = "Button_FormClose";
-            this.Button_FormClose.Size = new System.Drawing.Size(27, 25);
+            this.Button_FormClose.Size = new System.Drawing.Size(20, 20);
             this.Button_FormClose.TabIndex = 5;
             this.Button_FormClose.TabStop = false;
             this.Button_FormClose.Text = "X";
@@ -128,10 +124,9 @@
             this.Button_FormMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Button_FormMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_FormMinimize.Font = new System.Drawing.Font("Wide Latin", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_FormMinimize.Location = new System.Drawing.Point(397, 0);
-            this.Button_FormMinimize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_FormMinimize.Location = new System.Drawing.Point(300, 0);
             this.Button_FormMinimize.Name = "Button_FormMinimize";
-            this.Button_FormMinimize.Size = new System.Drawing.Size(27, 25);
+            this.Button_FormMinimize.Size = new System.Drawing.Size(20, 20);
             this.Button_FormMinimize.TabIndex = 6;
             this.Button_FormMinimize.TabStop = false;
             this.Button_FormMinimize.Text = "-";
@@ -147,10 +142,9 @@
             this.LinkLabel_ForgotPWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkLabel_ForgotPWD.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkLabel_ForgotPWD.LinkColor = System.Drawing.Color.Navy;
-            this.LinkLabel_ForgotPWD.Location = new System.Drawing.Point(263, 453);
-            this.LinkLabel_ForgotPWD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LinkLabel_ForgotPWD.Location = new System.Drawing.Point(198, 368);
             this.LinkLabel_ForgotPWD.Name = "LinkLabel_ForgotPWD";
-            this.LinkLabel_ForgotPWD.Size = new System.Drawing.Size(140, 22);
+            this.LinkLabel_ForgotPWD.Size = new System.Drawing.Size(105, 18);
             this.LinkLabel_ForgotPWD.TabIndex = 15;
             this.LinkLabel_ForgotPWD.TabStop = true;
             this.LinkLabel_ForgotPWD.Text = "Forgot Password?";
@@ -167,10 +161,9 @@
             this.CheckBox_RememberMe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CheckBox_RememberMe.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckBox_RememberMe.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CheckBox_RememberMe.Location = new System.Drawing.Point(44, 453);
-            this.CheckBox_RememberMe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CheckBox_RememberMe.Location = new System.Drawing.Point(34, 368);
             this.CheckBox_RememberMe.Name = "CheckBox_RememberMe";
-            this.CheckBox_RememberMe.Size = new System.Drawing.Size(133, 23);
+            this.CheckBox_RememberMe.Size = new System.Drawing.Size(100, 19);
             this.CheckBox_RememberMe.TabIndex = 2;
             this.CheckBox_RememberMe.TabStop = false;
             this.CheckBox_RememberMe.Text = "Remember Me";
@@ -188,20 +181,18 @@
             // 
             this.Label_UsernameUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_UsernameUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_UsernameUnderbar.Location = new System.Drawing.Point(213, 390);
-            this.Label_UsernameUnderbar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label_UsernameUnderbar.Location = new System.Drawing.Point(161, 317);
             this.Label_UsernameUnderbar.Name = "Label_UsernameUnderbar";
-            this.Label_UsernameUnderbar.Size = new System.Drawing.Size(185, 1);
+            this.Label_UsernameUnderbar.Size = new System.Drawing.Size(139, 1);
             this.Label_UsernameUnderbar.TabIndex = 16;
             // 
             // Label_PasswordUnderbar
             // 
             this.Label_PasswordUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_PasswordUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_PasswordUnderbar.Location = new System.Drawing.Point(213, 443);
-            this.Label_PasswordUnderbar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label_PasswordUnderbar.Location = new System.Drawing.Point(161, 360);
             this.Label_PasswordUnderbar.Name = "Label_PasswordUnderbar";
-            this.Label_PasswordUnderbar.Size = new System.Drawing.Size(185, 1);
+            this.Label_PasswordUnderbar.Size = new System.Drawing.Size(139, 1);
             this.Label_PasswordUnderbar.TabIndex = 17;
             // 
             // Button_Show_Hide_Pwd
@@ -214,10 +205,9 @@
             this.Button_Show_Hide_Pwd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Button_Show_Hide_Pwd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Show_Hide_Pwd.Image = global::PG_Management_System.Properties.Resources.Show_Password;
-            this.Button_Show_Hide_Pwd.Location = new System.Drawing.Point(371, 417);
-            this.Button_Show_Hide_Pwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_Show_Hide_Pwd.Location = new System.Drawing.Point(279, 339);
             this.Button_Show_Hide_Pwd.Name = "Button_Show_Hide_Pwd";
-            this.Button_Show_Hide_Pwd.Size = new System.Drawing.Size(28, 23);
+            this.Button_Show_Hide_Pwd.Size = new System.Drawing.Size(21, 19);
             this.Button_Show_Hide_Pwd.TabIndex = 8;
             this.Button_Show_Hide_Pwd.TabStop = false;
             this.Button_Show_Hide_Pwd.UseVisualStyleBackColor = false;
@@ -232,9 +222,8 @@
             this.Label_FormTitle.Image = ((System.Drawing.Image)(resources.GetObject("Label_FormTitle.Image")));
             this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Label_FormTitle.Location = new System.Drawing.Point(0, 0);
-            this.Label_FormTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_FormTitle.Name = "Label_FormTitle";
-            this.Label_FormTitle.Size = new System.Drawing.Size(451, 25);
+            this.Label_FormTitle.Size = new System.Drawing.Size(340, 20);
             this.Label_FormTitle.TabIndex = 4;
             this.Label_FormTitle.Text = "PGMS - Log In";
             this.Label_FormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -245,10 +234,9 @@
             this.PictureBox_PGMS.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox_PGMS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBox_PGMS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_PGMS.Image")));
-            this.PictureBox_PGMS.Location = new System.Drawing.Point(103, 62);
-            this.PictureBox_PGMS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBox_PGMS.Location = new System.Drawing.Point(78, 50);
             this.PictureBox_PGMS.Name = "PictureBox_PGMS";
-            this.PictureBox_PGMS.Size = new System.Drawing.Size(245, 239);
+            this.PictureBox_PGMS.Size = new System.Drawing.Size(184, 194);
             this.PictureBox_PGMS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox_PGMS.TabIndex = 3;
             this.PictureBox_PGMS.TabStop = false;
@@ -261,10 +249,9 @@
             this.Label_PWD.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_PWD.Image = global::PG_Management_System.Properties.Resources.Password_Image;
             this.Label_PWD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_PWD.Location = new System.Drawing.Point(20, 417);
-            this.Label_PWD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label_PWD.Location = new System.Drawing.Point(16, 339);
             this.Label_PWD.Name = "Label_PWD";
-            this.Label_PWD.Size = new System.Drawing.Size(169, 27);
+            this.Label_PWD.Size = new System.Drawing.Size(127, 22);
             this.Label_PWD.TabIndex = 0;
             this.Label_PWD.Text = "Password :";
             this.Label_PWD.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -277,21 +264,20 @@
             this.Label_UN.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_UN.Image = global::PG_Management_System.Properties.Resources.Username_Image;
             this.Label_UN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_UN.Location = new System.Drawing.Point(21, 358);
-            this.Label_UN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label_UN.Location = new System.Drawing.Point(17, 291);
             this.Label_UN.Name = "Label_UN";
-            this.Label_UN.Size = new System.Drawing.Size(169, 32);
+            this.Label_UN.Size = new System.Drawing.Size(127, 26);
             this.Label_UN.TabIndex = 0;
             this.Label_UN.Text = "Username :";
             this.Label_UN.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(451, 585);
+            this.ClientSize = new System.Drawing.Size(340, 475);
             this.Controls.Add(this.Label_PasswordUnderbar);
             this.Controls.Add(this.Label_UsernameUnderbar);
             this.Controls.Add(this.Button_Show_Hide_Pwd);
@@ -307,7 +293,6 @@
             this.Controls.Add(this.Label_PWD);
             this.Controls.Add(this.Label_UN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.LoginForm_Load);

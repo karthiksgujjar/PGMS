@@ -19,11 +19,12 @@ namespace PG_Management_System
 
         private void Button_FormClose_Click(object sender, EventArgs e)
         {
-           DialogResult res = MessageBox.Show("Do you really want to exit?", "CONFIRMATION",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2);
-            if(res==DialogResult.Yes)
-            {
-                Application.Exit();
-            }
+            /* DialogResult res = MessageBox.Show("Do you really want to exit?", "CONFIRMATION",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2);
+              if(res==DialogResult.Yes)
+              {
+                  Application.Exit();
+              }*/
+            Application.Exit();
         }
 
         private void Button_FormMinimize_Click(object sender, EventArgs e)
@@ -44,7 +45,7 @@ namespace PG_Management_System
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            LoadForm(new BuidlingsForm());
+            LoadForm(new BuildingsForm());
             LoginForm.loginFormInstance.Close();
         }
     }

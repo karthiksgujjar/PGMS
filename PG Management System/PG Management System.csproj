@@ -84,6 +84,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBuildingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBuildingForm.Designer.cs">
+      <DependentUpon>AddBuildingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdmissionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,11 +102,11 @@
     <Compile Include="BedsForm.Designer.cs">
       <DependentUpon>BedsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuidlingsForm.cs">
+    <Compile Include="BuildingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuidlingsForm.Designer.cs">
-      <DependentUpon>BuidlingsForm.cs</DependentUpon>
+    <Compile Include="BuildingsForm.Designer.cs">
+      <DependentUpon>BuildingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FloorsForm.cs">
       <SubType>Form</SubType>
@@ -139,14 +145,17 @@
     <Compile Include="RoomsForm.Designer.cs">
       <DependentUpon>RoomsForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddBuildingForm.resx">
+      <DependentUpon>AddBuildingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdmissionForm.resx">
       <DependentUpon>AdmissionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BedsForm.resx">
       <DependentUpon>BedsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuidlingsForm.resx">
-      <DependentUpon>BuidlingsForm.cs</DependentUpon>
+    <EmbeddedResource Include="BuildingsForm.resx">
+      <DependentUpon>BuildingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FloorsForm.resx">
       <DependentUpon>FloorsForm.cs</DependentUpon>
@@ -208,6 +217,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PGMS 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

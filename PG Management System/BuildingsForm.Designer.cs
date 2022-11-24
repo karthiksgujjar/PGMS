@@ -1,6 +1,6 @@
 ﻿namespace PG_Management_System
 {
-    partial class BuidlingsForm
+    partial class BuildingsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,15 +35,19 @@
             // Button_AddBuilding
             // 
             this.Button_AddBuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Button_AddBuilding.BackColor = System.Drawing.Color.Transparent;
             this.Button_AddBuilding.FlatAppearance.BorderSize = 0;
-            this.Button_AddBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Button_AddBuilding.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Button_AddBuilding.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Button_AddBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_AddBuilding.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AddBuilding.Image = global::PG_Management_System.Properties.Resources.Insert;
             this.Button_AddBuilding.Location = new System.Drawing.Point(750, 400);
             this.Button_AddBuilding.Name = "Button_AddBuilding";
             this.Button_AddBuilding.Size = new System.Drawing.Size(38, 38);
             this.Button_AddBuilding.TabIndex = 4;
-            this.Button_AddBuilding.Text = "+";
-            this.Button_AddBuilding.UseVisualStyleBackColor = true;
+            this.Button_AddBuilding.UseVisualStyleBackColor = false;
+            this.Button_AddBuilding.Click += new System.EventHandler(this.Button_AddBuilding_Click);
             // 
             // Label_BUILDINGS
             // 
@@ -58,17 +62,20 @@
             this.Label_BUILDINGS.Text = "BUILDINGS";
             this.Label_BUILDINGS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // BuidlingsForm
+            // BuildingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Label_BUILDINGS);
             this.Controls.Add(this.Button_AddBuilding);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "BuidlingsForm";
+            this.Name = "BuildingsForm";
             this.Text = "PGMS - Buidlings";
+            this.Activated += new System.EventHandler(this.BuildingsForm_Activated);
+            this.Load += new System.EventHandler(this.BuildingsForm_Load);
             this.ResumeLayout(false);
 
         }
