@@ -92,6 +92,7 @@
             this.Button_LogIn.Name = "Button_LogIn";
             this.Button_LogIn.Size = new System.Drawing.Size(75, 30);
             this.Button_LogIn.TabIndex = 2;
+            this.Button_LogIn.Tag = "";
             this.Button_LogIn.Text = "LOGIN";
             this.Button_LogIn.UseVisualStyleBackColor = false;
             this.Button_LogIn.Click += new System.EventHandler(this.Button_LogIn_Click);
@@ -121,7 +122,7 @@
             this.Button_FormMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_FormMinimize.FlatAppearance.BorderSize = 0;
             this.Button_FormMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_FormMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Button_FormMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Button_FormMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_FormMinimize.Font = new System.Drawing.Font("Wide Latin", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_FormMinimize.Location = new System.Drawing.Point(300, 0);

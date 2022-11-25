@@ -40,3 +40,5 @@ E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.Pass
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.MainForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AddBuildingForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BuildingsForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.TestForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AddFloorForm.resources

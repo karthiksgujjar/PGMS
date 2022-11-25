@@ -17,6 +17,7 @@ namespace PG_Management_System
     {
         string RImagePath = "No Image";
         string PictureBox_ImagePath = "No Image";
+
         public AddBuildingForm()
         {
             InitializeComponent();
@@ -44,7 +45,7 @@ namespace PG_Management_System
                         PictureBox_BuildingImage.Image.Save(RImagePath + TextBox_BuildingName.Text + " Image.jpg", ImageFormat.Jpeg);
                     }
                     MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-                    string query = "INSERT INTO BUILDINGS values(@ID,@Name,@ImageRPath);";
+                    string query = "INSERT INTO buildings VALUES(@ID,@Name,@ImageRPath);";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@ID", TextBox_BuildingID.Text);
                     cmd.Parameters.AddWithValue("@Name", TextBox_BuildingName.Text);
@@ -123,7 +124,6 @@ namespace PG_Management_System
             PictureBox_BuildingImage.Image = Properties.Resources.Add_Image;
             TextBox_BuildingID.Focus();
         }
-
 
     }
 }

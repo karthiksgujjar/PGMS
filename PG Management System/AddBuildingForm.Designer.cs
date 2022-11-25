@@ -34,16 +34,14 @@
             this.Button_FormClose = new System.Windows.Forms.Button();
             this.Button_Save = new System.Windows.Forms.Button();
             this.TextBox_BuildingName = new System.Windows.Forms.TextBox();
-            this.ErrorProvider_AddBuildingForm = new System.Windows.Forms.ErrorProvider(this.components);
             this.Label_BuildingNameUnderbar = new System.Windows.Forms.Label();
             this.Label_BuildingIDUnderbar = new System.Windows.Forms.Label();
             this.Label_BuildingName = new System.Windows.Forms.Label();
             this.Label_BuildingID = new System.Windows.Forms.Label();
             this.TextBox_BuildingID = new System.Windows.Forms.TextBox();
+            this.ToolTip_AddBuidlingForm = new System.Windows.Forms.ToolTip(this.components);
             this.Label_FormTitle = new System.Windows.Forms.Label();
             this.PictureBox_BuildingImage = new System.Windows.Forms.PictureBox();
-            this.ToolTip_AddBuidlingForm = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_AddBuildingForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_BuildingImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +51,7 @@
             this.Button_FormMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_FormMinimize.FlatAppearance.BorderSize = 0;
             this.Button_FormMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_FormMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Button_FormMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Button_FormMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_FormMinimize.Font = new System.Drawing.Font("Wide Latin", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_FormMinimize.Location = new System.Drawing.Point(300, 0);
@@ -109,23 +107,16 @@
             this.TextBox_BuildingName.BackColor = System.Drawing.Color.LightGray;
             this.TextBox_BuildingName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBox_BuildingName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_BuildingName.Location = new System.Drawing.Point(123, 355);
+            this.TextBox_BuildingName.Location = new System.Drawing.Point(123, 357);
             this.TextBox_BuildingName.Name = "TextBox_BuildingName";
             this.TextBox_BuildingName.Size = new System.Drawing.Size(139, 16);
             this.TextBox_BuildingName.TabIndex = 1;
-            // 
-            // ErrorProvider_AddBuildingForm
-            // 
-            this.ErrorProvider_AddBuildingForm.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
-            this.ErrorProvider_AddBuildingForm.ContainerControl = this;
-            this.ErrorProvider_AddBuildingForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider_AddBuildingForm.Icon")));
-            this.ErrorProvider_AddBuildingForm.RightToLeft = true;
             // 
             // Label_BuildingNameUnderbar
             // 
             this.Label_BuildingNameUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_BuildingNameUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_BuildingNameUnderbar.Location = new System.Drawing.Point(123, 374);
+            this.Label_BuildingNameUnderbar.Location = new System.Drawing.Point(123, 376);
             this.Label_BuildingNameUnderbar.Name = "Label_BuildingNameUnderbar";
             this.Label_BuildingNameUnderbar.Size = new System.Drawing.Size(139, 1);
             this.Label_BuildingNameUnderbar.TabIndex = 31;
@@ -134,7 +125,7 @@
             // 
             this.Label_BuildingIDUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_BuildingIDUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_BuildingIDUnderbar.Location = new System.Drawing.Point(123, 328);
+            this.Label_BuildingIDUnderbar.Location = new System.Drawing.Point(123, 330);
             this.Label_BuildingIDUnderbar.Name = "Label_BuildingIDUnderbar";
             this.Label_BuildingIDUnderbar.Size = new System.Drawing.Size(139, 1);
             this.Label_BuildingIDUnderbar.TabIndex = 30;
@@ -175,7 +166,7 @@
             this.TextBox_BuildingID.BackColor = System.Drawing.Color.LightGray;
             this.TextBox_BuildingID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBox_BuildingID.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_BuildingID.Location = new System.Drawing.Point(123, 309);
+            this.TextBox_BuildingID.Location = new System.Drawing.Point(123, 311);
             this.TextBox_BuildingID.Name = "TextBox_BuildingID";
             this.TextBox_BuildingID.Size = new System.Drawing.Size(139, 16);
             this.TextBox_BuildingID.TabIndex = 0;
@@ -202,7 +193,7 @@
             this.PictureBox_BuildingImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBox_BuildingImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PictureBox_BuildingImage.Image = global::PG_Management_System.Properties.Resources.Add_Image;
-            this.PictureBox_BuildingImage.Location = new System.Drawing.Point(61, 60);
+            this.PictureBox_BuildingImage.Location = new System.Drawing.Point(60, 60);
             this.PictureBox_BuildingImage.Name = "PictureBox_BuildingImage";
             this.PictureBox_BuildingImage.Size = new System.Drawing.Size(219, 205);
             this.PictureBox_BuildingImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,7 +226,6 @@
             this.Name = "AddBuildingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddBuildingForm";
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_AddBuildingForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_BuildingImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -247,7 +237,6 @@
         private System.Windows.Forms.Button Button_FormClose;
         private System.Windows.Forms.Button Button_Save;
         private System.Windows.Forms.TextBox TextBox_BuildingName;
-        private System.Windows.Forms.ErrorProvider ErrorProvider_AddBuildingForm;
         private System.Windows.Forms.Label Label_BuildingNameUnderbar;
         private System.Windows.Forms.Label Label_BuildingIDUnderbar;
         private System.Windows.Forms.Label Label_FormTitle;

@@ -90,6 +90,12 @@
     <Compile Include="AddBuildingForm.Designer.cs">
       <DependentUpon>AddBuildingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddFloorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFloorForm.Designer.cs">
+      <DependentUpon>AddFloorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdmissionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,8 +151,17 @@
     <Compile Include="RoomsForm.Designer.cs">
       <DependentUpon>RoomsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddBuildingForm.resx">
       <DependentUpon>AddBuildingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFloorForm.resx">
+      <DependentUpon>AddFloorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdmissionForm.resx">
       <DependentUpon>AdmissionForm.cs</DependentUpon>
@@ -176,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoomsForm.resx">
       <DependentUpon>RoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -232,6 +250,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Add Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

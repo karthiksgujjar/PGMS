@@ -28,9 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Button_AddBuilding = new System.Windows.Forms.Button();
             this.Label_BUILDINGS = new System.Windows.Forms.Label();
+            this.Button_AddBuilding = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // Label_BUILDINGS
+            // 
+            this.Label_BUILDINGS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_BUILDINGS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_BUILDINGS.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_BUILDINGS.Location = new System.Drawing.Point(224, 9);
+            this.Label_BUILDINGS.Name = "Label_BUILDINGS";
+            this.Label_BUILDINGS.Size = new System.Drawing.Size(352, 70);
+            this.Label_BUILDINGS.TabIndex = 5;
+            this.Label_BUILDINGS.Text = "BUILDINGS";
+            this.Label_BUILDINGS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Button_AddBuilding
             // 
@@ -49,32 +62,18 @@
             this.Button_AddBuilding.UseVisualStyleBackColor = false;
             this.Button_AddBuilding.Click += new System.EventHandler(this.Button_AddBuilding_Click);
             // 
-            // Label_BUILDINGS
-            // 
-            this.Label_BUILDINGS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label_BUILDINGS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_BUILDINGS.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_BUILDINGS.Location = new System.Drawing.Point(224, 9);
-            this.Label_BUILDINGS.Name = "Label_BUILDINGS";
-            this.Label_BUILDINGS.Size = new System.Drawing.Size(352, 70);
-            this.Label_BUILDINGS.TabIndex = 5;
-            this.Label_BUILDINGS.Text = "BUILDINGS";
-            this.Label_BUILDINGS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // BuildingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Label_BUILDINGS);
             this.Controls.Add(this.Button_AddBuilding);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BuildingsForm";
+            this.Tag = "";
             this.Text = "PGMS - Buidlings";
-            this.Activated += new System.EventHandler(this.BuildingsForm_Activated);
             this.Load += new System.EventHandler(this.BuildingsForm_Load);
             this.ResumeLayout(false);
 
