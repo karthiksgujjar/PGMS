@@ -22,7 +22,8 @@ namespace PG_Management_System
 
         private void Button_AddBuilding_Click(object sender, EventArgs e)
         {
-            AddBuildingForm addBuildingForm = new AddBuildingForm();
+            Properties.Settings.Default.AddingBuilding = true;
+            AddBuildingData addBuildingForm = new AddBuildingData();
             addBuildingForm.ShowDialog();
         }
 

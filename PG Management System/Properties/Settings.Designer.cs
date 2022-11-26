@@ -130,5 +130,65 @@ namespace PG_Management_System.Properties {
                 this["SelectedFloorID"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SelectedFloorName {
+            get {
+                return ((string)(this["SelectedFloorName"]));
+            }
+            set {
+                this["SelectedFloorName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AddingBuilding {
+            get {
+                return ((bool)(this["AddingBuilding"]));
+            }
+            set {
+                this["AddingBuilding"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AddingFloor {
+            get {
+                return ((bool)(this["AddingFloor"]));
+            }
+            set {
+                this["AddingFloor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SelectedRoomID {
+            get {
+                return ((string)(this["SelectedRoomID"]));
+            }
+            set {
+                this["SelectedRoomID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SelectedRoomName {
+            get {
+                return ((string)(this["SelectedRoomName"]));
+            }
+            set {
+                this["SelectedRoomName"] = value;
+            }
+        }
     }
 }

@@ -199,6 +199,7 @@
             this.ComboBox_Floors.Sorted = true;
             this.ComboBox_Floors.TabIndex = 14;
             this.ComboBox_Floors.Visible = false;
+            this.ComboBox_Floors.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Floors_SelectedIndexChanged);
             // 
             // ComboBox_Rooms
             // 
@@ -211,7 +212,6 @@
             this.ComboBox_Rooms.Size = new System.Drawing.Size(141, 23);
             this.ComboBox_Rooms.Sorted = true;
             this.ComboBox_Rooms.TabIndex = 15;
-            this.ComboBox_Rooms.Text = "-- Select Room --";
             this.ComboBox_Rooms.Visible = false;
             // 
             // MainForm

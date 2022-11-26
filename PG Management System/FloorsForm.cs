@@ -22,8 +22,9 @@ namespace PG_Management_System
 
         private void Button_AddFloor_Click(object sender, EventArgs e)
         {
-            AddFloorForm addFloorForm = new AddFloorForm();
-            addFloorForm.ShowDialog();
+            Properties.Settings.Default.AddingFloor = true;
+            AddBuildingData addBuildingForm = new AddBuildingData();
+            addBuildingForm.ShowDialog();
         }
 
         private void FloorsForm_Load(object sender, EventArgs e)
