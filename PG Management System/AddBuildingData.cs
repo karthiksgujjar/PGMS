@@ -22,6 +22,15 @@ namespace PG_Management_System
         {
             InitializeComponent();
         }
+        
+        private void AddBuildingData_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.AddingBuilding == false && Properties.Settings.Default.AddingFloor == false)
+            {
+                Label_BuildingDataName.Location = new Point(18, 351);
+                Label_BuildingDataName.Text = "Room No :";
+            }
+        }
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
@@ -37,6 +46,7 @@ namespace PG_Management_System
                     {
                         throw new FormatException();
                     }
+                    
                     if(Properties.Settings.Default.AddingBuilding)
                     {
                         if (PictureBox_ImagePath != "No Image")
@@ -96,8 +106,7 @@ namespace PG_Management_System
                     }
                     else
                     {
-                        Label_BuildingDataName.Location = new Point(18, 351);
-                        Label_BuildingDataName.Text = "Room No :";
+                        
                         if (PictureBox_ImagePath != "No Image")
                         {
                             RImagePath = "Images/" + Properties.Settings.Default.SelectedBuildingName + "/" + Properties.Settings.Default.SelectedFloorName + "/Room No. " + TextBox_BuildingDataName.Text + "/"; //RelativeImagePath
@@ -189,6 +198,24 @@ namespace PG_Management_System
             TextBox_BuildingDataName.Clear();
             PictureBox_BuildingDataImage.Image = Properties.Resources.Add_Image;
             TextBox_BuildingDataID.Focus();
+        }
+
+        private void TextBox_BuildingDataID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+            {
+                e.Handled = true;
+                TextBox_BuildingDataName.Focus();
+            }
+        }
+
+        private void TextBox_BuildingDataName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+            {
+                e.Handled = true;
+                Button_Save_Click(sender, e);
+            }
         }
 
     }

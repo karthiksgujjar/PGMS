@@ -111,6 +111,7 @@
             this.TextBox_BuildingDataName.Name = "TextBox_BuildingDataName";
             this.TextBox_BuildingDataName.Size = new System.Drawing.Size(139, 16);
             this.TextBox_BuildingDataName.TabIndex = 1;
+            this.TextBox_BuildingDataName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_BuildingDataName_KeyPress);
             // 
             // Label_BuildingDataNameUnderbar
             // 
@@ -170,6 +171,7 @@
             this.TextBox_BuildingDataID.Name = "TextBox_BuildingDataID";
             this.TextBox_BuildingDataID.Size = new System.Drawing.Size(139, 16);
             this.TextBox_BuildingDataID.TabIndex = 0;
+            this.TextBox_BuildingDataID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_BuildingDataID_KeyPress);
             // 
             // PictureBox_BuildingDataImage
             // 
@@ -226,6 +228,7 @@
             this.Name = "AddBuildingData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddBuildingDataForm";
+            this.Load += new System.EventHandler(this.AddBuildingData_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_BuildingDataImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

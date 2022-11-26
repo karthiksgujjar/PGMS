@@ -159,6 +159,7 @@ namespace PG_Management_System
             LoadForm(new FloorsForm());
             Button_Home.Visible = true;
             ComboBox_Floors.Visible = true;
+            ComboBox_Rooms.Visible = false;
         }
 
         private void ComboBox_Floors_SelectedIndexChanged(object sender, EventArgs e)
@@ -182,7 +183,7 @@ namespace PG_Management_System
 
                 while (RoomsNames.Read())
                 {
-                    ComboBox_Rooms.Items.Add(RoomsNames["room_no"].ToString() + " - " + RoomsNames["id"].ToString());
+                    ComboBox_Rooms.Items.Add("Room No. " + RoomsNames["room_no"].ToString() + " - " + RoomsNames["id"].ToString());
                 }
             }
             catch (Exception Err)
