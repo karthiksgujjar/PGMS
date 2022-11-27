@@ -16,5 +16,15 @@ namespace PG_Management_System
         {
             InitializeComponent();
         }
+
+        private void Button_FormClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_FormMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

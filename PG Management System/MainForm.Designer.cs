@@ -39,6 +39,7 @@
             this.Button_FormMaximize = new System.Windows.Forms.Button();
             this.ComboBox_Floors = new System.Windows.Forms.ComboBox();
             this.ComboBox_Rooms = new System.Windows.Forms.ComboBox();
+            this.Label_GuestFormDisplayController = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Button_FormClose
@@ -213,6 +214,20 @@
             this.ComboBox_Rooms.Sorted = true;
             this.ComboBox_Rooms.TabIndex = 15;
             this.ComboBox_Rooms.Visible = false;
+            this.ComboBox_Rooms.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Rooms_SelectedIndexChanged);
+            // 
+            // Label_GuestFormDisplayController
+            // 
+            this.Label_GuestFormDisplayController.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_GuestFormDisplayController.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_GuestFormDisplayController.Enabled = false;
+            this.Label_GuestFormDisplayController.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_GuestFormDisplayController.Location = new System.Drawing.Point(736, 16);
+            this.Label_GuestFormDisplayController.Name = "Label_GuestFormDisplayController";
+            this.Label_GuestFormDisplayController.Size = new System.Drawing.Size(136, 14);
+            this.Label_GuestFormDisplayController.TabIndex = 16;
+            this.Label_GuestFormDisplayController.Text = "GuestFormDisplayController";
+            this.Label_GuestFormDisplayController.Visible = false;
             // 
             // MainForm
             // 
@@ -220,6 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1080, 720);
+            this.Controls.Add(this.Label_GuestFormDisplayController);
             this.Controls.Add(this.ComboBox_Rooms);
             this.Controls.Add(this.ComboBox_Floors);
             this.Controls.Add(this.Button_FormMaximize);
@@ -254,5 +270,6 @@
         private System.Windows.Forms.Button Button_FormMaximize;
         private System.Windows.Forms.ComboBox ComboBox_Floors;
         private System.Windows.Forms.ComboBox ComboBox_Rooms;
+        private System.Windows.Forms.Label Label_GuestFormDisplayController;
     }
 }

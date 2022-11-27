@@ -96,11 +96,11 @@
     <Compile Include="AdmissionForm.Designer.cs">
       <DependentUpon>AdmissionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BedsForm.cs">
+    <Compile Include="GuestsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BedsForm.Designer.cs">
-      <DependentUpon>BedsForm.cs</DependentUpon>
+    <Compile Include="GuestsForm.Designer.cs">
+      <DependentUpon>GuestsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BuildingsForm.cs">
       <SubType>Form</SubType>
@@ -145,20 +145,14 @@
     <Compile Include="RoomsForm.Designer.cs">
       <DependentUpon>RoomsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TestForm.Designer.cs">
-      <DependentUpon>TestForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AddBuildingData.resx">
       <DependentUpon>AddBuildingData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdmissionForm.resx">
       <DependentUpon>AdmissionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BedsForm.resx">
-      <DependentUpon>BedsForm.cs</DependentUpon>
+    <EmbeddedResource Include="GuestsForm.resx">
+      <DependentUpon>GuestsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuildingsForm.resx">
       <DependentUpon>BuildingsForm.cs</DependentUpon>
@@ -182,9 +176,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoomsForm.resx">
       <DependentUpon>RoomsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestForm.resx">
-      <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

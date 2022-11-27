@@ -23,6 +23,18 @@ namespace PG_Management_System
             InitializeComponent();
         }
         
+        private void Button_FormClose_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.AddingBuilding = false;
+            Properties.Settings.Default.AddingFloor = false;
+            this.Close();
+        }
+        
+        private void Button_FormMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        
         private void AddBuildingData_Load(object sender, EventArgs e)
         {
             if (Properties.Settings.Default.AddingBuilding == false && Properties.Settings.Default.AddingFloor == false)
@@ -159,18 +171,6 @@ namespace PG_Management_System
                     }
                 }
             }
-        }
-
-        private void Button_FormClose_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.AddingBuilding = false;
-            Properties.Settings.Default.AddingFloor = false;
-            this.Close();
-        }
-
-        private void Button_FormMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
 
         private void PictureBox_BuildingImage_Click(object sender, EventArgs e)

@@ -28,149 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdmissionForm));
             this.Label_PGName = new System.Windows.Forms.Label();
+            this.Button_Admit = new System.Windows.Forms.Button();
+            this.Button_Print = new System.Windows.Forms.Button();
+            this.Button_Reset = new System.Windows.Forms.Button();
+            this.ToolTip_AdmissionForm = new System.Windows.Forms.ToolTip(this.components);
+            this.PictureBox_GuestImage = new System.Windows.Forms.PictureBox();
             this.Label_Name = new System.Windows.Forms.Label();
             this.Label_PhNo = new System.Windows.Forms.Label();
             this.Label_EMailID = new System.Windows.Forms.Label();
             this.Label_Address = new System.Windows.Forms.Label();
             this.Label_AadhaarNo = new System.Windows.Forms.Label();
-            this.TextBox_Name = new System.Windows.Forms.TextBox();
-            this.TextBox_MobileNo = new System.Windows.Forms.TextBox();
-            this.TextBox_EMailID = new System.Windows.Forms.TextBox();
-            this.TextBox_Address = new System.Windows.Forms.TextBox();
+            this.TextBox_GuestName = new System.Windows.Forms.TextBox();
+            this.TextBox_GuestMobileNo = new System.Windows.Forms.TextBox();
+            this.Label_GuestMobileNoUnderbar = new System.Windows.Forms.Label();
+            this.Label_GuestNameUnderbar = new System.Windows.Forms.Label();
+            this.Label_FormTitle = new System.Windows.Forms.Label();
+            this.Button_FormMinimize = new System.Windows.Forms.Button();
+            this.Button_FormClose = new System.Windows.Forms.Button();
+            this.TextBox_GuestMailID = new System.Windows.Forms.TextBox();
+            this.TextBox_GuestAddress = new System.Windows.Forms.TextBox();
+            this.Label_GuestAddressUnderbar = new System.Windows.Forms.Label();
+            this.Label_GuestMailIDUnderbar = new System.Windows.Forms.Label();
             this.TextBox_AadhaarNo = new System.Windows.Forms.TextBox();
-            this.Button_Admit = new System.Windows.Forms.Button();
-            this.Button_Print = new System.Windows.Forms.Button();
-            this.Button_Reset = new System.Windows.Forms.Button();
+            this.Label_AadhaarNoUnderbar = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_GuestImage)).BeginInit();
             this.SuspendLayout();
             // 
             // Label_PGName
             // 
-            this.Label_PGName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label_PGName.AutoSize = true;
+            this.Label_PGName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_PGName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_PGName.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGName.Location = new System.Drawing.Point(303, 9);
+            this.Label_PGName.Location = new System.Drawing.Point(99, 20);
             this.Label_PGName.Name = "Label_PGName";
-            this.Label_PGName.Size = new System.Drawing.Size(195, 75);
+            this.Label_PGName.Size = new System.Drawing.Size(518, 75);
             this.Label_PGName.TabIndex = 10;
-            this.Label_PGName.Text = "PGMS";
+            this.Label_PGName.Text = "Guest Addmisson";
             this.Label_PGName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label_Name
-            // 
-            this.Label_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label_Name.AutoSize = true;
-            this.Label_Name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_Name.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Name.Location = new System.Drawing.Point(80, 103);
-            this.Label_Name.Name = "Label_Name";
-            this.Label_Name.Size = new System.Drawing.Size(68, 22);
-            this.Label_Name.TabIndex = 11;
-            this.Label_Name.Text = "Name :";
-            this.Label_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label_PhNo
-            // 
-            this.Label_PhNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label_PhNo.AutoSize = true;
-            this.Label_PhNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_PhNo.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PhNo.Location = new System.Drawing.Point(40, 149);
-            this.Label_PhNo.Name = "Label_PhNo";
-            this.Label_PhNo.Size = new System.Drawing.Size(108, 22);
-            this.Label_PhNo.TabIndex = 11;
-            this.Label_PhNo.Text = "Mobile No. :";
-            this.Label_PhNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label_EMailID
-            // 
-            this.Label_EMailID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label_EMailID.AutoSize = true;
-            this.Label_EMailID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_EMailID.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_EMailID.Location = new System.Drawing.Point(50, 195);
-            this.Label_EMailID.Name = "Label_EMailID";
-            this.Label_EMailID.Size = new System.Drawing.Size(98, 22);
-            this.Label_EMailID.TabIndex = 11;
-            this.Label_EMailID.Text = "E-Mail ID :";
-            this.Label_EMailID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label_Address
-            // 
-            this.Label_Address.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label_Address.AutoSize = true;
-            this.Label_Address.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_Address.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Address.Location = new System.Drawing.Point(61, 241);
-            this.Label_Address.Name = "Label_Address";
-            this.Label_Address.Size = new System.Drawing.Size(87, 22);
-            this.Label_Address.TabIndex = 11;
-            this.Label_Address.Text = "Address :";
-            this.Label_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label_AadhaarNo
-            // 
-            this.Label_AadhaarNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Label_AadhaarNo.AutoSize = true;
-            this.Label_AadhaarNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_AadhaarNo.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_AadhaarNo.Location = new System.Drawing.Point(12, 287);
-            this.Label_AadhaarNo.Name = "Label_AadhaarNo";
-            this.Label_AadhaarNo.Size = new System.Drawing.Size(136, 22);
-            this.Label_AadhaarNo.TabIndex = 11;
-            this.Label_AadhaarNo.Text = "AADHAAR No. :";
-            this.Label_AadhaarNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TextBox_Name
-            // 
-            this.TextBox_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBox_Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_Name.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Name.Location = new System.Drawing.Point(154, 103);
-            this.TextBox_Name.Name = "TextBox_Name";
-            this.TextBox_Name.Size = new System.Drawing.Size(238, 23);
-            this.TextBox_Name.TabIndex = 12;
-            // 
-            // TextBox_MobileNo
-            // 
-            this.TextBox_MobileNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBox_MobileNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_MobileNo.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_MobileNo.Location = new System.Drawing.Point(154, 149);
-            this.TextBox_MobileNo.Name = "TextBox_MobileNo";
-            this.TextBox_MobileNo.Size = new System.Drawing.Size(238, 23);
-            this.TextBox_MobileNo.TabIndex = 12;
-            // 
-            // TextBox_EMailID
-            // 
-            this.TextBox_EMailID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBox_EMailID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_EMailID.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_EMailID.Location = new System.Drawing.Point(154, 195);
-            this.TextBox_EMailID.Name = "TextBox_EMailID";
-            this.TextBox_EMailID.Size = new System.Drawing.Size(238, 23);
-            this.TextBox_EMailID.TabIndex = 12;
-            // 
-            // TextBox_Address
-            // 
-            this.TextBox_Address.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBox_Address.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_Address.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Address.Location = new System.Drawing.Point(154, 241);
-            this.TextBox_Address.Name = "TextBox_Address";
-            this.TextBox_Address.Size = new System.Drawing.Size(238, 23);
-            this.TextBox_Address.TabIndex = 12;
-            // 
-            // TextBox_AadhaarNo
-            // 
-            this.TextBox_AadhaarNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBox_AadhaarNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_AadhaarNo.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_AadhaarNo.Location = new System.Drawing.Point(154, 287);
-            this.TextBox_AadhaarNo.Name = "TextBox_AadhaarNo";
-            this.TextBox_AadhaarNo.Size = new System.Drawing.Size(238, 23);
-            this.TextBox_AadhaarNo.TabIndex = 12;
             // 
             // Button_Admit
             // 
@@ -178,10 +76,10 @@
             this.Button_Admit.FlatAppearance.BorderSize = 0;
             this.Button_Admit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Button_Admit.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Admit.Location = new System.Drawing.Point(65, 408);
+            this.Button_Admit.Location = new System.Drawing.Point(46, 408);
             this.Button_Admit.Name = "Button_Admit";
             this.Button_Admit.Size = new System.Drawing.Size(83, 30);
-            this.Button_Admit.TabIndex = 13;
+            this.Button_Admit.TabIndex = 5;
             this.Button_Admit.Text = "ADMIT";
             this.Button_Admit.UseVisualStyleBackColor = true;
             // 
@@ -191,7 +89,7 @@
             this.Button_Print.FlatAppearance.BorderSize = 0;
             this.Button_Print.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Button_Print.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Print.Location = new System.Drawing.Point(324, 408);
+            this.Button_Print.Location = new System.Drawing.Point(307, 408);
             this.Button_Print.Name = "Button_Print";
             this.Button_Print.Size = new System.Drawing.Size(83, 30);
             this.Button_Print.TabIndex = 13;
@@ -204,34 +102,283 @@
             this.Button_Reset.FlatAppearance.BorderSize = 0;
             this.Button_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Button_Reset.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Reset.Location = new System.Drawing.Point(583, 408);
+            this.Button_Reset.Location = new System.Drawing.Point(541, 408);
             this.Button_Reset.Name = "Button_Reset";
             this.Button_Reset.Size = new System.Drawing.Size(131, 30);
             this.Button_Reset.TabIndex = 13;
             this.Button_Reset.Text = "RESET FORM";
             this.Button_Reset.UseVisualStyleBackColor = true;
             // 
+            // PictureBox_GuestImage
+            // 
+            this.PictureBox_GuestImage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureBox_GuestImage.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox_GuestImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PictureBox_GuestImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PictureBox_GuestImage.Image = global::PG_Management_System.Properties.Resources.Add_Image;
+            this.PictureBox_GuestImage.Location = new System.Drawing.Point(453, 137);
+            this.PictureBox_GuestImage.Name = "PictureBox_GuestImage";
+            this.PictureBox_GuestImage.Size = new System.Drawing.Size(219, 210);
+            this.PictureBox_GuestImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_GuestImage.TabIndex = 25;
+            this.PictureBox_GuestImage.TabStop = false;
+            this.ToolTip_AdmissionForm.SetToolTip(this.PictureBox_GuestImage, "Add Image");
+            // 
+            // Label_Name
+            // 
+            this.Label_Name.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_Name.AutoSize = true;
+            this.Label_Name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_Name.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Name.Location = new System.Drawing.Point(82, 137);
+            this.Label_Name.Name = "Label_Name";
+            this.Label_Name.Size = new System.Drawing.Size(68, 22);
+            this.Label_Name.TabIndex = 11;
+            this.Label_Name.Text = "Name :";
+            this.Label_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Label_PhNo
+            // 
+            this.Label_PhNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_PhNo.AutoSize = true;
+            this.Label_PhNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_PhNo.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PhNo.Location = new System.Drawing.Point(42, 183);
+            this.Label_PhNo.Name = "Label_PhNo";
+            this.Label_PhNo.Size = new System.Drawing.Size(108, 22);
+            this.Label_PhNo.TabIndex = 11;
+            this.Label_PhNo.Text = "Mobile No. :";
+            this.Label_PhNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Label_EMailID
+            // 
+            this.Label_EMailID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_EMailID.AutoSize = true;
+            this.Label_EMailID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_EMailID.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_EMailID.Location = new System.Drawing.Point(52, 229);
+            this.Label_EMailID.Name = "Label_EMailID";
+            this.Label_EMailID.Size = new System.Drawing.Size(98, 22);
+            this.Label_EMailID.TabIndex = 11;
+            this.Label_EMailID.Text = "E-Mail ID :";
+            this.Label_EMailID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Label_Address
+            // 
+            this.Label_Address.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_Address.AutoSize = true;
+            this.Label_Address.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_Address.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Address.Location = new System.Drawing.Point(63, 275);
+            this.Label_Address.Name = "Label_Address";
+            this.Label_Address.Size = new System.Drawing.Size(87, 22);
+            this.Label_Address.TabIndex = 11;
+            this.Label_Address.Text = "Address :";
+            this.Label_Address.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Label_AadhaarNo
+            // 
+            this.Label_AadhaarNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_AadhaarNo.AutoSize = true;
+            this.Label_AadhaarNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_AadhaarNo.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_AadhaarNo.Location = new System.Drawing.Point(14, 321);
+            this.Label_AadhaarNo.Name = "Label_AadhaarNo";
+            this.Label_AadhaarNo.Size = new System.Drawing.Size(136, 22);
+            this.Label_AadhaarNo.TabIndex = 11;
+            this.Label_AadhaarNo.Text = "AADHAAR No. :";
+            this.Label_AadhaarNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TextBox_GuestName
+            // 
+            this.TextBox_GuestName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBox_GuestName.BackColor = System.Drawing.Color.LightGray;
+            this.TextBox_GuestName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_GuestName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_GuestName.Location = new System.Drawing.Point(166, 140);
+            this.TextBox_GuestName.Name = "TextBox_GuestName";
+            this.TextBox_GuestName.Size = new System.Drawing.Size(238, 19);
+            this.TextBox_GuestName.TabIndex = 0;
+            // 
+            // TextBox_GuestMobileNo
+            // 
+            this.TextBox_GuestMobileNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBox_GuestMobileNo.BackColor = System.Drawing.Color.LightGray;
+            this.TextBox_GuestMobileNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_GuestMobileNo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_GuestMobileNo.Location = new System.Drawing.Point(166, 186);
+            this.TextBox_GuestMobileNo.Name = "TextBox_GuestMobileNo";
+            this.TextBox_GuestMobileNo.Size = new System.Drawing.Size(238, 19);
+            this.TextBox_GuestMobileNo.TabIndex = 1;
+            // 
+            // Label_GuestMobileNoUnderbar
+            // 
+            this.Label_GuestMobileNoUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_GuestMobileNoUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_GuestMobileNoUnderbar.Location = new System.Drawing.Point(166, 208);
+            this.Label_GuestMobileNoUnderbar.Name = "Label_GuestMobileNoUnderbar";
+            this.Label_GuestMobileNoUnderbar.Size = new System.Drawing.Size(238, 1);
+            this.Label_GuestMobileNoUnderbar.TabIndex = 35;
+            // 
+            // Label_GuestNameUnderbar
+            // 
+            this.Label_GuestNameUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_GuestNameUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_GuestNameUnderbar.Location = new System.Drawing.Point(166, 162);
+            this.Label_GuestNameUnderbar.Name = "Label_GuestNameUnderbar";
+            this.Label_GuestNameUnderbar.Size = new System.Drawing.Size(238, 1);
+            this.Label_GuestNameUnderbar.TabIndex = 34;
+            // 
+            // Label_FormTitle
+            // 
+            this.Label_FormTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_FormTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Label_FormTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_FormTitle.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_FormTitle.Image = ((System.Drawing.Image)(resources.GetObject("Label_FormTitle.Image")));
+            this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_FormTitle.Location = new System.Drawing.Point(0, 0);
+            this.Label_FormTitle.Name = "Label_FormTitle";
+            this.Label_FormTitle.Size = new System.Drawing.Size(716, 20);
+            this.Label_FormTitle.TabIndex = 36;
+            this.Label_FormTitle.Text = "PGMS - Admission Form";
+            this.Label_FormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Button_FormMinimize
+            // 
+            this.Button_FormMinimize.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Button_FormMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_FormMinimize.FlatAppearance.BorderSize = 0;
+            this.Button_FormMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_FormMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Button_FormMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_FormMinimize.Font = new System.Drawing.Font("Wide Latin", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_FormMinimize.Location = new System.Drawing.Point(676, 0);
+            this.Button_FormMinimize.Name = "Button_FormMinimize";
+            this.Button_FormMinimize.Size = new System.Drawing.Size(20, 20);
+            this.Button_FormMinimize.TabIndex = 38;
+            this.Button_FormMinimize.TabStop = false;
+            this.Button_FormMinimize.Text = "-";
+            this.Button_FormMinimize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Button_FormMinimize.UseVisualStyleBackColor = false;
+            this.Button_FormMinimize.Click += new System.EventHandler(this.Button_FormMinimize_Click);
+            // 
+            // Button_FormClose
+            // 
+            this.Button_FormClose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Button_FormClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_FormClose.FlatAppearance.BorderSize = 0;
+            this.Button_FormClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_FormClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.Button_FormClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_FormClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_FormClose.Location = new System.Drawing.Point(696, 0);
+            this.Button_FormClose.Name = "Button_FormClose";
+            this.Button_FormClose.Size = new System.Drawing.Size(20, 20);
+            this.Button_FormClose.TabIndex = 37;
+            this.Button_FormClose.TabStop = false;
+            this.Button_FormClose.Text = "X";
+            this.Button_FormClose.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Button_FormClose.UseVisualStyleBackColor = false;
+            this.Button_FormClose.Click += new System.EventHandler(this.Button_FormClose_Click);
+            // 
+            // TextBox_GuestMailID
+            // 
+            this.TextBox_GuestMailID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBox_GuestMailID.BackColor = System.Drawing.Color.LightGray;
+            this.TextBox_GuestMailID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_GuestMailID.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_GuestMailID.Location = new System.Drawing.Point(166, 232);
+            this.TextBox_GuestMailID.Name = "TextBox_GuestMailID";
+            this.TextBox_GuestMailID.Size = new System.Drawing.Size(238, 19);
+            this.TextBox_GuestMailID.TabIndex = 2;
+            // 
+            // TextBox_GuestAddress
+            // 
+            this.TextBox_GuestAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBox_GuestAddress.BackColor = System.Drawing.Color.LightGray;
+            this.TextBox_GuestAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_GuestAddress.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_GuestAddress.Location = new System.Drawing.Point(166, 278);
+            this.TextBox_GuestAddress.Name = "TextBox_GuestAddress";
+            this.TextBox_GuestAddress.Size = new System.Drawing.Size(238, 19);
+            this.TextBox_GuestAddress.TabIndex = 3;
+            // 
+            // Label_GuestAddressUnderbar
+            // 
+            this.Label_GuestAddressUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_GuestAddressUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_GuestAddressUnderbar.Location = new System.Drawing.Point(166, 300);
+            this.Label_GuestAddressUnderbar.Name = "Label_GuestAddressUnderbar";
+            this.Label_GuestAddressUnderbar.Size = new System.Drawing.Size(238, 1);
+            this.Label_GuestAddressUnderbar.TabIndex = 42;
+            // 
+            // Label_GuestMailIDUnderbar
+            // 
+            this.Label_GuestMailIDUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_GuestMailIDUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_GuestMailIDUnderbar.Location = new System.Drawing.Point(166, 254);
+            this.Label_GuestMailIDUnderbar.Name = "Label_GuestMailIDUnderbar";
+            this.Label_GuestMailIDUnderbar.Size = new System.Drawing.Size(238, 1);
+            this.Label_GuestMailIDUnderbar.TabIndex = 41;
+            // 
+            // TextBox_AadhaarNo
+            // 
+            this.TextBox_AadhaarNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBox_AadhaarNo.BackColor = System.Drawing.Color.LightGray;
+            this.TextBox_AadhaarNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_AadhaarNo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_AadhaarNo.Location = new System.Drawing.Point(166, 324);
+            this.TextBox_AadhaarNo.Name = "TextBox_AadhaarNo";
+            this.TextBox_AadhaarNo.Size = new System.Drawing.Size(238, 19);
+            this.TextBox_AadhaarNo.TabIndex = 4;
+            // 
+            // Label_AadhaarNoUnderbar
+            // 
+            this.Label_AadhaarNoUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_AadhaarNoUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_AadhaarNoUnderbar.Location = new System.Drawing.Point(166, 346);
+            this.Label_AadhaarNoUnderbar.Name = "Label_AadhaarNoUnderbar";
+            this.Label_AadhaarNoUnderbar.Size = new System.Drawing.Size(238, 1);
+            this.Label_AadhaarNoUnderbar.TabIndex = 44;
+            // 
             // AdmissionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(716, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.TextBox_AadhaarNo);
+            this.Controls.Add(this.Label_AadhaarNoUnderbar);
+            this.Controls.Add(this.TextBox_GuestMailID);
+            this.Controls.Add(this.TextBox_GuestAddress);
+            this.Controls.Add(this.Label_GuestAddressUnderbar);
+            this.Controls.Add(this.Label_GuestMailIDUnderbar);
+            this.Controls.Add(this.Button_FormMinimize);
+            this.Controls.Add(this.Button_FormClose);
+            this.Controls.Add(this.Label_FormTitle);
+            this.Controls.Add(this.TextBox_GuestName);
+            this.Controls.Add(this.TextBox_GuestMobileNo);
+            this.Controls.Add(this.Label_GuestMobileNoUnderbar);
+            this.Controls.Add(this.Label_GuestNameUnderbar);
+            this.Controls.Add(this.PictureBox_GuestImage);
             this.Controls.Add(this.Button_Reset);
             this.Controls.Add(this.Button_Print);
             this.Controls.Add(this.Button_Admit);
-            this.Controls.Add(this.TextBox_AadhaarNo);
-            this.Controls.Add(this.TextBox_Address);
-            this.Controls.Add(this.TextBox_EMailID);
-            this.Controls.Add(this.TextBox_MobileNo);
-            this.Controls.Add(this.TextBox_Name);
             this.Controls.Add(this.Label_AadhaarNo);
             this.Controls.Add(this.Label_Address);
             this.Controls.Add(this.Label_EMailID);
             this.Controls.Add(this.Label_PhNo);
             this.Controls.Add(this.Label_Name);
             this.Controls.Add(this.Label_PGName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AdmissionForm";
-            this.Text = "PGMS - Admission Form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Admission Form";
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_GuestImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,18 +387,28 @@
         #endregion
 
         private System.Windows.Forms.Label Label_PGName;
+        private System.Windows.Forms.Button Button_Admit;
+        private System.Windows.Forms.Button Button_Print;
+        private System.Windows.Forms.Button Button_Reset;
+        private System.Windows.Forms.ToolTip ToolTip_AdmissionForm;
+        private System.Windows.Forms.PictureBox PictureBox_GuestImage;
         private System.Windows.Forms.Label Label_Name;
         private System.Windows.Forms.Label Label_PhNo;
         private System.Windows.Forms.Label Label_EMailID;
         private System.Windows.Forms.Label Label_Address;
         private System.Windows.Forms.Label Label_AadhaarNo;
-        private System.Windows.Forms.TextBox TextBox_Name;
-        private System.Windows.Forms.TextBox TextBox_MobileNo;
-        private System.Windows.Forms.TextBox TextBox_EMailID;
-        private System.Windows.Forms.TextBox TextBox_Address;
+        private System.Windows.Forms.TextBox TextBox_GuestName;
+        private System.Windows.Forms.TextBox TextBox_GuestMobileNo;
+        private System.Windows.Forms.Label Label_GuestMobileNoUnderbar;
+        private System.Windows.Forms.Label Label_GuestNameUnderbar;
+        private System.Windows.Forms.Label Label_FormTitle;
+        private System.Windows.Forms.Button Button_FormMinimize;
+        private System.Windows.Forms.Button Button_FormClose;
+        private System.Windows.Forms.TextBox TextBox_GuestMailID;
+        private System.Windows.Forms.TextBox TextBox_GuestAddress;
+        private System.Windows.Forms.Label Label_GuestAddressUnderbar;
+        private System.Windows.Forms.Label Label_GuestMailIDUnderbar;
         private System.Windows.Forms.TextBox TextBox_AadhaarNo;
-        private System.Windows.Forms.Button Button_Admit;
-        private System.Windows.Forms.Button Button_Print;
-        private System.Windows.Forms.Button Button_Reset;
+        private System.Windows.Forms.Label Label_AadhaarNoUnderbar;
     }
 }

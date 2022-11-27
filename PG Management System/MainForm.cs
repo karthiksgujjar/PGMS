@@ -30,6 +30,7 @@ namespace PG_Management_System
             Button_Previous.Visible = false;
             ComboBox_Floors.Visible = false;
             ComboBox_Rooms.Visible = false;
+            Label_GuestFormDisplayController.Enabled = false;
             ComboBox_Buildings.Text = "-- Select Building --";
             BuildingsForm.buildingsFormInstance.Close();
             LoadForm(new BuildingsForm());
@@ -40,14 +41,19 @@ namespace PG_Management_System
             Button_Previous.Visible = false;
             ComboBox_Rooms.Visible = false;
             ComboBox_Floors.Text = "-- Select Floor --";
+            Label_GuestFormDisplayController.Enabled = false;
             RoomsForm.roomsFormInstance.Close();
             LoadForm(new FloorsForm());
         }
         
         private void MainForm_Activated(object sender, EventArgs e)
         {
-            
-            if(Button_Home.Visible && Button_Previous.Visible )
+            if(Button_Home.Visible && Button_Previous.Visible && Label_GuestFormDisplayController.Enabled)
+            {
+                ComboBox_Rooms_SelectedIndexChanged(sender, e);
+                ComboBox_Rooms.Focus();
+            }
+            else if(Button_Home.Visible && Button_Previous.Visible)
             {
                 ComboBox_Floors_SelectedIndexChanged(sender, e);
                 ComboBox_Rooms.Focus();
@@ -160,6 +166,7 @@ namespace PG_Management_System
             Button_Home.Visible = true;
             ComboBox_Floors.Visible = true;
             ComboBox_Rooms.Visible = false;
+            Label_GuestFormDisplayController.Enabled = false;
         }
 
         private void ComboBox_Floors_SelectedIndexChanged(object sender, EventArgs e)
@@ -195,6 +202,20 @@ namespace PG_Management_System
             LoadForm(new RoomsForm());
             Button_Previous.Visible = true;
             ComboBox_Rooms.Visible = true;
+            Label_GuestFormDisplayController.Enabled = false;
+        }
+
+        private void ComboBox_Rooms_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] roomNameID = ComboBox_Rooms.SelectedItem.ToString().Split('-');
+
+            Properties.Settings.Default.SelectedRoomName = roomNameID[0].Trim();
+
+            Properties.Settings.Default.SelectedRoomID = Regex.Match(roomNameID[1], @"\d+").Value;
+
+            GuestsForm.guestsFormInstance.Close();
+            LoadForm(new GuestsForm());
+            Label_GuestFormDisplayController.Enabled = true;
         }
 
 
