@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -94,6 +95,7 @@ namespace PG_Management_System
                     TableLayout_FloorsDisplay.Controls.Add(Button_DeleteFloor, 2, RowCount);
                 }
                 this.Controls.Add(TableLayout_FloorsDisplay);
+                con.Close();
             }
             catch (Exception Err)
             {
@@ -110,28 +112,56 @@ namespace PG_Management_System
                 Properties.Settings.Default.SelectedFloorID = getID.Tag.ToString();
 
                 MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-                string query = "DELETE FROM floors WHERE id = @ID;";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@ID", Properties.Settings.Default.SelectedFloorID);
+                string query1 = "SELECT floor_imageRPath FROM floors WHERE id = @ID;";
+                string query2 = "DELETE FROM floors WHERE id = @ID;";
+                
+                MySqlCommand cmd1 = new MySqlCommand(query1, con);
+                cmd1.Parameters.AddWithValue("@ID", Properties.Settings.Default.SelectedFloorID);
+
+                MySqlCommand cmd2 = new MySqlCommand(query2, con);
+                cmd2.Parameters.AddWithValue("@ID", Properties.Settings.Default.SelectedFloorID);
 
                 try
                 {
+                    string ImageLocation = "No Image";
                     con.Open();
-                    int res = cmd.ExecuteNonQuery();
+                    MySqlDataReader RImagePath = cmd1.ExecuteReader();
+                    if (RImagePath.Read())
+                    {
+                        ImageLocation = RImagePath["floor_imageRPath"].ToString();
+                    }
+                    con.Close();
+
+                    con.Open();
+                    int res = cmd2.ExecuteNonQuery();
                     if (res > 0)
                     {
+                        if (ImageLocation != "No Image")
+                        {
+                            Directory.Delete(ImageLocation, true);
+                        }
                         MessageBox.Show("Floor Deleted Successfully", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
                         MessageBox.Show("Unable to Delete Floor", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    con.Close();
                 }
                 catch (Exception Err)
                 {
-                    MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (Err.Message.Contains("FOREIGN"))
+                    {
+                        MessageBox.Show("Cannot Delete Floor.\nDelete all rooms in this floor then delete.", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }
+
+
     }
 }

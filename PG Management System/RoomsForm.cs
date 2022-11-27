@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -110,28 +111,56 @@ namespace PG_Management_System
                 Properties.Settings.Default.SelectedRoomID = getID.Tag.ToString();
 
                 MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-                string query = "DELETE FROM rooms WHERE id = @ID;";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@ID", Properties.Settings.Default.SelectedRoomID);
+                string query1 = "SELECT room_imageRPath FROM rooms WHERE id = @ID;";
+                string query2 = "DELETE FROM rooms WHERE id = @ID;";
+
+                MySqlCommand cmd1 = new MySqlCommand(query1,con);
+                cmd1.Parameters.AddWithValue("@ID", Properties.Settings.Default.SelectedRoomID);
+
+                MySqlCommand cmd2 = new MySqlCommand(query2, con);
+                cmd2.Parameters.AddWithValue("@ID", Properties.Settings.Default.SelectedRoomID);
 
                 try
                 {
+                    string ImageLocation = "No Image";
                     con.Open();
-                    int res = cmd.ExecuteNonQuery();
+                    MySqlDataReader RImagePath = cmd1.ExecuteReader();
+                    if (RImagePath.Read())
+                    {
+                        ImageLocation = RImagePath["room_imageRPath"].ToString();
+                    }
+                    con.Close();
+
+                    con.Open() ;
+                    int res = cmd2.ExecuteNonQuery();
                     if (res > 0)
                     {
+                        if(ImageLocation != "No Image")
+                        {
+                            Directory.Delete(ImageLocation, true);
+                        }
                         MessageBox.Show("Room Deleted Successfully", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
                         MessageBox.Show("Unable to Delete Room", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    con.Close();
                 }
                 catch (Exception Err)
                 {
-                    MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if(Err.Message.Contains("FOREIGN"))
+                    {
+                        MessageBox.Show("Cannot Delete Room.\nRemove all guests from this room then delete.", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }
+
+
     }
 }

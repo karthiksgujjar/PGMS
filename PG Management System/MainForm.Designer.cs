@@ -50,7 +50,7 @@
             this.Button_FormClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Button_FormClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_FormClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_FormClose.Location = new System.Drawing.Point(779, 0);
+            this.Button_FormClose.Location = new System.Drawing.Point(1060, 0);
             this.Button_FormClose.Name = "Button_FormClose";
             this.Button_FormClose.Size = new System.Drawing.Size(20, 20);
             this.Button_FormClose.TabIndex = 8;
@@ -69,7 +69,7 @@
             this.Button_FormMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Button_FormMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_FormMinimize.Font = new System.Drawing.Font("Wide Latin", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_FormMinimize.Location = new System.Drawing.Point(726, 0);
+            this.Button_FormMinimize.Location = new System.Drawing.Point(1007, 0);
             this.Button_FormMinimize.Name = "Button_FormMinimize";
             this.Button_FormMinimize.Size = new System.Drawing.Size(20, 20);
             this.Button_FormMinimize.TabIndex = 9;
@@ -125,7 +125,7 @@
             this.Button_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Settings.Image = global::PG_Management_System.Properties.Resources.Settings;
-            this.Button_Settings.Location = new System.Drawing.Point(778, 20);
+            this.Button_Settings.Location = new System.Drawing.Point(1058, 20);
             this.Button_Settings.Name = "Button_Settings";
             this.Button_Settings.Size = new System.Drawing.Size(20, 20);
             this.Button_Settings.TabIndex = 9;
@@ -142,7 +142,7 @@
             this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Label_FormTitle.Location = new System.Drawing.Point(0, 0);
             this.Label_FormTitle.Name = "Label_FormTitle";
-            this.Label_FormTitle.Size = new System.Drawing.Size(800, 40);
+            this.Label_FormTitle.Size = new System.Drawing.Size(1080, 40);
             this.Label_FormTitle.TabIndex = 7;
             this.Label_FormTitle.Text = "PGMS";
             this.Label_FormTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -152,7 +152,7 @@
             this.Panel_MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_MainPanel.Location = new System.Drawing.Point(0, 40);
             this.Panel_MainPanel.Name = "Panel_MainPanel";
-            this.Panel_MainPanel.Size = new System.Drawing.Size(800, 410);
+            this.Panel_MainPanel.Size = new System.Drawing.Size(1080, 680);
             this.Panel_MainPanel.TabIndex = 0;
             // 
             // ComboBox_Buildings
@@ -161,9 +161,9 @@
             this.ComboBox_Buildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Buildings.FormattingEnabled = true;
-            this.ComboBox_Buildings.Location = new System.Drawing.Point(124, 17);
+            this.ComboBox_Buildings.Location = new System.Drawing.Point(127, 17);
             this.ComboBox_Buildings.Name = "ComboBox_Buildings";
-            this.ComboBox_Buildings.Size = new System.Drawing.Size(141, 23);
+            this.ComboBox_Buildings.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Buildings.Sorted = true;
             this.ComboBox_Buildings.TabIndex = 12;
             this.ComboBox_Buildings.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Buildings_SelectedIndexChanged);
@@ -177,7 +177,7 @@
             this.Button_FormMaximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Button_FormMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_FormMaximize.Font = new System.Drawing.Font("Wingdings", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.Button_FormMaximize.Location = new System.Drawing.Point(754, 0);
+            this.Button_FormMaximize.Location = new System.Drawing.Point(1035, 0);
             this.Button_FormMaximize.Name = "Button_FormMaximize";
             this.Button_FormMaximize.Size = new System.Drawing.Size(20, 20);
             this.Button_FormMaximize.TabIndex = 13;
@@ -193,9 +193,9 @@
             this.ComboBox_Floors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Floors.FormattingEnabled = true;
-            this.ComboBox_Floors.Location = new System.Drawing.Point(289, 17);
+            this.ComboBox_Floors.Location = new System.Drawing.Point(325, 17);
             this.ComboBox_Floors.Name = "ComboBox_Floors";
-            this.ComboBox_Floors.Size = new System.Drawing.Size(141, 23);
+            this.ComboBox_Floors.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Floors.Sorted = true;
             this.ComboBox_Floors.TabIndex = 14;
             this.ComboBox_Floors.Visible = false;
@@ -207,9 +207,9 @@
             this.ComboBox_Rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Rooms.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Rooms.FormattingEnabled = true;
-            this.ComboBox_Rooms.Location = new System.Drawing.Point(454, 16);
+            this.ComboBox_Rooms.Location = new System.Drawing.Point(523, 16);
             this.ComboBox_Rooms.Name = "ComboBox_Rooms";
-            this.ComboBox_Rooms.Size = new System.Drawing.Size(141, 23);
+            this.ComboBox_Rooms.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Rooms.Sorted = true;
             this.ComboBox_Rooms.TabIndex = 15;
             this.ComboBox_Rooms.Visible = false;
@@ -219,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1080, 720);
             this.Controls.Add(this.ComboBox_Rooms);
             this.Controls.Add(this.ComboBox_Floors);
             this.Controls.Add(this.Button_FormMaximize);
