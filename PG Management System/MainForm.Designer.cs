@@ -222,7 +222,7 @@
             this.Label_GuestFormDisplayController.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Label_GuestFormDisplayController.Enabled = false;
             this.Label_GuestFormDisplayController.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_GuestFormDisplayController.Location = new System.Drawing.Point(736, 16);
+            this.Label_GuestFormDisplayController.Location = new System.Drawing.Point(736, 20);
             this.Label_GuestFormDisplayController.Name = "Label_GuestFormDisplayController";
             this.Label_GuestFormDisplayController.Size = new System.Drawing.Size(136, 14);
             this.Label_GuestFormDisplayController.TabIndex = 16;

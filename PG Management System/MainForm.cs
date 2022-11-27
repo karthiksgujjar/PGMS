@@ -38,12 +38,20 @@ namespace PG_Management_System
         
         private void Button_Previous_Click(object sender, EventArgs e)
         {
-            Button_Previous.Visible = false;
-            ComboBox_Rooms.Visible = false;
-            ComboBox_Floors.Text = "-- Select Floor --";
-            Label_GuestFormDisplayController.Enabled = false;
-            RoomsForm.roomsFormInstance.Close();
-            LoadForm(new FloorsForm());
+            if (Label_GuestFormDisplayController.Enabled)
+            {
+                ComboBox_Floors_SelectedIndexChanged(sender, e);
+                ComboBox_Rooms.Focus();
+            }
+            else
+            {
+                Button_Previous.Visible = false;
+                ComboBox_Rooms.Visible = false;
+                ComboBox_Floors.Text = "-- Select Floor --";
+                Label_GuestFormDisplayController.Enabled = false;
+                RoomsForm.roomsFormInstance.Close();
+                LoadForm(new FloorsForm());
+            }
         }
         
         private void MainForm_Activated(object sender, EventArgs e)
