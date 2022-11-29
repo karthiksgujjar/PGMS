@@ -190,5 +190,17 @@ namespace PG_Management_System.Properties {
                 this["SelectedRoomName"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SelectedGuestID {
+            get {
+                return ((string)(this["SelectedGuestID"]));
+            }
+            set {
+                this["SelectedGuestID"] = value;
+            }
+        }
     }
 }

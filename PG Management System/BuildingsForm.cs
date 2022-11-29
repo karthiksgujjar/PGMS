@@ -95,6 +95,7 @@ namespace PG_Management_System
                     TableLayout_BuildingsDisplay.Controls.Add(Button_DeleteBuilding, 2, RowCount);
                 }
                 this.Controls.Add(TableLayout_BuildingsDisplay);
+                con.Close();
             }
             catch (Exception Err)
             {

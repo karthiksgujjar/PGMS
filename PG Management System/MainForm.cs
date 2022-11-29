@@ -22,6 +22,9 @@ namespace PG_Management_System
         private void MainForm_Load(object sender, EventArgs e)
         {
             LoginForm.loginFormInstance.Close();
+            Timer_TimeUpdaterMainForm.Start();
+            DateTime dateTime = DateTime.Now;
+            Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
         }
 
         private void Button_Home_Click(object sender, EventArgs e)
@@ -224,6 +227,12 @@ namespace PG_Management_System
             GuestsForm.guestsFormInstance.Close();
             LoadForm(new GuestsForm());
             Label_GuestFormDisplayController.Enabled = true;
+        }
+
+        private void Timer_TimeUpdaterMainForm_Tick(object sender, EventArgs e)
+        {
+            DateTime dateTime = DateTime.Now;
+            Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
         }
 
 

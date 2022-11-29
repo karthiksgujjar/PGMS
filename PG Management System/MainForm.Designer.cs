@@ -28,18 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Button_FormClose = new System.Windows.Forms.Button();
             this.Button_FormMinimize = new System.Windows.Forms.Button();
-            this.Button_Previous = new System.Windows.Forms.Button();
-            this.Button_Home = new System.Windows.Forms.Button();
-            this.Button_Settings = new System.Windows.Forms.Button();
-            this.Label_FormTitle = new System.Windows.Forms.Label();
+            this.Label_Header = new System.Windows.Forms.Label();
             this.Panel_MainPanel = new System.Windows.Forms.Panel();
             this.ComboBox_Buildings = new System.Windows.Forms.ComboBox();
             this.Button_FormMaximize = new System.Windows.Forms.Button();
             this.ComboBox_Floors = new System.Windows.Forms.ComboBox();
             this.ComboBox_Rooms = new System.Windows.Forms.ComboBox();
             this.Label_GuestFormDisplayController = new System.Windows.Forms.Label();
+            this.Label_DateTimeDisplay = new System.Windows.Forms.Label();
+            this.Timer_TimeUpdaterMainForm = new System.Windows.Forms.Timer(this.components);
+            this.Label_SidePanel = new System.Windows.Forms.Label();
+            this.Button_AddBuildingData = new System.Windows.Forms.Button();
+            this.Button_RemoveGuest = new System.Windows.Forms.Button();
+            this.Button_GuestDetails = new System.Windows.Forms.Button();
+            this.Button_AdmitGuest = new System.Windows.Forms.Button();
+            this.Button_Logout = new System.Windows.Forms.Button();
+            this.PictureBox_PGMSLogo = new System.Windows.Forms.PictureBox();
+            this.Button_Settings = new System.Windows.Forms.Button();
+            this.Button_Previous = new System.Windows.Forms.Button();
+            this.Button_Home = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_PGMSLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_FormClose
@@ -80,80 +91,28 @@
             this.Button_FormMinimize.UseVisualStyleBackColor = false;
             this.Button_FormMinimize.Click += new System.EventHandler(this.Button_FormMinimize_Click);
             // 
-            // Button_Previous
+            // Label_Header
             // 
-            this.Button_Previous.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_Previous.FlatAppearance.BorderSize = 0;
-            this.Button_Previous.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_Previous.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.Button_Previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Previous.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Previous.Image = global::PG_Management_System.Properties.Resources.Previous;
-            this.Button_Previous.Location = new System.Drawing.Point(86, 20);
-            this.Button_Previous.Name = "Button_Previous";
-            this.Button_Previous.Size = new System.Drawing.Size(20, 20);
-            this.Button_Previous.TabIndex = 10;
-            this.Button_Previous.TabStop = false;
-            this.Button_Previous.UseVisualStyleBackColor = false;
-            this.Button_Previous.Visible = false;
-            this.Button_Previous.Click += new System.EventHandler(this.Button_Previous_Click);
-            // 
-            // Button_Home
-            // 
-            this.Button_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_Home.FlatAppearance.BorderSize = 0;
-            this.Button_Home.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_Home.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.Button_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Home.Image = global::PG_Management_System.Properties.Resources.Home;
-            this.Button_Home.Location = new System.Drawing.Point(50, 19);
-            this.Button_Home.Name = "Button_Home";
-            this.Button_Home.Size = new System.Drawing.Size(20, 20);
-            this.Button_Home.TabIndex = 11;
-            this.Button_Home.TabStop = false;
-            this.Button_Home.UseVisualStyleBackColor = false;
-            this.Button_Home.Visible = false;
-            this.Button_Home.Click += new System.EventHandler(this.Button_Home_Click);
-            // 
-            // Button_Settings
-            // 
-            this.Button_Settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Button_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_Settings.FlatAppearance.BorderSize = 0;
-            this.Button_Settings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_Settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.Button_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Settings.Image = global::PG_Management_System.Properties.Resources.Settings;
-            this.Button_Settings.Location = new System.Drawing.Point(1058, 20);
-            this.Button_Settings.Name = "Button_Settings";
-            this.Button_Settings.Size = new System.Drawing.Size(20, 20);
-            this.Button_Settings.TabIndex = 9;
-            this.Button_Settings.TabStop = false;
-            this.Button_Settings.UseVisualStyleBackColor = false;
-            // 
-            // Label_FormTitle
-            // 
-            this.Label_FormTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_FormTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Label_FormTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_FormTitle.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_FormTitle.Image = global::PG_Management_System.Properties.Resources.PGMS_32;
-            this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_FormTitle.Location = new System.Drawing.Point(0, 0);
-            this.Label_FormTitle.Name = "Label_FormTitle";
-            this.Label_FormTitle.Size = new System.Drawing.Size(1080, 40);
-            this.Label_FormTitle.TabIndex = 7;
-            this.Label_FormTitle.Text = "PGMS";
-            this.Label_FormTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Label_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Label_Header.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_Header.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Label_Header.Location = new System.Drawing.Point(0, 0);
+            this.Label_Header.Name = "Label_Header";
+            this.Label_Header.Size = new System.Drawing.Size(1080, 40);
+            this.Label_Header.TabIndex = 7;
+            this.Label_Header.Text = "PGMS";
+            this.Label_Header.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Panel_MainPanel
             // 
-            this.Panel_MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_MainPanel.Location = new System.Drawing.Point(0, 40);
+            this.Panel_MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Panel_MainPanel.Location = new System.Drawing.Point(122, 40);
             this.Panel_MainPanel.Name = "Panel_MainPanel";
-            this.Panel_MainPanel.Size = new System.Drawing.Size(1080, 680);
+            this.Panel_MainPanel.Size = new System.Drawing.Size(958, 680);
             this.Panel_MainPanel.TabIndex = 0;
             // 
             // ComboBox_Buildings
@@ -162,7 +121,7 @@
             this.ComboBox_Buildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Buildings.FormattingEnabled = true;
-            this.ComboBox_Buildings.Location = new System.Drawing.Point(127, 17);
+            this.ComboBox_Buildings.Location = new System.Drawing.Point(127, 16);
             this.ComboBox_Buildings.Name = "ComboBox_Buildings";
             this.ComboBox_Buildings.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Buildings.Sorted = true;
@@ -194,7 +153,7 @@
             this.ComboBox_Floors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Floors.FormattingEnabled = true;
-            this.ComboBox_Floors.Location = new System.Drawing.Point(325, 17);
+            this.ComboBox_Floors.Location = new System.Drawing.Point(325, 16);
             this.ComboBox_Floors.Name = "ComboBox_Floors";
             this.ComboBox_Floors.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Floors.Sorted = true;
@@ -222,12 +181,182 @@
             this.Label_GuestFormDisplayController.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Label_GuestFormDisplayController.Enabled = false;
             this.Label_GuestFormDisplayController.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_GuestFormDisplayController.Location = new System.Drawing.Point(736, 20);
+            this.Label_GuestFormDisplayController.Location = new System.Drawing.Point(813, 4);
             this.Label_GuestFormDisplayController.Name = "Label_GuestFormDisplayController";
             this.Label_GuestFormDisplayController.Size = new System.Drawing.Size(136, 14);
             this.Label_GuestFormDisplayController.TabIndex = 16;
             this.Label_GuestFormDisplayController.Text = "GuestFormDisplayController";
             this.Label_GuestFormDisplayController.Visible = false;
+            // 
+            // Label_DateTimeDisplay
+            // 
+            this.Label_DateTimeDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_DateTimeDisplay.AutoSize = true;
+            this.Label_DateTimeDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_DateTimeDisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Label_DateTimeDisplay.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_DateTimeDisplay.Location = new System.Drawing.Point(813, 22);
+            this.Label_DateTimeDisplay.Name = "Label_DateTimeDisplay";
+            this.Label_DateTimeDisplay.Size = new System.Drawing.Size(111, 15);
+            this.Label_DateTimeDisplay.TabIndex = 17;
+            this.Label_DateTimeDisplay.Text = "DateTimeDisplay";
+            // 
+            // Timer_TimeUpdaterMainForm
+            // 
+            this.Timer_TimeUpdaterMainForm.Interval = 60000;
+            this.Timer_TimeUpdaterMainForm.Tick += new System.EventHandler(this.Timer_TimeUpdaterMainForm_Tick);
+            // 
+            // Label_SidePanel
+            // 
+            this.Label_SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_SidePanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Label_SidePanel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_SidePanel.Location = new System.Drawing.Point(0, 40);
+            this.Label_SidePanel.Name = "Label_SidePanel";
+            this.Label_SidePanel.Size = new System.Drawing.Size(121, 680);
+            this.Label_SidePanel.TabIndex = 18;
+            // 
+            // Button_AddBuildingData
+            // 
+            this.Button_AddBuildingData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AddBuildingData.FlatAppearance.BorderSize = 0;
+            this.Button_AddBuildingData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AddBuildingData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_AddBuildingData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_AddBuildingData.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AddBuildingData.Location = new System.Drawing.Point(2, 196);
+            this.Button_AddBuildingData.Name = "Button_AddBuildingData";
+            this.Button_AddBuildingData.Size = new System.Drawing.Size(117, 38);
+            this.Button_AddBuildingData.TabIndex = 20;
+            this.Button_AddBuildingData.Text = "Add Building\r\nData";
+            this.Button_AddBuildingData.UseVisualStyleBackColor = false;
+            // 
+            // Button_RemoveGuest
+            // 
+            this.Button_RemoveGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_RemoveGuest.FlatAppearance.BorderSize = 0;
+            this.Button_RemoveGuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_RemoveGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_RemoveGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_RemoveGuest.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_RemoveGuest.Location = new System.Drawing.Point(2, 305);
+            this.Button_RemoveGuest.Name = "Button_RemoveGuest";
+            this.Button_RemoveGuest.Size = new System.Drawing.Size(117, 23);
+            this.Button_RemoveGuest.TabIndex = 22;
+            this.Button_RemoveGuest.Text = "Remove Guest";
+            this.Button_RemoveGuest.UseVisualStyleBackColor = false;
+            // 
+            // Button_GuestDetails
+            // 
+            this.Button_GuestDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_GuestDetails.FlatAppearance.BorderSize = 0;
+            this.Button_GuestDetails.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_GuestDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_GuestDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_GuestDetails.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_GuestDetails.Location = new System.Drawing.Point(2, 352);
+            this.Button_GuestDetails.Name = "Button_GuestDetails";
+            this.Button_GuestDetails.Size = new System.Drawing.Size(117, 23);
+            this.Button_GuestDetails.TabIndex = 23;
+            this.Button_GuestDetails.Text = "Guests Details";
+            this.Button_GuestDetails.UseVisualStyleBackColor = false;
+            // 
+            // Button_AdmitGuest
+            // 
+            this.Button_AdmitGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AdmitGuest.FlatAppearance.BorderSize = 0;
+            this.Button_AdmitGuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AdmitGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_AdmitGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_AdmitGuest.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AdmitGuest.Location = new System.Drawing.Point(2, 258);
+            this.Button_AdmitGuest.Name = "Button_AdmitGuest";
+            this.Button_AdmitGuest.Size = new System.Drawing.Size(117, 23);
+            this.Button_AdmitGuest.TabIndex = 24;
+            this.Button_AdmitGuest.Text = "Admit Guest";
+            this.Button_AdmitGuest.UseVisualStyleBackColor = false;
+            // 
+            // Button_Logout
+            // 
+            this.Button_Logout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Button_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Logout.FlatAppearance.BorderSize = 0;
+            this.Button_Logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Logout.Font = new System.Drawing.Font("Cambria", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Logout.Image = global::PG_Management_System.Properties.Resources.Logout;
+            this.Button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_Logout.Location = new System.Drawing.Point(2, 668);
+            this.Button_Logout.Name = "Button_Logout";
+            this.Button_Logout.Size = new System.Drawing.Size(117, 28);
+            this.Button_Logout.TabIndex = 25;
+            this.Button_Logout.Text = "Log Out";
+            this.Button_Logout.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.Button_Logout.UseVisualStyleBackColor = false;
+            // 
+            // PictureBox_PGMSLogo
+            // 
+            this.PictureBox_PGMSLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.PictureBox_PGMSLogo.Image = global::PG_Management_System.Properties.Resources.Add_Image;
+            this.PictureBox_PGMSLogo.Location = new System.Drawing.Point(11, 55);
+            this.PictureBox_PGMSLogo.Name = "PictureBox_PGMSLogo";
+            this.PictureBox_PGMSLogo.Size = new System.Drawing.Size(100, 100);
+            this.PictureBox_PGMSLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_PGMSLogo.TabIndex = 19;
+            this.PictureBox_PGMSLogo.TabStop = false;
+            // 
+            // Button_Settings
+            // 
+            this.Button_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Settings.FlatAppearance.BorderSize = 0;
+            this.Button_Settings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Settings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Settings.Image = global::PG_Management_System.Properties.Resources.Settings;
+            this.Button_Settings.Location = new System.Drawing.Point(12, 18);
+            this.Button_Settings.Name = "Button_Settings";
+            this.Button_Settings.Size = new System.Drawing.Size(20, 20);
+            this.Button_Settings.TabIndex = 9;
+            this.Button_Settings.TabStop = false;
+            this.Button_Settings.UseVisualStyleBackColor = false;
+            // 
+            // Button_Previous
+            // 
+            this.Button_Previous.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Previous.FlatAppearance.BorderSize = 0;
+            this.Button_Previous.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Previous.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_Previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Previous.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Previous.Image = global::PG_Management_System.Properties.Resources.Previous;
+            this.Button_Previous.Location = new System.Drawing.Point(100, 19);
+            this.Button_Previous.Name = "Button_Previous";
+            this.Button_Previous.Size = new System.Drawing.Size(20, 20);
+            this.Button_Previous.TabIndex = 10;
+            this.Button_Previous.TabStop = false;
+            this.Button_Previous.UseVisualStyleBackColor = false;
+            this.Button_Previous.Visible = false;
+            this.Button_Previous.Click += new System.EventHandler(this.Button_Previous_Click);
+            // 
+            // Button_Home
+            // 
+            this.Button_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Home.FlatAppearance.BorderSize = 0;
+            this.Button_Home.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Home.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Home.Image = global::PG_Management_System.Properties.Resources.Home;
+            this.Button_Home.Location = new System.Drawing.Point(56, 18);
+            this.Button_Home.Name = "Button_Home";
+            this.Button_Home.Size = new System.Drawing.Size(20, 20);
+            this.Button_Home.TabIndex = 11;
+            this.Button_Home.TabStop = false;
+            this.Button_Home.UseVisualStyleBackColor = false;
+            this.Button_Home.Visible = false;
+            this.Button_Home.Click += new System.EventHandler(this.Button_Home_Click);
             // 
             // MainForm
             // 
@@ -235,6 +364,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1080, 720);
+            this.Controls.Add(this.Button_Logout);
+            this.Controls.Add(this.Button_GuestDetails);
+            this.Controls.Add(this.Button_RemoveGuest);
+            this.Controls.Add(this.Button_AdmitGuest);
+            this.Controls.Add(this.Button_AddBuildingData);
+            this.Controls.Add(this.PictureBox_PGMSLogo);
+            this.Controls.Add(this.Label_SidePanel);
+            this.Controls.Add(this.Label_DateTimeDisplay);
             this.Controls.Add(this.Label_GuestFormDisplayController);
             this.Controls.Add(this.ComboBox_Rooms);
             this.Controls.Add(this.ComboBox_Floors);
@@ -246,14 +383,16 @@
             this.Controls.Add(this.Button_FormMinimize);
             this.Controls.Add(this.Button_Previous);
             this.Controls.Add(this.Button_Home);
-            this.Controls.Add(this.Label_FormTitle);
+            this.Controls.Add(this.Label_Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PGMS";
             this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_PGMSLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -264,12 +403,21 @@
         private System.Windows.Forms.Button Button_Previous;
         private System.Windows.Forms.Button Button_Home;
         private System.Windows.Forms.Button Button_Settings;
-        private System.Windows.Forms.Label Label_FormTitle;
+        private System.Windows.Forms.Label Label_Header;
         private System.Windows.Forms.Panel Panel_MainPanel;
         private System.Windows.Forms.ComboBox ComboBox_Buildings;
         private System.Windows.Forms.Button Button_FormMaximize;
         private System.Windows.Forms.ComboBox ComboBox_Floors;
         private System.Windows.Forms.ComboBox ComboBox_Rooms;
         private System.Windows.Forms.Label Label_GuestFormDisplayController;
+        private System.Windows.Forms.Label Label_DateTimeDisplay;
+        private System.Windows.Forms.Timer Timer_TimeUpdaterMainForm;
+        private System.Windows.Forms.Label Label_SidePanel;
+        private System.Windows.Forms.PictureBox PictureBox_PGMSLogo;
+        private System.Windows.Forms.Button Button_AddBuildingData;
+        private System.Windows.Forms.Button Button_RemoveGuest;
+        private System.Windows.Forms.Button Button_GuestDetails;
+        private System.Windows.Forms.Button Button_AdmitGuest;
+        private System.Windows.Forms.Button Button_Logout;
     }
 }

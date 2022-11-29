@@ -52,7 +52,7 @@
             this.TextBox_GuestAddress = new System.Windows.Forms.TextBox();
             this.Label_GuestAddressUnderbar = new System.Windows.Forms.Label();
             this.Label_GuestMailIDUnderbar = new System.Windows.Forms.Label();
-            this.TextBox_AadhaarNo = new System.Windows.Forms.TextBox();
+            this.TextBox_GuestAadhaarNo = new System.Windows.Forms.TextBox();
             this.Label_AadhaarNoUnderbar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_GuestImage)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,7 @@
             this.Button_Admit.TabIndex = 5;
             this.Button_Admit.Text = "ADMIT";
             this.Button_Admit.UseVisualStyleBackColor = true;
+            this.Button_Admit.Click += new System.EventHandler(this.Button_Admit_Click);
             // 
             // Button_Print
             // 
@@ -123,6 +124,7 @@
             this.PictureBox_GuestImage.TabIndex = 25;
             this.PictureBox_GuestImage.TabStop = false;
             this.ToolTip_AdmissionForm.SetToolTip(this.PictureBox_GuestImage, "Add Image");
+            this.PictureBox_GuestImage.Click += new System.EventHandler(this.PictureBox_GuestImage_Click);
             // 
             // Label_Name
             // 
@@ -207,6 +209,7 @@
             this.TextBox_GuestMobileNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBox_GuestMobileNo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_GuestMobileNo.Location = new System.Drawing.Point(166, 186);
+            this.TextBox_GuestMobileNo.MaxLength = 10;
             this.TextBox_GuestMobileNo.Name = "TextBox_GuestMobileNo";
             this.TextBox_GuestMobileNo.Size = new System.Drawing.Size(238, 19);
             this.TextBox_GuestMobileNo.TabIndex = 1;
@@ -322,16 +325,17 @@
             this.Label_GuestMailIDUnderbar.Size = new System.Drawing.Size(238, 1);
             this.Label_GuestMailIDUnderbar.TabIndex = 41;
             // 
-            // TextBox_AadhaarNo
+            // TextBox_GuestAadhaarNo
             // 
-            this.TextBox_AadhaarNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBox_AadhaarNo.BackColor = System.Drawing.Color.LightGray;
-            this.TextBox_AadhaarNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_AadhaarNo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_AadhaarNo.Location = new System.Drawing.Point(166, 324);
-            this.TextBox_AadhaarNo.Name = "TextBox_AadhaarNo";
-            this.TextBox_AadhaarNo.Size = new System.Drawing.Size(238, 19);
-            this.TextBox_AadhaarNo.TabIndex = 4;
+            this.TextBox_GuestAadhaarNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TextBox_GuestAadhaarNo.BackColor = System.Drawing.Color.LightGray;
+            this.TextBox_GuestAadhaarNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_GuestAadhaarNo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_GuestAadhaarNo.Location = new System.Drawing.Point(166, 324);
+            this.TextBox_GuestAadhaarNo.MaxLength = 12;
+            this.TextBox_GuestAadhaarNo.Name = "TextBox_GuestAadhaarNo";
+            this.TextBox_GuestAadhaarNo.Size = new System.Drawing.Size(238, 19);
+            this.TextBox_GuestAadhaarNo.TabIndex = 4;
             // 
             // Label_AadhaarNoUnderbar
             // 
@@ -349,7 +353,7 @@
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(716, 450);
             this.ControlBox = false;
-            this.Controls.Add(this.TextBox_AadhaarNo);
+            this.Controls.Add(this.TextBox_GuestAadhaarNo);
             this.Controls.Add(this.Label_AadhaarNoUnderbar);
             this.Controls.Add(this.TextBox_GuestMailID);
             this.Controls.Add(this.TextBox_GuestAddress);
@@ -408,7 +412,7 @@
         private System.Windows.Forms.TextBox TextBox_GuestAddress;
         private System.Windows.Forms.Label Label_GuestAddressUnderbar;
         private System.Windows.Forms.Label Label_GuestMailIDUnderbar;
-        private System.Windows.Forms.TextBox TextBox_AadhaarNo;
+        private System.Windows.Forms.TextBox TextBox_GuestAadhaarNo;
         private System.Windows.Forms.Label Label_AadhaarNoUnderbar;
     }
 }

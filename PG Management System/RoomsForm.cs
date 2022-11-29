@@ -95,6 +95,7 @@ namespace PG_Management_System
                     TableLayout_RoomsDisplay.Controls.Add(Button_DeleteRoom, 2, RowCount);
                 }
                 this.Controls.Add(TableLayout_RoomsDisplay);
+                con.Close();
             }
             catch (Exception Err)
             {
