@@ -41,7 +41,7 @@
             this.Label_DateTimeDisplay = new System.Windows.Forms.Label();
             this.Timer_TimeUpdaterMainForm = new System.Windows.Forms.Timer(this.components);
             this.Label_SidePanel = new System.Windows.Forms.Label();
-            this.Button_AddBuildingData = new System.Windows.Forms.Button();
+            this.Button_AddRemoveBuildingData = new System.Windows.Forms.Button();
             this.Button_RemoveGuest = new System.Windows.Forms.Button();
             this.Button_GuestDetails = new System.Windows.Forms.Button();
             this.Button_AdmitGuest = new System.Windows.Forms.Button();
@@ -50,6 +50,8 @@
             this.Button_Settings = new System.Windows.Forms.Button();
             this.Button_Previous = new System.Windows.Forms.Button();
             this.Button_Home = new System.Windows.Forms.Button();
+            this.Button_OverviewPG = new System.Windows.Forms.Button();
+            this.Button_AcceptPayment = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_PGMSLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -216,20 +218,21 @@
             this.Label_SidePanel.Size = new System.Drawing.Size(121, 680);
             this.Label_SidePanel.TabIndex = 18;
             // 
-            // Button_AddBuildingData
+            // Button_AddRemoveBuildingData
             // 
-            this.Button_AddBuildingData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_AddBuildingData.FlatAppearance.BorderSize = 0;
-            this.Button_AddBuildingData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_AddBuildingData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.Button_AddBuildingData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_AddBuildingData.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_AddBuildingData.Location = new System.Drawing.Point(2, 196);
-            this.Button_AddBuildingData.Name = "Button_AddBuildingData";
-            this.Button_AddBuildingData.Size = new System.Drawing.Size(117, 38);
-            this.Button_AddBuildingData.TabIndex = 20;
-            this.Button_AddBuildingData.Text = "Add Building\r\nData";
-            this.Button_AddBuildingData.UseVisualStyleBackColor = false;
+            this.Button_AddRemoveBuildingData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AddRemoveBuildingData.FlatAppearance.BorderSize = 0;
+            this.Button_AddRemoveBuildingData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AddRemoveBuildingData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_AddRemoveBuildingData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_AddRemoveBuildingData.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AddRemoveBuildingData.Location = new System.Drawing.Point(2, 329);
+            this.Button_AddRemoveBuildingData.Name = "Button_AddRemoveBuildingData";
+            this.Button_AddRemoveBuildingData.Size = new System.Drawing.Size(117, 51);
+            this.Button_AddRemoveBuildingData.TabIndex = 1;
+            this.Button_AddRemoveBuildingData.Text = "Add / Remove\r\nBuilding";
+            this.Button_AddRemoveBuildingData.UseVisualStyleBackColor = false;
+            this.Button_AddRemoveBuildingData.Click += new System.EventHandler(this.Button_AddRemoveBuildingData_Click);
             // 
             // Button_RemoveGuest
             // 
@@ -239,12 +242,13 @@
             this.Button_RemoveGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_RemoveGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_RemoveGuest.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_RemoveGuest.Location = new System.Drawing.Point(2, 305);
+            this.Button_RemoveGuest.Location = new System.Drawing.Point(2, 526);
             this.Button_RemoveGuest.Name = "Button_RemoveGuest";
-            this.Button_RemoveGuest.Size = new System.Drawing.Size(117, 23);
-            this.Button_RemoveGuest.TabIndex = 22;
+            this.Button_RemoveGuest.Size = new System.Drawing.Size(117, 25);
+            this.Button_RemoveGuest.TabIndex = 4;
             this.Button_RemoveGuest.Text = "Remove Guest";
             this.Button_RemoveGuest.UseVisualStyleBackColor = false;
+            this.Button_RemoveGuest.Click += new System.EventHandler(this.Button_RemoveGuest_Click);
             // 
             // Button_GuestDetails
             // 
@@ -254,12 +258,13 @@
             this.Button_GuestDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_GuestDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_GuestDetails.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_GuestDetails.Location = new System.Drawing.Point(2, 352);
+            this.Button_GuestDetails.Location = new System.Drawing.Point(2, 469);
             this.Button_GuestDetails.Name = "Button_GuestDetails";
-            this.Button_GuestDetails.Size = new System.Drawing.Size(117, 23);
-            this.Button_GuestDetails.TabIndex = 23;
+            this.Button_GuestDetails.Size = new System.Drawing.Size(117, 25);
+            this.Button_GuestDetails.TabIndex = 3;
             this.Button_GuestDetails.Text = "Guests Details";
             this.Button_GuestDetails.UseVisualStyleBackColor = false;
+            this.Button_GuestDetails.Click += new System.EventHandler(this.Button_GuestDetails_Click);
             // 
             // Button_AdmitGuest
             // 
@@ -269,12 +274,13 @@
             this.Button_AdmitGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_AdmitGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_AdmitGuest.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_AdmitGuest.Location = new System.Drawing.Point(2, 258);
+            this.Button_AdmitGuest.Location = new System.Drawing.Point(2, 412);
             this.Button_AdmitGuest.Name = "Button_AdmitGuest";
-            this.Button_AdmitGuest.Size = new System.Drawing.Size(117, 23);
-            this.Button_AdmitGuest.TabIndex = 24;
+            this.Button_AdmitGuest.Size = new System.Drawing.Size(117, 25);
+            this.Button_AdmitGuest.TabIndex = 2;
             this.Button_AdmitGuest.Text = "Admit Guest";
             this.Button_AdmitGuest.UseVisualStyleBackColor = false;
+            this.Button_AdmitGuest.Click += new System.EventHandler(this.Button_AdmitGuest_Click);
             // 
             // Button_Logout
             // 
@@ -290,10 +296,11 @@
             this.Button_Logout.Location = new System.Drawing.Point(2, 668);
             this.Button_Logout.Name = "Button_Logout";
             this.Button_Logout.Size = new System.Drawing.Size(117, 28);
-            this.Button_Logout.TabIndex = 25;
+            this.Button_Logout.TabIndex = 5;
             this.Button_Logout.Text = "Log Out";
             this.Button_Logout.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.Button_Logout.UseVisualStyleBackColor = false;
+            this.Button_Logout.Click += new System.EventHandler(this.Button_Logout_Click);
             // 
             // PictureBox_PGMSLogo
             // 
@@ -358,17 +365,51 @@
             this.Button_Home.Visible = false;
             this.Button_Home.Click += new System.EventHandler(this.Button_Home_Click);
             // 
+            // Button_OverviewPG
+            // 
+            this.Button_OverviewPG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_OverviewPG.FlatAppearance.BorderSize = 0;
+            this.Button_OverviewPG.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_OverviewPG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_OverviewPG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_OverviewPG.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_OverviewPG.Location = new System.Drawing.Point(2, 197);
+            this.Button_OverviewPG.Name = "Button_OverviewPG";
+            this.Button_OverviewPG.Size = new System.Drawing.Size(117, 25);
+            this.Button_OverviewPG.TabIndex = 0;
+            this.Button_OverviewPG.Text = "Overview PG";
+            this.Button_OverviewPG.UseVisualStyleBackColor = false;
+            this.Button_OverviewPG.Click += new System.EventHandler(this.Button_OverviewPG_Click);
+            // 
+            // Button_AcceptPayment
+            // 
+            this.Button_AcceptPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AcceptPayment.FlatAppearance.BorderSize = 0;
+            this.Button_AcceptPayment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_AcceptPayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_AcceptPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_AcceptPayment.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AcceptPayment.Location = new System.Drawing.Point(2, 254);
+            this.Button_AcceptPayment.Name = "Button_AcceptPayment";
+            this.Button_AcceptPayment.Size = new System.Drawing.Size(117, 43);
+            this.Button_AcceptPayment.TabIndex = 20;
+            this.Button_AcceptPayment.Text = "Accept Payment";
+            this.Button_AcceptPayment.UseVisualStyleBackColor = false;
+            this.Button_AcceptPayment.Click += new System.EventHandler(this.Button_AcceptPayment_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1080, 720);
+            this.Controls.Add(this.Button_AcceptPayment);
+            this.Controls.Add(this.Button_OverviewPG);
             this.Controls.Add(this.Button_Logout);
             this.Controls.Add(this.Button_GuestDetails);
             this.Controls.Add(this.Button_RemoveGuest);
             this.Controls.Add(this.Button_AdmitGuest);
-            this.Controls.Add(this.Button_AddBuildingData);
+            this.Controls.Add(this.Button_AddRemoveBuildingData);
             this.Controls.Add(this.PictureBox_PGMSLogo);
             this.Controls.Add(this.Label_SidePanel);
             this.Controls.Add(this.Label_DateTimeDisplay);
@@ -414,10 +455,12 @@
         private System.Windows.Forms.Timer Timer_TimeUpdaterMainForm;
         private System.Windows.Forms.Label Label_SidePanel;
         private System.Windows.Forms.PictureBox PictureBox_PGMSLogo;
-        private System.Windows.Forms.Button Button_AddBuildingData;
+        private System.Windows.Forms.Button Button_AddRemoveBuildingData;
         private System.Windows.Forms.Button Button_RemoveGuest;
         private System.Windows.Forms.Button Button_GuestDetails;
         private System.Windows.Forms.Button Button_AdmitGuest;
         private System.Windows.Forms.Button Button_Logout;
+        private System.Windows.Forms.Button Button_OverviewPG;
+        private System.Windows.Forms.Button Button_AcceptPayment;
     }
 }

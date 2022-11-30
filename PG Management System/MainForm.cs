@@ -25,6 +25,7 @@ namespace PG_Management_System
             Timer_TimeUpdaterMainForm.Start();
             DateTime dateTime = DateTime.Now;
             Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
+            Button_OverviewPG_Click(sender, e);
         }
 
         private void Button_Home_Click(object sender, EventArgs e)
@@ -235,6 +236,98 @@ namespace PG_Management_System
             Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
         }
 
+        private void Button_OverviewPG_Click(object sender, EventArgs e)
+        {
+            {
+                Button_OverviewPG.BackColor = Color.White;
+                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
+                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
+                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+            }
 
+            Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button = false;
+            Button_Home.Visible = false;
+            Button_Previous.Visible = false;
+            Label_GuestFormDisplayController.Enabled = false;
+            ComboBox_Floors.Visible = false;
+            ComboBox_Rooms.Visible = false;
+            MainForm_Activated(sender, e);
+        }
+
+        private void Button_AcceptPayment_Click(object sender, EventArgs e)
+        {
+            {
+                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
+                Button_AcceptPayment.BackColor = Color.White;
+                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
+                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
+                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+            }
+        }
+        
+        private void Button_AddRemoveBuildingData_Click(object sender, EventArgs e)
+        {
+            {
+                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
+                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AddRemoveBuildingData.BackColor = Color.White;
+                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
+                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
+                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+            }
+            Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button = true;
+            Button_Home.Visible = false;
+            Button_Previous.Visible = false;
+            Label_GuestFormDisplayController.Enabled = false;
+            ComboBox_Floors.Visible = false;
+            ComboBox_Rooms.Visible = false;
+            MainForm_Activated(sender, e);
+        }
+
+        private void Button_AdmitGuest_Click(object sender, EventArgs e)
+        {
+            {
+                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
+                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AdmitGuest.BackColor = Color.White;
+                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
+                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+            }
+        }
+
+        private void Button_GuestDetails_Click(object sender, EventArgs e)
+        {
+            {
+                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
+                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
+                Button_GuestDetails.BackColor = Color.White;
+                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+            }
+        }
+
+        private void Button_RemoveGuest_Click(object sender, EventArgs e)
+        {
+            {
+                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
+                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
+                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
+                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
+                Button_RemoveGuest.BackColor = Color.White;
+            }
+        }
+
+        private void Button_Logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm loginForm = new LoginForm();  
+            loginForm.Show();
+        }
     }
 }

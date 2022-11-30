@@ -202,5 +202,17 @@ namespace PG_Management_System.Properties {
                 this["SelectedGuestID"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MainForm_SidePanel_Add_Remove_Building_Button {
+            get {
+                return ((bool)(this["MainForm_SidePanel_Add_Remove_Building_Button"]));
+            }
+            set {
+                this["MainForm_SidePanel_Add_Remove_Building_Button"] = value;
+            }
+        }
     }
 }

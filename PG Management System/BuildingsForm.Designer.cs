@@ -60,6 +60,7 @@
             this.Button_AddBuilding.Size = new System.Drawing.Size(38, 38);
             this.Button_AddBuilding.TabIndex = 4;
             this.Button_AddBuilding.UseVisualStyleBackColor = false;
+            this.Button_AddBuilding.Visible = false;
             this.Button_AddBuilding.Click += new System.EventHandler(this.Button_AddBuilding_Click);
             // 
             // BuildingsForm

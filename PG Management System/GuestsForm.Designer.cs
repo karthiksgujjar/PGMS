@@ -60,6 +60,7 @@
             this.Button_AddGuest.Size = new System.Drawing.Size(38, 38);
             this.Button_AddGuest.TabIndex = 10;
             this.Button_AddGuest.UseVisualStyleBackColor = false;
+            this.Button_AddGuest.Visible = false;
             this.Button_AddGuest.Click += new System.EventHandler(this.Button_AddGuest_Click);
             // 
             // GuestsForm

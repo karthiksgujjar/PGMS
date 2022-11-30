@@ -30,6 +30,10 @@ namespace PG_Management_System
 
         private void FloorsForm_Load(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+            {
+                Button_AddFloor.Visible = true;
+            }
             TableLayoutPanel TableLayout_FloorsDisplay = new TableLayoutPanel
             {
                 Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
@@ -86,9 +90,15 @@ namespace PG_Management_System
                         FlatStyle = FlatStyle.Flat,
                         Image = Properties.Resources.Delete,
                         Tag = FloorsData["id"].ToString(),
+                        Visible = false,
                     };
                     Button_DeleteFloor.FlatAppearance.BorderSize = 0;
                     Button_DeleteFloor.Click += new EventHandler(Button_DeleteFloor_Click);
+
+                    if (Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+                    {
+                        Button_DeleteFloor.Visible = true;
+                    }
 
                     TableLayout_FloorsDisplay.Controls.Add(PictureBox_FloorImage, 0, RowCount);
                     TableLayout_FloorsDisplay.Controls.Add(Label_FloorName, 1, RowCount);

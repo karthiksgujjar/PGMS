@@ -60,6 +60,7 @@
             this.Button_AddRoom.Size = new System.Drawing.Size(38, 38);
             this.Button_AddRoom.TabIndex = 10;
             this.Button_AddRoom.UseVisualStyleBackColor = false;
+            this.Button_AddRoom.Visible = false;
             this.Button_AddRoom.Click += new System.EventHandler(this.Button_AddRoom_Click);
             // 
             // RoomsForm

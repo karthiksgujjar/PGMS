@@ -29,6 +29,10 @@ namespace PG_Management_System
         
         private void GuestsForm_Load(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+            {
+                Button_AddGuest.Visible = true;
+            }
             TableLayoutPanel TableLayout_GuestsDisplay = new TableLayoutPanel
             {
                 Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
@@ -95,9 +99,15 @@ namespace PG_Management_System
                         FlatStyle = FlatStyle.Flat,
                         Image = Properties.Resources.Delete,
                         Tag = GuestsData["id"].ToString(),
+                        Visible = false,
                     };
                     Button_RemoveGuest.FlatAppearance.BorderSize = 0;
                     Button_RemoveGuest.Click += new EventHandler(Button_RemoveGuest_Click);
+
+                    if (Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+                    {
+                        Button_RemoveGuest.Visible = true;
+                    }
 
                     TableLayout_GuestsDisplay.Controls.Add(PictureBox_GuestImage, 0, RowCount);
                     TableLayout_GuestsDisplay.Controls.Add(Label_GuestName, 1, RowCount);

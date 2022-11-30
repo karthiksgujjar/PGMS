@@ -24,12 +24,17 @@ namespace PG_Management_System
         private void Button_AddBuilding_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.AddingBuilding = true;
+            Button_AddBuilding.Text = "Add";
             AddBuildingData addBuildingForm = new AddBuildingData();
             addBuildingForm.ShowDialog();
         }
 
         private void BuildingsForm_Load(object sender, EventArgs e)
         {
+            if(Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+            {
+                Button_AddBuilding.Visible = true;
+            }
             TableLayoutPanel TableLayout_BuildingsDisplay = new TableLayoutPanel
             {
                 Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
@@ -77,7 +82,7 @@ namespace PG_Management_System
                         Anchor = AnchorStyles.None,
                         TextAlign = ContentAlignment.MiddleCenter,
                     };
-                    
+
                     Button Button_DeleteBuilding = new Button
                     {
                         Anchor = AnchorStyles.None,
@@ -86,9 +91,15 @@ namespace PG_Management_System
                         FlatStyle = FlatStyle.Flat,
                         Image = Properties.Resources.Delete,
                         Tag = BuildingsData["id"].ToString(),
+                        Visible = false,
                     };
                     Button_DeleteBuilding.FlatAppearance.BorderSize = 0;
                     Button_DeleteBuilding.Click += new EventHandler(Button_DeleteBuilding_Click);
+
+                    if (Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+                    {
+                        Button_DeleteBuilding.Visible = true;
+                    }
 
                     TableLayout_BuildingsDisplay.Controls.Add(PictureBox_BuildingImage, 0, RowCount);
                     TableLayout_BuildingsDisplay.Controls.Add(Label_BuildingName, 1, RowCount);

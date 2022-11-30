@@ -60,6 +60,7 @@
             this.Button_AddFloor.Size = new System.Drawing.Size(38, 38);
             this.Button_AddFloor.TabIndex = 8;
             this.Button_AddFloor.UseVisualStyleBackColor = false;
+            this.Button_AddFloor.Visible = false;
             this.Button_AddFloor.Click += new System.EventHandler(this.Button_AddFloor_Click);
             // 
             // FloorsForm

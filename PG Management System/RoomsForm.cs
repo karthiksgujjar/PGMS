@@ -29,6 +29,10 @@ namespace PG_Management_System
 
         private void RoomsForm_Load(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+            {
+                Button_AddRoom.Visible = true;
+            }
             TableLayoutPanel TableLayout_RoomsDisplay = new TableLayoutPanel
             {
                 Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
@@ -86,9 +90,15 @@ namespace PG_Management_System
                         FlatStyle = FlatStyle.Flat,
                         Image = Properties.Resources.Delete,
                         Tag = RoomsData["id"].ToString(),
+                        Visible = false,
                     };
                     Button_DeleteRoom.FlatAppearance.BorderSize = 0;
                     Button_DeleteRoom.Click += new EventHandler(Button_DeleteRoom_Click);
+
+                    if (Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button)
+                    {
+                        Button_DeleteRoom.Visible = true;
+                    }
 
                     TableLayout_RoomsDisplay.Controls.Add(PictureBox_RoomImage, 0, RowCount);
                     TableLayout_RoomsDisplay.Controls.Add(Label_RoomNo, 1, RowCount);
