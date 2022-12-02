@@ -18,93 +18,7 @@ namespace PG_Management_System
         {
             InitializeComponent();
         }
-        
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            LoginForm.loginFormInstance.Close();
-            Timer_TimeUpdaterMainForm.Start();
-            DateTime dateTime = DateTime.Now;
-            Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
-            Button_OverviewPG_Click(sender, e);
-        }
 
-        private void Button_Home_Click(object sender, EventArgs e)
-        {
-            Button_Home.Visible = false;
-            Button_Previous.Visible = false;
-            ComboBox_Floors.Visible = false;
-            ComboBox_Rooms.Visible = false;
-            Label_GuestFormDisplayController.Enabled = false;
-            ComboBox_Buildings.Text = "-- Select Building --";
-            BuildingsForm.buildingsFormInstance.Close();
-            LoadForm(new BuildingsForm());
-        }
-        
-        private void Button_Previous_Click(object sender, EventArgs e)
-        {
-            if (Label_GuestFormDisplayController.Enabled)
-            {
-                ComboBox_Floors_SelectedIndexChanged(sender, e);
-                ComboBox_Rooms.Focus();
-            }
-            else
-            {
-                Button_Previous.Visible = false;
-                ComboBox_Rooms.Visible = false;
-                ComboBox_Floors.Text = "-- Select Floor --";
-                Label_GuestFormDisplayController.Enabled = false;
-                RoomsForm.roomsFormInstance.Close();
-                LoadForm(new FloorsForm());
-            }
-        }
-        
-        private void MainForm_Activated(object sender, EventArgs e)
-        {
-            if(Button_Home.Visible && Button_Previous.Visible && Label_GuestFormDisplayController.Enabled)
-            {
-                ComboBox_Rooms_SelectedIndexChanged(sender, e);
-                ComboBox_Rooms.Focus();
-            }
-            else if(Button_Home.Visible && Button_Previous.Visible)
-            {
-                ComboBox_Floors_SelectedIndexChanged(sender, e);
-                ComboBox_Rooms.Focus();
-            }
-            else if(Button_Home.Visible)
-            {
-                ComboBox_Buildings_SelectedIndexChanged(sender, e); 
-                ComboBox_Rooms.Focus();
-                //I'm calling this function here because when the floors forms is to be refreshed i.e, when floor is added or deleted from the floorsform, this function updates the ComboBox_Floors and also loads the new FloorsForm. However I was loading a new FloorsForm here but was not able to update the ComboBox_Floors, this issues is solved by this trick.
-            }
-            else
-            {
-                //Here BuildingForm is Loaded when the Button_Home is not visible that means, a floor is not yet selected that implies, new building is added or the form is loading for the first time. This also updates the ComboBox_Buildings here itself.
-                MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-                string query = "SELECT id,building_name FROM buildings;";
-                MySqlCommand cmd = new MySqlCommand(query, con);
-
-                try
-                {
-                    ComboBox_Buildings.Items.Clear();
-                    ComboBox_Buildings.Text = "-- Select Building --";
-                    con.Open();
-                    MySqlDataReader BuildingsNames = cmd.ExecuteReader();
-
-                    while (BuildingsNames.Read())
-                    {
-                        ComboBox_Buildings.Items.Add(BuildingsNames["building_name"].ToString() + " - " + BuildingsNames["id"].ToString());
-                    }
-                }
-                catch (Exception Err)
-                {
-                    MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                BuildingsForm.buildingsFormInstance.Close();
-                LoadForm(new BuildingsForm());
-                ComboBox_Buildings.Focus();
-            }
-        }
-        
         private void Button_FormMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -130,7 +44,44 @@ namespace PG_Management_System
                 Application.Exit();
             }
         }
+        
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            LoginForm.loginFormInstance.Close();
+            Timer_TimeUpdaterMainForm.Start();
+            DateTime dateTime = DateTime.Now;
+            Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
+            LoadForm(new PGFMSDashboardForm());
+        }
 
+        private void Button_Home_Click(object sender, EventArgs e)
+        {
+            ControlsInvisibler_TabsBackColorSetter();
+            ComboBox_Buildings.Text = "-- Select Building --";
+            ComboBox_Buildings.Visible = true;
+            ComboBox_Buildings.Focus();
+            BuildingsForm.buildingsFormInstance.Close();
+            LoadForm(new BuildingsForm());
+        }
+        
+        private void Button_Previous_Click(object sender, EventArgs e)
+        {
+            if (Label_GuestFormDisplayController.Enabled)
+            {
+                ComboBox_Floors_SelectedIndexChanged(sender, e);
+                ComboBox_Rooms.Focus();
+            }
+            else
+            {
+                Button_Previous.Visible = false;
+                ComboBox_Rooms.Visible = false;
+                ComboBox_Floors.Text = "-- Select Floor --";
+                Label_GuestFormDisplayController.Enabled = false;
+                RoomsForm.roomsFormInstance.Close();
+                LoadForm(new FloorsForm());
+            }
+        }
+        
         public void LoadForm(object Form)
         {
             Panel_MainPanel.Controls.Clear();
@@ -159,7 +110,6 @@ namespace PG_Management_System
             try
             {
                 ComboBox_Floors.Items.Clear();
-                ComboBox_Floors.Text = "-- Select Floor --";
                 con.Open();
                 MySqlDataReader FloorsNames = cmd.ExecuteReader();
 
@@ -176,9 +126,11 @@ namespace PG_Management_System
             FloorsForm.floorsFormInstance.Close();
             LoadForm(new FloorsForm());
             Button_Home.Visible = true;
-            ComboBox_Floors.Visible = true;
             ComboBox_Rooms.Visible = false;
             Label_GuestFormDisplayController.Enabled = false;
+            ComboBox_Floors.Text = "-- Select Floor --";
+            ComboBox_Floors.Visible = true;
+            ComboBox_Floors.Focus();
         }
 
         private void ComboBox_Floors_SelectedIndexChanged(object sender, EventArgs e)
@@ -196,7 +148,6 @@ namespace PG_Management_System
             try
             {
                 ComboBox_Rooms.Items.Clear();
-                ComboBox_Rooms.Text = "-- Select Room --";
                 con.Open();
                 MySqlDataReader RoomsNames = cmd.ExecuteReader();
 
@@ -212,9 +163,11 @@ namespace PG_Management_System
 
             RoomsForm.roomsFormInstance.Close();
             LoadForm(new RoomsForm());
-            Button_Previous.Visible = true;
-            ComboBox_Rooms.Visible = true;
             Label_GuestFormDisplayController.Enabled = false;
+            Button_Previous.Visible = true;
+            ComboBox_Rooms.Text = "-- Select Room --";
+            ComboBox_Rooms.Visible = true;
+            ComboBox_Rooms.Focus();
         }
 
         private void ComboBox_Rooms_SelectedIndexChanged(object sender, EventArgs e)
@@ -238,89 +191,100 @@ namespace PG_Management_System
 
         private void Button_OverviewPG_Click(object sender, EventArgs e)
         {
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_OverviewPG.BackColor = Color.White;
+            Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button = false;
+            
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
+            string query = "SELECT id,building_name FROM buildings;";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+
+            try
             {
-                Button_OverviewPG.BackColor = Color.White;
-                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
-                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
-                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+                ComboBox_Buildings.Items.Clear();
+                con.Open();
+                MySqlDataReader BuildingsNames = cmd.ExecuteReader();
+
+                while (BuildingsNames.Read())
+                {
+                    ComboBox_Buildings.Items.Add(BuildingsNames["building_name"].ToString() + " - " + BuildingsNames["id"].ToString());
+                }
+            }
+            catch (Exception Err)
+            {
+                MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button = false;
-            Button_Home.Visible = false;
-            Button_Previous.Visible = false;
-            Label_GuestFormDisplayController.Enabled = false;
-            ComboBox_Floors.Visible = false;
-            ComboBox_Rooms.Visible = false;
-            MainForm_Activated(sender, e);
+            BuildingsForm.buildingsFormInstance.Close();
+            LoadForm(new BuildingsForm());
+            ComboBox_Buildings.Text = "-- Select Building --";
+            ComboBox_Buildings.Visible = true;
+            ComboBox_Buildings.Focus();
         }
 
         private void Button_AcceptPayment_Click(object sender, EventArgs e)
         {
-            {
-                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
-                Button_AcceptPayment.BackColor = Color.White;
-                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
-                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
-                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
-            }
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_AcceptPayment.BackColor = Color.White;
+            AcceptPaymentForm.acceptPaymentFormInstance.Close();
+            LoadForm(new AcceptPaymentForm());
         }
         
         private void Button_AddRemoveBuildingData_Click(object sender, EventArgs e)
         {
-            {
-                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
-                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AddRemoveBuildingData.BackColor = Color.White;
-                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
-                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
-                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
-            }
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_AddRemoveBuildingData.BackColor = Color.White;
             Properties.Settings.Default.MainForm_SidePanel_Add_Remove_Building_Button = true;
-            Button_Home.Visible = false;
-            Button_Previous.Visible = false;
-            Label_GuestFormDisplayController.Enabled = false;
-            ComboBox_Floors.Visible = false;
-            ComboBox_Rooms.Visible = false;
-            MainForm_Activated(sender, e);
+
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
+            string query = "SELECT id,building_name FROM buildings;";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+
+            try
+            {
+                ComboBox_Buildings.Items.Clear();
+                con.Open();
+                MySqlDataReader BuildingsNames = cmd.ExecuteReader();
+
+                while (BuildingsNames.Read())
+                {
+                    ComboBox_Buildings.Items.Add(BuildingsNames["building_name"].ToString() + " - " + BuildingsNames["id"].ToString());
+                }
+            }
+            catch (Exception Err)
+            {
+                MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            BuildingsForm.buildingsFormInstance.Close();
+            LoadForm(new BuildingsForm());
+            ComboBox_Buildings.Text = "-- Select Building --";
+            ComboBox_Buildings.Visible = true;
+            ComboBox_Buildings.Focus();
         }
 
         private void Button_AdmitGuest_Click(object sender, EventArgs e)
         {
-            {
-                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
-                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AdmitGuest.BackColor = Color.White;
-                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
-                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
-            }
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_AdmitGuest.BackColor = Color.White;
+            AdmissionForm.admissionFormInstance.Close();
+            LoadForm(new AdmissionForm());
         }
 
         private void Button_GuestDetails_Click(object sender, EventArgs e)
         {
-            {
-                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
-                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
-                Button_GuestDetails.BackColor = Color.White;
-                Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
-            }
+            
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_GuestDetails.BackColor = Color.White;
+            GuestDetailsForm.guestDetailsFormInstance.Close();
+            LoadForm(new GuestDetailsForm());
         }
 
         private void Button_RemoveGuest_Click(object sender, EventArgs e)
         {
-            {
-                Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0); 
-                Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
-                Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
-                Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
-                Button_RemoveGuest.BackColor = Color.White;
-            }
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_RemoveGuest.BackColor = Color.White;
+            AdmissionForm.admissionFormInstance.Close();
+            LoadForm(new AdmissionForm());
         }
 
         private void Button_Logout_Click(object sender, EventArgs e)
@@ -328,6 +292,23 @@ namespace PG_Management_System
             this.Close();
             LoginForm loginForm = new LoginForm();  
             loginForm.Show();
+        }
+
+        private void ControlsInvisibler_TabsBackColorSetter()
+        {
+            Button_Home.Visible = false;
+            Button_Previous.Visible = false;
+            Label_GuestFormDisplayController.Enabled = false;
+            ComboBox_Buildings.Visible = false;
+            ComboBox_Floors.Visible = false;
+            ComboBox_Rooms.Visible = false;
+
+            Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0);
+            Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
+            Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
+            Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
+            Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
+            Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
         }
     }
 }

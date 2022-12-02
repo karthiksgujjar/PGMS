@@ -128,6 +128,7 @@
             this.ComboBox_Buildings.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Buildings.Sorted = true;
             this.ComboBox_Buildings.TabIndex = 12;
+            this.ComboBox_Buildings.Visible = false;
             this.ComboBox_Buildings.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Buildings_SelectedIndexChanged);
             // 
             // Button_FormMaximize
@@ -429,7 +430,6 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PGMS";
-            this.Activated += new System.EventHandler(this.MainForm_Activated);
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_PGMSLogo)).EndInit();
             this.ResumeLayout(false);

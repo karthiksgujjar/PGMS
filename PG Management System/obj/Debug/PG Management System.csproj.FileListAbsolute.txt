@@ -40,3 +40,5 @@ E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.Main
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.BuildingsForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AddBuildingData.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GuestsForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AcceptPaymentForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.PGFMSDashboardForm.resources

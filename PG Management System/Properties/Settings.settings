@@ -50,5 +50,8 @@
     <Setting Name="MainForm_SidePanel_Add_Remove_Building_Button" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="GuestFormAddGuestButton" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

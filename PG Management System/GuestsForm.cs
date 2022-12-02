@@ -23,6 +23,7 @@ namespace PG_Management_System
         
         private void Button_AddGuest_Click(object sender, EventArgs e)
         {
+            Properties.Settings.Default.GuestFormAddGuestButton = true;
             AdmissionForm admissionForm = new AdmissionForm();
             admissionForm.ShowDialog();
         }
@@ -182,6 +183,5 @@ namespace PG_Management_System
                 }
             }
         }
-
     }
 }

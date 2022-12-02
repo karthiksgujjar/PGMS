@@ -17,22 +17,13 @@ namespace PG_Management_System
     {
         string PictureBox_ImagePath = "No Image";
         string RImagePath = "No Image";
+        public static AdmissionForm admissionFormInstance = new AdmissionForm();
 
         public AdmissionForm()
         {
             InitializeComponent();
         }
-
-        private void Button_FormClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Button_FormMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
+        
         private void Button_Admit_Click(object sender, EventArgs e)
         {
             try
@@ -111,6 +102,26 @@ namespace PG_Management_System
                     MessageBox.Show("Unable to Load the Image\n" + Err.Message, "IMAGE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void AdmissionForm_Load(object sender, EventArgs e)
+        {
+            if(Properties.Settings.Default.GuestFormAddGuestButton)
+            {
+                this.BackColor = Color.LightGray;
+                TextBox_GuestName.BackColor = Color.LightGray;
+                TextBox_GuestMobileNo.BackColor = Color.LightGray;
+                TextBox_GuestMailID.BackColor = Color.LightGray;
+                TextBox_GuestAddress.BackColor = Color.LightGray;
+                TextBox_GuestAadhaarNo.BackColor = Color.LightGray;
+                Button_FormClose.Visible = true;
+            }
+        }
+
+        private void Button_FormClose_Click_1(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.GuestFormAddGuestButton = false;
+            this.Close();
         }
     }
 }
