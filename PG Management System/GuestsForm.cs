@@ -44,7 +44,7 @@ namespace PG_Management_System
             };
 
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-            string query = "SELECT * FROM guests WHERE room_id=@RoomID;";
+            string query = "SELECT id,name,mob_no,guest_imageRPath FROM guests WHERE room_id=@RoomID;";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.Parameters.AddWithValue("@RoomID", Properties.Settings.Default.SelectedRoomID);
 
@@ -70,7 +70,7 @@ namespace PG_Management_System
                         BackColor = Color.Transparent,
                         BackgroundImageLayout = ImageLayout.Stretch,
                         SizeMode = PictureBoxSizeMode.StretchImage,
-                        ImageLocation = GuestsData["imageRPath"].ToString() + GuestsData["name"].ToString() + " Image.jpg",
+                        ImageLocation = GuestsData["guest_imageRPath"].ToString() + GuestsData["name"].ToString() + " Image.jpg",
                         Size = new Size(250, 250),
                     };
 
@@ -83,9 +83,9 @@ namespace PG_Management_System
                         TextAlign = ContentAlignment.MiddleCenter,
                     };
 
-                    Label Label_GuestPhNo = new Label
+                    Label Label_GuestMobNo = new Label
                     {
-                        Text = GuestsData["phno"].ToString(),
+                        Text = GuestsData["mob_no"].ToString(),
                         AutoSize = true,
                         Font = new Font("Cambria", 20, FontStyle.Bold),
                         Anchor = AnchorStyles.None,
@@ -112,7 +112,7 @@ namespace PG_Management_System
 
                     TableLayout_GuestsDisplay.Controls.Add(PictureBox_GuestImage, 0, RowCount);
                     TableLayout_GuestsDisplay.Controls.Add(Label_GuestName, 1, RowCount);
-                    TableLayout_GuestsDisplay.Controls.Add(Label_GuestPhNo, 2, RowCount);
+                    TableLayout_GuestsDisplay.Controls.Add(Label_GuestMobNo, 2, RowCount);
                     TableLayout_GuestsDisplay.Controls.Add(Button_RemoveGuest, 3, RowCount);
                 }
                 this.Controls.Add(TableLayout_GuestsDisplay);
@@ -134,7 +134,7 @@ namespace PG_Management_System
                 Properties.Settings.Default.SelectedGuestID = getID.Tag.ToString();
 
                 MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-                string query1 = "SELECT imageRPath FROM guests WHERE id = @ID;";
+                string query1 = "SELECT guest_imageRPath FROM guests WHERE id = @ID;";
                 string query2 = "DELETE FROM guests WHERE id = @ID;";
 
                 MySqlCommand cmd1 = new MySqlCommand(query1, con);
@@ -150,7 +150,7 @@ namespace PG_Management_System
                     MySqlDataReader RImagePath = cmd1.ExecuteReader();
                     if (RImagePath.Read())
                     {
-                        ImageLocation = RImagePath["imageRPath"].ToString();
+                        ImageLocation = RImagePath["guest_imageRPath"].ToString();
                     }
                     con.Close();
 

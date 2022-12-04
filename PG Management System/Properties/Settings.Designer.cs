@@ -226,5 +226,29 @@ namespace PG_Management_System.Properties {
                 this["GuestFormAddGuestButton"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool MainFormRemoveGuest {
+            get {
+                return ((bool)(this["MainFormRemoveGuest"]));
+            }
+            set {
+                this["MainFormRemoveGuest"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int ReceiptNo {
+            get {
+                return ((int)(this["ReceiptNo"]));
+            }
+            set {
+                this["ReceiptNo"] = value;
+            }
+        }
     }
 }

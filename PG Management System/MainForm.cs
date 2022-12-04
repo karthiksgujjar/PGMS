@@ -267,6 +267,7 @@ namespace PG_Management_System
             ControlsInvisibler_TabsBackColorSetter();
             Button_AdmitGuest.BackColor = Color.White;
             AdmissionForm.admissionFormInstance.Close();
+            Properties.Settings.Default.MainFormRemoveGuest = false;
             LoadForm(new AdmissionForm());
         }
 
@@ -284,6 +285,7 @@ namespace PG_Management_System
             ControlsInvisibler_TabsBackColorSetter();
             Button_RemoveGuest.BackColor = Color.White;
             AdmissionForm.admissionFormInstance.Close();
+            Properties.Settings.Default.MainFormRemoveGuest = true;
             LoadForm(new AdmissionForm());
         }
 
