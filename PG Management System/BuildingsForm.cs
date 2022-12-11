@@ -35,6 +35,7 @@ namespace PG_Management_System
             {
                 Button_AddBuilding.Visible = true;
             }
+
             TableLayoutPanel TableLayout_BuildingsDisplay = new TableLayoutPanel
             {
                 Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom,
@@ -57,7 +58,6 @@ namespace PG_Management_System
 
                 while (BuildingsData.Read())
                 {
-                    RowCount++;
                     TableLayout_BuildingsDisplay.RowStyles.Add(new RowStyle(SizeType.AutoSize));
                     TableLayout_BuildingsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
                     TableLayout_BuildingsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
@@ -104,6 +104,7 @@ namespace PG_Management_System
                     TableLayout_BuildingsDisplay.Controls.Add(PictureBox_BuildingImage, 0, RowCount);
                     TableLayout_BuildingsDisplay.Controls.Add(Label_BuildingName, 1, RowCount);
                     TableLayout_BuildingsDisplay.Controls.Add(Button_DeleteBuilding, 2, RowCount);
+                    RowCount++;
                 }
                 this.Controls.Add(TableLayout_BuildingsDisplay);
                 con.Close();

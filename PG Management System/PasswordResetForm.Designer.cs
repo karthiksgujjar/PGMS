@@ -168,7 +168,7 @@
             this.PictureBox_PGMS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBox_PGMS.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox_PGMS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PictureBox_PGMS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_PGMS.Image")));
+            this.PictureBox_PGMS.Image = global::PG_Management_System.Properties.Resources.PGFMS_Logo;
             this.PictureBox_PGMS.Location = new System.Drawing.Point(12, 35);
             this.PictureBox_PGMS.Name = "PictureBox_PGMS";
             this.PictureBox_PGMS.Size = new System.Drawing.Size(184, 194);
@@ -182,7 +182,7 @@
             this.Label_FormTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.Label_FormTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_FormTitle.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_FormTitle.Image = ((System.Drawing.Image)(resources.GetObject("Label_FormTitle.Image")));
+            this.Label_FormTitle.Image = global::PG_Management_System.Properties.Resources.PGFMS_Logo_Small;
             this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Label_FormTitle.Location = new System.Drawing.Point(0, 0);
             this.Label_FormTitle.Name = "Label_FormTitle";

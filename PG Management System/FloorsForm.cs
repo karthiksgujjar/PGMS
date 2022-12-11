@@ -57,7 +57,6 @@ namespace PG_Management_System
 
                 while (FloorsData.Read())
                 {
-                    RowCount++;
                     TableLayout_FloorsDisplay.RowStyles.Add(new RowStyle(SizeType.AutoSize));
                     TableLayout_FloorsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
                     TableLayout_FloorsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
@@ -103,6 +102,8 @@ namespace PG_Management_System
                     TableLayout_FloorsDisplay.Controls.Add(PictureBox_FloorImage, 0, RowCount);
                     TableLayout_FloorsDisplay.Controls.Add(Label_FloorName, 1, RowCount);
                     TableLayout_FloorsDisplay.Controls.Add(Button_DeleteFloor, 2, RowCount);
+                    RowCount++;
+
                 }
                 this.Controls.Add(TableLayout_FloorsDisplay);
                 con.Close();

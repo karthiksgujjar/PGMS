@@ -43,7 +43,7 @@ namespace PG_Management_System
             };
 
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-            string query = "SELECT * FROM rooms WHERE floor_id=@FloorID;";
+            string query = "SELECT * FROM rooms WHERE floor_id=@FloorID ORDER BY(room_no);";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.Parameters.AddWithValue("@FloorID", Properties.Settings.Default.SelectedFloorID);
 
@@ -56,7 +56,6 @@ namespace PG_Management_System
 
                 while (RoomsData.Read())
                 {
-                    RowCount++;
                     TableLayout_RoomsDisplay.RowStyles.Add(new RowStyle(SizeType.AutoSize));
                     TableLayout_RoomsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
                     TableLayout_RoomsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
@@ -103,6 +102,8 @@ namespace PG_Management_System
                     TableLayout_RoomsDisplay.Controls.Add(PictureBox_RoomImage, 0, RowCount);
                     TableLayout_RoomsDisplay.Controls.Add(Label_RoomNo, 1, RowCount);
                     TableLayout_RoomsDisplay.Controls.Add(Button_DeleteRoom, 2, RowCount);
+                    RowCount++;
+
                 }
                 this.Controls.Add(TableLayout_RoomsDisplay);
                 con.Close();

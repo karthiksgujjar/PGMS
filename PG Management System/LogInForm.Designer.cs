@@ -39,10 +39,10 @@
             this.ErrorProvider_LogInForm = new System.Windows.Forms.ErrorProvider(this.components);
             this.Label_UsernameUnderbar = new System.Windows.Forms.Label();
             this.Label_PasswordUnderbar = new System.Windows.Forms.Label();
-            this.Button_LogIn = new System.Windows.Forms.Button();
             this.Button_Show_Hide_Pwd = new System.Windows.Forms.Button();
             this.Label_FormTitle = new System.Windows.Forms.Label();
             this.PictureBox_PGMS = new System.Windows.Forms.PictureBox();
+            this.Button_LogIn = new System.Windows.Forms.Button();
             this.Label_PWD = new System.Windows.Forms.Label();
             this.Label_UN = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_LogInForm)).BeginInit();
@@ -177,28 +177,6 @@
             this.Label_PasswordUnderbar.Size = new System.Drawing.Size(139, 1);
             this.Label_PasswordUnderbar.TabIndex = 17;
             // 
-            // Button_LogIn
-            // 
-            this.Button_LogIn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Button_LogIn.BackColor = System.Drawing.Color.Transparent;
-            this.Button_LogIn.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Button_LogIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_LogIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Button_LogIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_LogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_LogIn.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_LogIn.Image = global::PG_Management_System.Properties.Resources.Login;
-            this.Button_LogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Button_LogIn.Location = new System.Drawing.Point(112, 424);
-            this.Button_LogIn.Name = "Button_LogIn";
-            this.Button_LogIn.Size = new System.Drawing.Size(116, 30);
-            this.Button_LogIn.TabIndex = 2;
-            this.Button_LogIn.Tag = "";
-            this.Button_LogIn.Text = "LOGIN";
-            this.Button_LogIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_LogIn.UseVisualStyleBackColor = false;
-            this.Button_LogIn.Click += new System.EventHandler(this.Button_LogIn_Click);
-            // 
             // Button_Show_Hide_Pwd
             // 
             this.Button_Show_Hide_Pwd.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -223,7 +201,7 @@
             this.Label_FormTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.Label_FormTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_FormTitle.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_FormTitle.Image = ((System.Drawing.Image)(resources.GetObject("Label_FormTitle.Image")));
+            this.Label_FormTitle.Image = global::PG_Management_System.Properties.Resources.PGFMS_Logo_Small;
             this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Label_FormTitle.Location = new System.Drawing.Point(0, 0);
             this.Label_FormTitle.Name = "Label_FormTitle";
@@ -237,13 +215,35 @@
             this.PictureBox_PGMS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PictureBox_PGMS.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox_PGMS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PictureBox_PGMS.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_PGMS.Image")));
-            this.PictureBox_PGMS.Location = new System.Drawing.Point(78, 50);
+            this.PictureBox_PGMS.Image = global::PG_Management_System.Properties.Resources.PGFMS_Logo;
+            this.PictureBox_PGMS.Location = new System.Drawing.Point(21, 50);
             this.PictureBox_PGMS.Name = "PictureBox_PGMS";
-            this.PictureBox_PGMS.Size = new System.Drawing.Size(184, 194);
+            this.PictureBox_PGMS.Size = new System.Drawing.Size(282, 221);
             this.PictureBox_PGMS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox_PGMS.TabIndex = 3;
             this.PictureBox_PGMS.TabStop = false;
+            // 
+            // Button_LogIn
+            // 
+            this.Button_LogIn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Button_LogIn.BackColor = System.Drawing.Color.Transparent;
+            this.Button_LogIn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Button_LogIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_LogIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Button_LogIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_LogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_LogIn.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_LogIn.Image = global::PG_Management_System.Properties.Resources.Login;
+            this.Button_LogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Button_LogIn.Location = new System.Drawing.Point(106, 424);
+            this.Button_LogIn.Name = "Button_LogIn";
+            this.Button_LogIn.Size = new System.Drawing.Size(116, 30);
+            this.Button_LogIn.TabIndex = 2;
+            this.Button_LogIn.Tag = "";
+            this.Button_LogIn.Text = "LOGIN";
+            this.Button_LogIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_LogIn.UseVisualStyleBackColor = false;
+            this.Button_LogIn.Click += new System.EventHandler(this.Button_LogIn_Click);
             // 
             // Label_PWD
             // 

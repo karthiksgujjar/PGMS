@@ -57,7 +57,6 @@ namespace PG_Management_System
 
                 while (GuestsData.Read())
                 {
-                    RowCount++;
                     TableLayout_GuestsDisplay.RowStyles.Add(new RowStyle(SizeType.AutoSize));
                     TableLayout_GuestsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
                     TableLayout_GuestsDisplay.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
@@ -114,6 +113,8 @@ namespace PG_Management_System
                     TableLayout_GuestsDisplay.Controls.Add(Label_GuestName, 1, RowCount);
                     TableLayout_GuestsDisplay.Controls.Add(Label_GuestMobNo, 2, RowCount);
                     TableLayout_GuestsDisplay.Controls.Add(Button_RemoveGuest, 3, RowCount);
+                    RowCount++;
+
                 }
                 this.Controls.Add(TableLayout_GuestsDisplay);
                 con.Close();

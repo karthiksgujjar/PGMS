@@ -51,7 +51,7 @@ namespace PG_Management_System
             Timer_TimeUpdaterMainForm.Start();
             DateTime dateTime = DateTime.Now;
             Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
-            LoadForm(new PGFMSDashboardForm());
+            Button_OverviewPG_Click(sender, e);
         }
 
         private void Button_Home_Click(object sender, EventArgs e)
@@ -267,7 +267,6 @@ namespace PG_Management_System
             ControlsInvisibler_TabsBackColorSetter();
             Button_AdmitGuest.BackColor = Color.White;
             AdmissionForm.admissionFormInstance.Close();
-            Properties.Settings.Default.MainFormRemoveGuest = false;
             LoadForm(new AdmissionForm());
         }
 
@@ -305,12 +304,17 @@ namespace PG_Management_System
             ComboBox_Floors.Visible = false;
             ComboBox_Rooms.Visible = false;
 
+            Button_FormMaximize.Enabled = true;
+
             Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0);
             Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
             Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
             Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
             Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
             Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+
+            Properties.Settings.Default.MainFormRemoveGuest = false;
         }
+
     }
 }

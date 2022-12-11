@@ -274,6 +274,7 @@
             this.TextBox_GuestName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TextBox_GuestName.BackColor = System.Drawing.Color.White;
             this.TextBox_GuestName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_GuestName.Enabled = false;
             this.TextBox_GuestName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_GuestName.Location = new System.Drawing.Point(274, 235);
             this.TextBox_GuestName.Name = "TextBox_GuestName";

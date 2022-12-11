@@ -53,7 +53,48 @@ namespace PG_Management_System
 
         private void Button_AcceptGuestPayment_Click(object sender, EventArgs e)
         {
-            //when payment is accepted and stored increment the properties.settings.default.receiptno by 1 and save it.
+            //Properties.Settings.Default.ReceiptNo = 1;
+            //Properties.Settings.Default.Save();  // Only option to reset the value of ReceiptNo, do this on 1st of every month after generating report of previous month, do this on form load
+            
+            //when payment is accepted and stored increment the properties.settings.default.receiptno by 1 and save it. -- done
+            MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
+            string query = "INSERT INTO fees VALUES(@GuestID,@ReceiptNo,@ModeOfPayment,@Amount);";
+            MySqlCommand cmd = new MySqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@GuestID",Properties.Settings.Default.SelectedGuestID);
+            cmd.Parameters.AddWithValue("@ReceiptNo", Label_ReceiptNo.Text);
+            if(RadioButton_Cash.Checked)
+            {
+                cmd.Parameters.AddWithValue("@ModeOfPayment", RadioButton_Cash.Text);
+            }
+            else
+            {
+                cmd.Parameters.AddWithValue("@ModeOfPayment", TextBox_UPI_ID.Text);
+            }
+            cmd.Parameters.AddWithValue("@Amount", TextBox_GuestPayAmountPerMonth.Text);
+
+
+            try
+            {
+                con.Open();
+                int res = cmd.ExecuteNonQuery();
+                if (res > 0)
+                {
+                    MessageBox.Show("Payment Accepted Successfully", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Properties.Settings.Default.ReceiptNo++;
+                    Properties.Settings.Default.Save();
+                    Button_ResetGuestPaymentForm_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Unable to Accept Payment", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                con.Close();
+            }
+            catch (Exception Err)
+            {
+                MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
         }
         
         private void Button_ShareGuestPaymentReceipt_Click(object sender, EventArgs e)
@@ -68,6 +109,7 @@ namespace PG_Management_System
             ComboBox_Guests.Visible = false;
             TextBox_GuestName.Text = "";
             TextBox_GuestPayAmountPerMonth.Text = "";
+            RadioButton_Cash.Checked = true;
             Button_AcceptGuestPayment.Visible = false;
             Button_ShareGuestPaymentReceipt.Visible = false;
             Button_ResetGuestPaymentForm.Visible = false;

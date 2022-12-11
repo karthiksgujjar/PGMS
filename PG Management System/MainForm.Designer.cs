@@ -306,10 +306,10 @@
             // PictureBox_PGMSLogo
             // 
             this.PictureBox_PGMSLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PictureBox_PGMSLogo.Image = global::PG_Management_System.Properties.Resources.Add_Image;
-            this.PictureBox_PGMSLogo.Location = new System.Drawing.Point(11, 55);
+            this.PictureBox_PGMSLogo.Image = global::PG_Management_System.Properties.Resources.PGFMS_Logo;
+            this.PictureBox_PGMSLogo.Location = new System.Drawing.Point(3, 57);
             this.PictureBox_PGMSLogo.Name = "PictureBox_PGMSLogo";
-            this.PictureBox_PGMSLogo.Size = new System.Drawing.Size(100, 100);
+            this.PictureBox_PGMSLogo.Size = new System.Drawing.Size(116, 117);
             this.PictureBox_PGMSLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox_PGMSLogo.TabIndex = 19;
             this.PictureBox_PGMSLogo.TabStop = false;

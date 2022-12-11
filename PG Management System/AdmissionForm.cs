@@ -50,7 +50,8 @@ namespace PG_Management_System
                 TextBox_GuestPayAmountPerMonth.BackColor = Color.LightGray;
                 Button_FormClose.Visible = true;
             }
-            if(Properties.Settings.Default.MainFormRemoveGuest)
+
+            if (Properties.Settings.Default.MainFormRemoveGuest)
             {
                 TextBox_GuestName.Enabled = false;
                 DateTimePicker_GuestDateOfBirth.Enabled = false;

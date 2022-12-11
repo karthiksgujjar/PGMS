@@ -86,6 +86,7 @@ namespace PG_Management_System
                         {
                             MessageBox.Show("Unable to Insert Building", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                        con.Close();
                     }
                     else if(Properties.Settings.Default.AddingFloor)
                     {
@@ -115,6 +116,7 @@ namespace PG_Management_System
                         {
                             MessageBox.Show("Unable to Insert Floor", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                        con.Close();
                     }
                     else
                     {
@@ -145,6 +147,7 @@ namespace PG_Management_System
                         {
                             MessageBox.Show("Unable to Insert Room", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                        con.Close();
                     }
                     
                 }
