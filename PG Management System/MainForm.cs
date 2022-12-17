@@ -52,6 +52,14 @@ namespace PG_Management_System
             DateTime dateTime = DateTime.Now;
             Label_DateTimeDisplay.Text = dateTime.ToLongDateString() + ",  " + dateTime.ToShortTimeString();
             Button_OverviewPG_Click(sender, e);
+            if(Properties.Settings.Default.LoggedUser == "staff1" || Properties.Settings.Default.LoggedUser == "staff2")
+            {
+                Button_AddRemoveBuildingData.Visible = false;
+                Button_RemoveGuest.Visible = false;
+                Button_Settings.Visible = false;
+                Button_AdmitGuest.Location = new Point(2, 330);
+                Button_GuestDetails.Location = new Point(2, 390);
+            }
         }
 
         private void Button_Home_Click(object sender, EventArgs e)
@@ -277,6 +285,10 @@ namespace PG_Management_System
             Button_GuestDetails.BackColor = Color.White;
             GuestDetailsForm.guestDetailsFormInstance.Close();
             LoadForm(new GuestDetailsForm());
+
+            this.WindowState = FormWindowState.Maximized;
+
+            Button_FormMaximize.Enabled = false;
         }
 
         private void Button_RemoveGuest_Click(object sender, EventArgs e)

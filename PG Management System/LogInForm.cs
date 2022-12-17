@@ -50,7 +50,7 @@ namespace PG_Management_System
                         ErrorProvider_LogInForm.Clear();
                         SaveCredentials();
 
-                        Properties.Settings.Default.SelectedUser = ComboBox_UN.SelectedItem.ToString();
+                        Properties.Settings.Default.LoggedUser = ComboBox_UN.SelectedItem.ToString();
 
                         MainForm mainForm = new MainForm();
                         mainForm.Show();
@@ -218,7 +218,7 @@ namespace PG_Management_System
         private void LinkLabel_ForgotPWD_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Properties.Settings.Default.SelectedUser = ComboBox_UN.SelectedItem.ToString();
+            Properties.Settings.Default.LoggedUser = ComboBox_UN.SelectedItem.ToString();
             PasswordResetForm passwordResetForm = new PasswordResetForm();
             passwordResetForm.Show();
         }

@@ -51,7 +51,6 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TableLayout_GuestDetails.AutoScroll = true;
-            this.TableLayout_GuestDetails.AutoSize = true;
             this.TableLayout_GuestDetails.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.TableLayout_GuestDetails.BackColor = System.Drawing.Color.Transparent;
             this.TableLayout_GuestDetails.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -64,7 +63,7 @@
             this.TableLayout_GuestDetails.Name = "TableLayout_GuestDetails";
             this.TableLayout_GuestDetails.RowCount = 1;
             this.TableLayout_GuestDetails.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.TableLayout_GuestDetails.Size = new System.Drawing.Size(773, 2);
+            this.TableLayout_GuestDetails.Size = new System.Drawing.Size(773, 364);
             this.TableLayout_GuestDetails.TabIndex = 14;
             this.TableLayout_GuestDetails.Visible = false;
             // 
@@ -72,6 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.TableLayout_GuestDetails);
@@ -81,7 +81,6 @@
             this.Text = "GuestDetailsForm";
             this.Load += new System.EventHandler(this.GuestDetailsForm_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -63,12 +63,12 @@ namespace PG_Management_System
                     string query = "UPDATE login SET password=@NewPWD WHERE username=@UN";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@NewPWD",TextBox_NewPWD.Text);
-                    cmd.Parameters.AddWithValue("@UN", Properties.Settings.Default.SelectedUser);
+                    cmd.Parameters.AddWithValue("@UN", Properties.Settings.Default.LoggedUser);
                     con.Open();
                     int res = cmd.ExecuteNonQuery();
                     if (res == 1)
                     {
-                        MessageBox.Show("PASWORD RESET SUCCESSFULL.\nYour new Password for " + Properties.Settings.Default.SelectedUser + " is: " + TextBox_NewPWD.Text.ToString(), "SUCCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("PASWORD RESET SUCCESSFULL.\nYour new Password for " + Properties.Settings.Default.LoggedUser + " is: " + TextBox_NewPWD.Text.ToString(), "SUCCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     }
                     else
                     {

@@ -489,7 +489,7 @@
             this.TextBox_GuestEmergencyMobNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBox_GuestEmergencyMobNo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_GuestEmergencyMobNo.Location = new System.Drawing.Point(302, 513);
-            this.TextBox_GuestEmergencyMobNo.MaxLength = 12;
+            this.TextBox_GuestEmergencyMobNo.MaxLength = 10;
             this.TextBox_GuestEmergencyMobNo.Name = "TextBox_GuestEmergencyMobNo";
             this.TextBox_GuestEmergencyMobNo.Size = new System.Drawing.Size(272, 19);
             this.TextBox_GuestEmergencyMobNo.TabIndex = 7;

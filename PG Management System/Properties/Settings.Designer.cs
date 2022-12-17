@@ -74,12 +74,12 @@ namespace PG_Management_System.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string SelectedUser {
+        public string LoggedUser {
             get {
-                return ((string)(this["SelectedUser"]));
+                return ((string)(this["LoggedUser"]));
             }
             set {
-                this["SelectedUser"] = value;
+                this["LoggedUser"] = value;
             }
         }
         
