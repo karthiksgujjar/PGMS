@@ -16,8 +16,10 @@ namespace PG_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
+            FirstRunForm firstRunForm= new FirstRunForm();
+            firstRunForm.ShowDialog();
+            /*LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();*/
             Application.Run();
         }
     }

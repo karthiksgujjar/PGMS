@@ -42,3 +42,7 @@ E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AddB
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GuestsForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.AcceptPaymentForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GuestDetailsForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.FirstRunForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GetDBDetailsForm.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GetPGDetails.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GetPGOwnerDetails.resources

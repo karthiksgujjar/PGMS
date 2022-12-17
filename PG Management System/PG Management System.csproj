@@ -102,6 +102,30 @@
     <Compile Include="AdmissionForm.Designer.cs">
       <DependentUpon>AdmissionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirstRunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstRunForm.Designer.cs">
+      <DependentUpon>FirstRunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetDBDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetDBDetailsForm.Designer.cs">
+      <DependentUpon>GetDBDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetPGDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetPGDetails.Designer.cs">
+      <DependentUpon>GetPGDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetPGOwnerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetPGOwnerDetails.Designer.cs">
+      <DependentUpon>GetPGOwnerDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="GuestDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +189,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdmissionForm.resx">
       <DependentUpon>AdmissionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstRunForm.resx">
+      <DependentUpon>FirstRunForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetDBDetailsForm.resx">
+      <DependentUpon>GetDBDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetPGDetails.resx">
+      <DependentUpon>GetPGDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetPGOwnerDetails.resx">
+      <DependentUpon>GetPGOwnerDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuestDetailsForm.resx">
       <DependentUpon>GuestDetailsForm.cs</DependentUpon>
@@ -271,6 +307,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PGFMS Logo Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
