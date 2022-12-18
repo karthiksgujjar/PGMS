@@ -26,12 +26,12 @@ namespace PG_Management_System.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string AdminPassword {
+        public string OwnerPassword {
             get {
-                return ((string)(this["AdminPassword"]));
+                return ((string)(this["OwnerPassword"]));
             }
             set {
-                this["AdminPassword"] = value;
+                this["OwnerPassword"] = value;
             }
         }
         
@@ -251,12 +251,63 @@ namespace PG_Management_System.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        public string Setting {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PGName {
             get {
-                return ((string)(this["Setting"]));
+                return ((string)(this["PGName"]));
+            }
+            set {
+                this["PGName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PGAddress {
+            get {
+                return ((string)(this["PGAddress"]));
+            }
+            set {
+                this["PGAddress"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OwnerName {
+            get {
+                return ((string)(this["OwnerName"]));
+            }
+            set {
+                this["OwnerName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OwnerMobNo {
+            get {
+                return ((string)(this["OwnerMobNo"]));
+            }
+            set {
+                this["OwnerMobNo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string OwnerMailID {
+            get {
+                return ((string)(this["OwnerMailID"]));
+            }
+            set {
+                this["OwnerMailID"] = value;
             }
         }
     }

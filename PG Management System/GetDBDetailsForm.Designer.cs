@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetDBDetailsForm));
             this.TextBox_ServerName = new System.Windows.Forms.TextBox();
             this.Label_ServerNameUnderbar = new System.Windows.Forms.Label();
             this.Label_ServerName = new System.Windows.Forms.Label();
@@ -39,6 +41,8 @@
             this.Label_UserName = new System.Windows.Forms.Label();
             this.Label_UserNameUnderbar = new System.Windows.Forms.Label();
             this.Label_PasswordUnderbar = new System.Windows.Forms.Label();
+            this.ErrorProvider_GetDBDetailsForm = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_GetDBDetailsForm)).BeginInit();
             this.SuspendLayout();
             // 
             // TextBox_ServerName
@@ -80,18 +84,19 @@
             this.Button_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Save.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Save.Location = new System.Drawing.Point(135, 288);
+            this.Button_Save.Location = new System.Drawing.Point(143, 288);
             this.Button_Save.Name = "Button_Save";
             this.Button_Save.Size = new System.Drawing.Size(113, 30);
             this.Button_Save.TabIndex = 64;
             this.Button_Save.Text = "SAVE";
             this.Button_Save.UseVisualStyleBackColor = false;
+            this.Button_Save.Click += new System.EventHandler(this.Button_Save_Click);
             // 
             // Label_DatabaseDetailsTitle
             // 
             this.Label_DatabaseDetailsTitle.AutoSize = true;
             this.Label_DatabaseDetailsTitle.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_DatabaseDetailsTitle.Location = new System.Drawing.Point(36, 18);
+            this.Label_DatabaseDetailsTitle.Location = new System.Drawing.Point(44, 18);
             this.Label_DatabaseDetailsTitle.Name = "Label_DatabaseDetailsTitle";
             this.Label_DatabaseDetailsTitle.Size = new System.Drawing.Size(310, 32);
             this.Label_DatabaseDetailsTitle.TabIndex = 65;
@@ -157,12 +162,18 @@
             this.Label_PasswordUnderbar.TabIndex = 63;
             this.Label_PasswordUnderbar.Text = "label1";
             // 
+            // ErrorProvider_GetDBDetailsForm
+            // 
+            this.ErrorProvider_GetDBDetailsForm.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.ErrorProvider_GetDBDetailsForm.ContainerControl = this;
+            this.ErrorProvider_GetDBDetailsForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider_GetDBDetailsForm.Icon")));
+            // 
             // GetDBDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(383, 341);
+            this.ClientSize = new System.Drawing.Size(398, 341);
             this.ControlBox = false;
             this.Controls.Add(this.Label_DatabaseDetailsTitle);
             this.Controls.Add(this.Button_Save);
@@ -180,6 +191,7 @@
             this.MinimizeBox = false;
             this.Name = "GetDBDetailsForm";
             this.Text = "GetDBDetailsForm";
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_GetDBDetailsForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +209,6 @@
         private System.Windows.Forms.Label Label_UserName;
         private System.Windows.Forms.Label Label_UserNameUnderbar;
         private System.Windows.Forms.Label Label_PasswordUnderbar;
+        private System.Windows.Forms.ErrorProvider ErrorProvider_GetDBDetailsForm;
     }
 }

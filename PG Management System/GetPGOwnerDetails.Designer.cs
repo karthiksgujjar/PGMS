@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetPGOwnerDetails));
             this.TextBox_OwnerName = new System.Windows.Forms.TextBox();
             this.Label_OwnerNameUnderbar = new System.Windows.Forms.Label();
             this.Label_OwnerName = new System.Windows.Forms.Label();
@@ -42,6 +44,8 @@
             this.Label_OwnerPassword = new System.Windows.Forms.Label();
             this.TextBox_OwnerPassword = new System.Windows.Forms.TextBox();
             this.Label_DatabaseDetailsTitle = new System.Windows.Forms.Label();
+            this.ErrorProvider_GetPGOwnerDetailsForm = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_GetPGOwnerDetailsForm)).BeginInit();
             this.SuspendLayout();
             // 
             // TextBox_OwnerName
@@ -162,6 +166,7 @@
             this.Button_Save.TabIndex = 68;
             this.Button_Save.Text = "SAVE";
             this.Button_Save.UseVisualStyleBackColor = false;
+            this.Button_Save.Click += new System.EventHandler(this.Button_Save_Click);
             // 
             // Label_OwnerPasswordUnderbar
             // 
@@ -203,6 +208,12 @@
             this.Label_DatabaseDetailsTitle.TabIndex = 69;
             this.Label_DatabaseDetailsTitle.Text = "- Enter Owner Details -";
             // 
+            // ErrorProvider_GetPGOwnerDetailsForm
+            // 
+            this.ErrorProvider_GetPGOwnerDetailsForm.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.ErrorProvider_GetPGOwnerDetailsForm.ContainerControl = this;
+            this.ErrorProvider_GetPGOwnerDetailsForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider_GetPGOwnerDetailsForm.Icon")));
+            // 
             // GetPGOwnerDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +240,7 @@
             this.MinimizeBox = false;
             this.Name = "GetPGOwnerDetails";
             this.Text = "GetPGOwnerDetails";
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_GetPGOwnerDetailsForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,5 +262,6 @@
         private System.Windows.Forms.Label Label_OwnerPassword;
         private System.Windows.Forms.TextBox TextBox_OwnerPassword;
         private System.Windows.Forms.Label Label_DatabaseDetailsTitle;
+        private System.Windows.Forms.ErrorProvider ErrorProvider_GetPGOwnerDetailsForm;
     }
 }

@@ -47,7 +47,6 @@ namespace PG_Management_System
                     MySqlDataReader DB_PassWord = cmd.ExecuteReader();
                     if (DB_PassWord.HasRows)
                     {
-                        ErrorProvider_LogInForm.Clear();
                         SaveCredentials();
 
                         Properties.Settings.Default.LoggedUser = ComboBox_UN.SelectedItem.ToString();
@@ -98,9 +97,9 @@ namespace PG_Management_System
             else
             {
                 //Run FirstRunSetup Form, To collect 
-                //1. admin password and save it in properties.settings.default.AdminPassword;
+                //1. owner password and save it in properties.settings.default.ownerPassword;
                 //2. database connection details;
-                //3. 
+                //3. pg details
                 
                 // The Form should have 2 panels:
                 // 1st panel should display progression of setup
@@ -137,9 +136,9 @@ namespace PG_Management_System
         {
             if(CheckBox_RememberMe.Checked)
             {
-                if (ComboBox_UN.SelectedItem.ToString() == "admin")
+                if (ComboBox_UN.SelectedItem.ToString() == "owner")
                 {
-                    Properties.Settings.Default.AdminPassword = TextBox_PWD.Text;
+                    Properties.Settings.Default.OwnerPassword = TextBox_PWD.Text;
                 }
                 else if(ComboBox_UN.SelectedItem.ToString() == "staff1")
                 {
@@ -153,9 +152,9 @@ namespace PG_Management_System
             }
             else
             {
-                if (ComboBox_UN.SelectedItem.ToString() == "admin")
+                if (ComboBox_UN.SelectedItem.ToString() == "owner")
                 {
-                    Properties.Settings.Default.AdminPassword = "";
+                    Properties.Settings.Default.OwnerPassword = "";
                 }
                 else if (ComboBox_UN.SelectedItem.ToString() == "staff1")
                 {
@@ -171,10 +170,10 @@ namespace PG_Management_System
 
         void LoadCredentials()
         {
-            if (ComboBox_UN.SelectedItem.ToString() == "admin")
+            if (ComboBox_UN.SelectedItem.ToString() == "owner")
             {
-                TextBox_PWD.Text = Properties.Settings.Default.AdminPassword;
-                if (!string.IsNullOrEmpty(Properties.Settings.Default.AdminPassword))
+                TextBox_PWD.Text = Properties.Settings.Default.OwnerPassword;
+                if (!string.IsNullOrEmpty(Properties.Settings.Default.OwnerPassword))
                 {
                     CheckBox_RememberMe.Checked = true;
                 }

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetPGDetails));
             this.Button_Save = new System.Windows.Forms.Button();
             this.Label_PGDetailsTitle = new System.Windows.Forms.Label();
             this.Label_PGAddressUnderbar = new System.Windows.Forms.Label();
@@ -36,6 +38,8 @@
             this.Label_PGAddress = new System.Windows.Forms.Label();
             this.TextBox_PGAddress = new System.Windows.Forms.TextBox();
             this.TextBox_PGName = new System.Windows.Forms.TextBox();
+            this.ErrorProvider_GetPGDetailsForm = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_GetPGDetailsForm)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_Save
@@ -53,6 +57,7 @@
             this.Button_Save.TabIndex = 71;
             this.Button_Save.Text = "SAVE";
             this.Button_Save.UseVisualStyleBackColor = false;
+            this.Button_Save.Click += new System.EventHandler(this.Button_Save_Click);
             // 
             // Label_PGDetailsTitle
             // 
@@ -125,6 +130,12 @@
             this.TextBox_PGName.Size = new System.Drawing.Size(171, 24);
             this.TextBox_PGName.TabIndex = 73;
             // 
+            // ErrorProvider_GetPGDetailsForm
+            // 
+            this.ErrorProvider_GetPGDetailsForm.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.ErrorProvider_GetPGDetailsForm.ContainerControl = this;
+            this.ErrorProvider_GetPGDetailsForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider_GetPGDetailsForm.Icon")));
+            // 
             // GetPGDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +156,7 @@
             this.MinimizeBox = false;
             this.Name = "GetPGDetails";
             this.Text = "GetPGDetails";
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_GetPGDetailsForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +172,6 @@
         private System.Windows.Forms.Label Label_PGAddress;
         private System.Windows.Forms.TextBox TextBox_PGAddress;
         private System.Windows.Forms.TextBox TextBox_PGName;
+        private System.Windows.Forms.ErrorProvider ErrorProvider_GetPGDetailsForm;
     }
 }

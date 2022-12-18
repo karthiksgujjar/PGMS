@@ -50,52 +50,31 @@ namespace PG_Management_System
         {
             if (Label_FormProgress4.Enabled == true)
             {
-                //Label_FormProgress4.Image = Properties.Resources.C4Color;
+                Label_FormProgress4.Image = Properties.Resources.C4Color;
                 Label_FormStatusCompleteBar4.BackColor = Color.FromArgb(255, 128, 0);
                 Label_FormProgress5.Enabled = true;
             }
             else if (Label_FormProgress3.Enabled == true)
             {
-                //Label_FormProgress3.Image = Properties.Resources.C3Color;
+                Label_FormProgress3.Image = Properties.Resources.C3Color;
                 Label_FormStatusCompleteBar3.BackColor = Color.FromArgb(255, 128, 0);
                 Label_FormProgress4.Enabled = true;
             }
             else if (Label_FormProgress2.Enabled == true)
             {
-                //Label_FormProgress2.Image = Properties.Resources.C2Color;
+                Label_FormProgress2.Image = Properties.Resources.C2Color;
                 Label_FormStatusCompleteBar2.BackColor = Color.FromArgb(255, 128, 0);
                 Label_FormProgress3.Enabled = true;
                 LoadForm(new GetPGOwnerDetails());
             }
             else
             {
-                //Label_FormProgress1.Image = Properties.Resources.C1Color;
+                Label_FormProgress1.Image = Properties.Resources.C1Color;
                 Label_FormStatusCompleteBar1.BackColor = Color.FromArgb(255, 128, 0);
                 Label_FormProgress2.Enabled = true;
                 Button_Previous.Visible = true;
                 LoadForm(new GetPGDetails());
             }   
-           /*switch(ProgressCount)
-            {
-                case 1: //Label_FormProgress1.Image = Properties.Resources.C1Color;
-                        Label_FormStatusCompleteBar1.BackColor = Color.FromArgb(255, 128, 0);
-                        Label_FormProgress2.Enabled = true;
-                        break;
-                case 2: //Label_FormProgress2.Image = Properties.Resources.C2Color;
-                        Label_FormStatusCompleteBar2.BackColor = Color.FromArgb(255, 128, 0);
-                        Label_FormProgress3.Enabled = true;
-                        break;
-                case 3: //Label_FormProgress3.Image = Properties.Resources.C3Color;
-                        Label_FormStatusCompleteBar3.BackColor = Color.FromArgb(255, 128, 0);
-                        Label_FormProgress4.Enabled = true;
-                        break;  
-                case 4: //Label_FormProgress4.Image = Properties.Resources.C4Color;
-                        Label_FormStatusCompleteBar4.BackColor = Color.FromArgb(255, 128, 0);
-                        Label_FormProgress5.Enabled = true;
-                        break;
-                default: break;
-            }*/
-
         }
 
         private void Button_Previous_Click(object sender, EventArgs e)
