@@ -52,6 +52,7 @@
             this.Button_Home = new System.Windows.Forms.Button();
             this.Button_OverviewPG = new System.Windows.Forms.Button();
             this.Button_AcceptPayment = new System.Windows.Forms.Button();
+            this.Button_Visitors = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_PGMSLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -398,12 +399,29 @@
             this.Button_AcceptPayment.UseVisualStyleBackColor = false;
             this.Button_AcceptPayment.Click += new System.EventHandler(this.Button_AcceptPayment_Click);
             // 
+            // Button_Visitors
+            // 
+            this.Button_Visitors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Visitors.FlatAppearance.BorderSize = 0;
+            this.Button_Visitors.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Button_Visitors.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.Button_Visitors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_Visitors.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Visitors.Location = new System.Drawing.Point(2, 583);
+            this.Button_Visitors.Name = "Button_Visitors";
+            this.Button_Visitors.Size = new System.Drawing.Size(117, 25);
+            this.Button_Visitors.TabIndex = 21;
+            this.Button_Visitors.Text = "Visitors";
+            this.Button_Visitors.UseVisualStyleBackColor = false;
+            this.Button_Visitors.Click += new System.EventHandler(this.Button_Visitors_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1080, 720);
+            this.Controls.Add(this.Button_Visitors);
             this.Controls.Add(this.Button_AcceptPayment);
             this.Controls.Add(this.Button_OverviewPG);
             this.Controls.Add(this.Button_Logout);
@@ -462,5 +480,6 @@
         private System.Windows.Forms.Button Button_Logout;
         private System.Windows.Forms.Button Button_OverviewPG;
         private System.Windows.Forms.Button Button_AcceptPayment;
+        private System.Windows.Forms.Button Button_Visitors;
     }
 }

@@ -58,7 +58,7 @@ namespace PG_Management_System
             
             //when payment is accepted and stored increment the properties.settings.default.receiptno by 1 and save it. -- done
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-            string query = "INSERT INTO fees VALUES(@GuestID,@ReceiptNo,@ModeOfPayment,@Amount);";
+            string query = "INSERT INTO fees VALUES(@GuestID,@ReceiptNo,@ModeOfPayment,@Amount,@DateOfPayment);";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.Parameters.AddWithValue("@GuestID",Properties.Settings.Default.SelectedGuestID);
             cmd.Parameters.AddWithValue("@ReceiptNo", Label_ReceiptNo.Text);
@@ -71,7 +71,7 @@ namespace PG_Management_System
                 cmd.Parameters.AddWithValue("@ModeOfPayment", TextBox_UPI_ID.Text);
             }
             cmd.Parameters.AddWithValue("@Amount", TextBox_GuestPayAmountPerMonth.Text);
-
+            cmd.Parameters.AddWithValue("@DateOfPayment", Label_CurrentDate.Text);
 
             try
             {

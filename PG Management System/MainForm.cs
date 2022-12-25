@@ -299,6 +299,14 @@ namespace PG_Management_System
             Properties.Settings.Default.MainFormRemoveGuest = true;
             LoadForm(new AdmissionForm());
         }
+        
+        private void Button_Visitors_Click(object sender, EventArgs e)
+        {
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_Visitors.BackColor = Color.White;
+            VisitorsForm.visitorsFormInstance.Close();
+            LoadForm(new VisitorsForm());
+        }
 
         private void Button_Logout_Click(object sender, EventArgs e)
         {

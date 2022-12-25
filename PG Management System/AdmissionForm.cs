@@ -94,7 +94,6 @@ namespace PG_Management_System
             }
 
             ComboBox_Buildings.Text = "-- Select Building --";
-            ComboBox_Buildings.Visible = true;
         }
         
         private void PictureBox_GuestImage_Click(object sender, EventArgs e)

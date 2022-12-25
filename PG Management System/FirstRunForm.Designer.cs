@@ -34,12 +34,8 @@
             this.Button_FormClose = new System.Windows.Forms.Button();
             this.Label_FormStatusCompleteBar1 = new System.Windows.Forms.Label();
             this.Label_FormStatusCompleteBar2 = new System.Windows.Forms.Label();
-            this.Label_FormStatusCompleteBar3 = new System.Windows.Forms.Label();
-            this.Label_FormStatusCompleteBar4 = new System.Windows.Forms.Label();
             this.Button_Next = new System.Windows.Forms.Button();
             this.Button_Previous = new System.Windows.Forms.Button();
-            this.Label_FormProgress5 = new System.Windows.Forms.Label();
-            this.Label_FormProgress4 = new System.Windows.Forms.Label();
             this.Label_FormProgress3 = new System.Windows.Forms.Label();
             this.Label_FormProgress2 = new System.Windows.Forms.Label();
             this.Label_FormProgress1 = new System.Windows.Forms.Label();
@@ -94,7 +90,7 @@
             // Label_FormStatusCompleteBar1
             // 
             this.Label_FormStatusCompleteBar1.BackColor = System.Drawing.Color.LightGray;
-            this.Label_FormStatusCompleteBar1.Location = new System.Drawing.Point(66, 50);
+            this.Label_FormStatusCompleteBar1.Location = new System.Drawing.Point(139, 50);
             this.Label_FormStatusCompleteBar1.Name = "Label_FormStatusCompleteBar1";
             this.Label_FormStatusCompleteBar1.Size = new System.Drawing.Size(50, 3);
             this.Label_FormStatusCompleteBar1.TabIndex = 32;
@@ -102,26 +98,10 @@
             // Label_FormStatusCompleteBar2
             // 
             this.Label_FormStatusCompleteBar2.BackColor = System.Drawing.Color.LightGray;
-            this.Label_FormStatusCompleteBar2.Location = new System.Drawing.Point(132, 50);
+            this.Label_FormStatusCompleteBar2.Location = new System.Drawing.Point(205, 50);
             this.Label_FormStatusCompleteBar2.Name = "Label_FormStatusCompleteBar2";
             this.Label_FormStatusCompleteBar2.Size = new System.Drawing.Size(50, 3);
             this.Label_FormStatusCompleteBar2.TabIndex = 34;
-            // 
-            // Label_FormStatusCompleteBar3
-            // 
-            this.Label_FormStatusCompleteBar3.BackColor = System.Drawing.Color.LightGray;
-            this.Label_FormStatusCompleteBar3.Location = new System.Drawing.Point(198, 50);
-            this.Label_FormStatusCompleteBar3.Name = "Label_FormStatusCompleteBar3";
-            this.Label_FormStatusCompleteBar3.Size = new System.Drawing.Size(50, 3);
-            this.Label_FormStatusCompleteBar3.TabIndex = 36;
-            // 
-            // Label_FormStatusCompleteBar4
-            // 
-            this.Label_FormStatusCompleteBar4.BackColor = System.Drawing.Color.LightGray;
-            this.Label_FormStatusCompleteBar4.Location = new System.Drawing.Point(264, 50);
-            this.Label_FormStatusCompleteBar4.Name = "Label_FormStatusCompleteBar4";
-            this.Label_FormStatusCompleteBar4.Size = new System.Drawing.Size(50, 3);
-            this.Label_FormStatusCompleteBar4.TabIndex = 38;
             // 
             // Button_Next
             // 
@@ -160,29 +140,11 @@
             this.Button_Previous.Visible = false;
             this.Button_Previous.Click += new System.EventHandler(this.Button_Previous_Click);
             // 
-            // Label_FormProgress5
-            // 
-            this.Label_FormProgress5.Enabled = false;
-            this.Label_FormProgress5.Image = global::PG_Management_System.Properties.Resources.C5;
-            this.Label_FormProgress5.Location = new System.Drawing.Point(300, 35);
-            this.Label_FormProgress5.Name = "Label_FormProgress5";
-            this.Label_FormProgress5.Size = new System.Drawing.Size(32, 32);
-            this.Label_FormProgress5.TabIndex = 39;
-            // 
-            // Label_FormProgress4
-            // 
-            this.Label_FormProgress4.Enabled = false;
-            this.Label_FormProgress4.Image = global::PG_Management_System.Properties.Resources.C4;
-            this.Label_FormProgress4.Location = new System.Drawing.Point(236, 35);
-            this.Label_FormProgress4.Name = "Label_FormProgress4";
-            this.Label_FormProgress4.Size = new System.Drawing.Size(32, 32);
-            this.Label_FormProgress4.TabIndex = 37;
-            // 
             // Label_FormProgress3
             // 
             this.Label_FormProgress3.Enabled = false;
             this.Label_FormProgress3.Image = global::PG_Management_System.Properties.Resources.C3;
-            this.Label_FormProgress3.Location = new System.Drawing.Point(172, 35);
+            this.Label_FormProgress3.Location = new System.Drawing.Point(245, 35);
             this.Label_FormProgress3.Name = "Label_FormProgress3";
             this.Label_FormProgress3.Size = new System.Drawing.Size(32, 32);
             this.Label_FormProgress3.TabIndex = 35;
@@ -191,7 +153,7 @@
             // 
             this.Label_FormProgress2.Enabled = false;
             this.Label_FormProgress2.Image = global::PG_Management_System.Properties.Resources.C2;
-            this.Label_FormProgress2.Location = new System.Drawing.Point(108, 35);
+            this.Label_FormProgress2.Location = new System.Drawing.Point(181, 35);
             this.Label_FormProgress2.Name = "Label_FormProgress2";
             this.Label_FormProgress2.Size = new System.Drawing.Size(32, 32);
             this.Label_FormProgress2.TabIndex = 33;
@@ -200,7 +162,7 @@
             // 
             this.Label_FormProgress1.Enabled = false;
             this.Label_FormProgress1.Image = global::PG_Management_System.Properties.Resources.C1;
-            this.Label_FormProgress1.Location = new System.Drawing.Point(44, 35);
+            this.Label_FormProgress1.Location = new System.Drawing.Point(117, 35);
             this.Label_FormProgress1.Name = "Label_FormProgress1";
             this.Label_FormProgress1.Size = new System.Drawing.Size(32, 32);
             this.Label_FormProgress1.TabIndex = 31;
@@ -217,7 +179,7 @@
             this.Label_FormTitle.Name = "Label_FormTitle";
             this.Label_FormTitle.Size = new System.Drawing.Size(394, 20);
             this.Label_FormTitle.TabIndex = 28;
-            this.Label_FormTitle.Text = "PGMS - Add PG Details";
+            this.Label_FormTitle.Text = "PGMS";
             this.Label_FormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FirstRunForm
@@ -229,11 +191,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.Button_Previous);
             this.Controls.Add(this.Button_Next);
-            this.Controls.Add(this.Label_FormProgress5);
-            this.Controls.Add(this.Label_FormProgress4);
-            this.Controls.Add(this.Label_FormStatusCompleteBar4);
             this.Controls.Add(this.Label_FormProgress3);
-            this.Controls.Add(this.Label_FormStatusCompleteBar3);
             this.Controls.Add(this.Label_FormProgress2);
             this.Controls.Add(this.Label_FormStatusCompleteBar2);
             this.Controls.Add(this.Label_FormProgress1);
@@ -264,10 +222,6 @@
         private System.Windows.Forms.Label Label_FormProgress2;
         private System.Windows.Forms.Label Label_FormStatusCompleteBar2;
         private System.Windows.Forms.Label Label_FormProgress3;
-        private System.Windows.Forms.Label Label_FormStatusCompleteBar3;
-        private System.Windows.Forms.Label Label_FormProgress4;
-        private System.Windows.Forms.Label Label_FormStatusCompleteBar4;
-        private System.Windows.Forms.Label Label_FormProgress5;
         private System.Windows.Forms.Button Button_Next;
         private System.Windows.Forms.Button Button_Previous;
     }

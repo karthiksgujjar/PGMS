@@ -181,6 +181,12 @@
     <Compile Include="RoomsForm.Designer.cs">
       <DependentUpon>RoomsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VisitorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisitorsForm.Designer.cs">
+      <DependentUpon>VisitorsForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AcceptPaymentForm.resx">
       <DependentUpon>AcceptPaymentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoomsForm.resx">
       <DependentUpon>RoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitorsForm.resx">
+      <DependentUpon>VisitorsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

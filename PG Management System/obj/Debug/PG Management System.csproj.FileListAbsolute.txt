@@ -46,3 +46,4 @@ E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.Firs
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GetDBDetailsForm.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GetPGDetails.resources
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.GetPGOwnerDetails.resources
+E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.VisitorsForm.resources

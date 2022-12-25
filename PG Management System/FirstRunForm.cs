@@ -48,19 +48,7 @@ namespace PG_Management_System
 
         private void Button_Next_Click(object sender, EventArgs e)
         {
-            if (Label_FormProgress4.Enabled == true)
-            {
-                Label_FormProgress4.Image = Properties.Resources.C4Color;
-                Label_FormStatusCompleteBar4.BackColor = Color.FromArgb(255, 128, 0);
-                Label_FormProgress5.Enabled = true;
-            }
-            else if (Label_FormProgress3.Enabled == true)
-            {
-                Label_FormProgress3.Image = Properties.Resources.C3Color;
-                Label_FormStatusCompleteBar3.BackColor = Color.FromArgb(255, 128, 0);
-                Label_FormProgress4.Enabled = true;
-            }
-            else if (Label_FormProgress2.Enabled == true)
+            if (Label_FormProgress2.Enabled == true)
             {
                 Label_FormProgress2.Image = Properties.Resources.C2Color;
                 Label_FormStatusCompleteBar2.BackColor = Color.FromArgb(255, 128, 0);
@@ -79,20 +67,7 @@ namespace PG_Management_System
 
         private void Button_Previous_Click(object sender, EventArgs e)
         {
-            if (Label_FormProgress5.Enabled == true)
-            {
-                Label_FormProgress4.Image = Properties.Resources.C4;
-                Label_FormStatusCompleteBar4.BackColor = Color.LightGray;
-                Label_FormProgress5.Enabled = false;
-            }
-            else if (Label_FormProgress4.Enabled == true)
-            {
-                Label_FormProgress3.Image = Properties.Resources.C3;
-                Label_FormStatusCompleteBar3.BackColor = Color.LightGray;
-                Label_FormProgress4.Enabled = false;
-                LoadForm(new GetPGOwnerDetails());
-            }
-            else if (Label_FormProgress3.Enabled == true)
+            if (Label_FormProgress3.Enabled == true)
             {
                 Label_FormProgress2.Image = Properties.Resources.C2;
                 Label_FormStatusCompleteBar2.BackColor = Color.LightGray;

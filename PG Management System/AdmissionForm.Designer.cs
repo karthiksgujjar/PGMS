@@ -154,11 +154,11 @@
             this.Label_GuestName.AutoSize = true;
             this.Label_GuestName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_GuestName.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_GuestName.Location = new System.Drawing.Point(92, 132);
+            this.Label_GuestName.Location = new System.Drawing.Point(139, 129);
             this.Label_GuestName.Name = "Label_GuestName";
-            this.Label_GuestName.Size = new System.Drawing.Size(132, 22);
+            this.Label_GuestName.Size = new System.Drawing.Size(68, 22);
             this.Label_GuestName.TabIndex = 11;
-            this.Label_GuestName.Text = "Guest\'s Name :";
+            this.Label_GuestName.Text = "Name :";
             this.Label_GuestName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Label_GuestMobileNo
