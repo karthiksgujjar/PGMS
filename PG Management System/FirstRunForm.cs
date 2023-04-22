@@ -12,7 +12,6 @@ namespace PG_Management_System
 {
     public partial class FirstRunForm : Form
     {
-        int ProgressCount = 0;
 
         public FirstRunForm()
         {
@@ -83,7 +82,5 @@ namespace PG_Management_System
                 LoadForm(new GetDBDetailsForm());
             }
         }
-
-
     }
 }

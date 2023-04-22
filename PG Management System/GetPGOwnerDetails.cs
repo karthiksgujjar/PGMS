@@ -58,7 +58,10 @@ namespace PG_Management_System
 
                     if (res == 1)
                     {
-                        MessageBox.Show("Successfully Saved Owner Details!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Properties.Settings.Default.FirstRunStatus = false;
+                        Properties.Settings.Default.Save();
+
+                        MessageBox.Show("Successfully Saved Owner Details!!\nNow Restart the application.", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     con.Close();
                 }

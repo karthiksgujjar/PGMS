@@ -48,17 +48,18 @@
             // TextBox_ServerName
             // 
             this.TextBox_ServerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_ServerName.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_ServerName.Location = new System.Drawing.Point(194, 85);
+            this.TextBox_ServerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_ServerName.Location = new System.Drawing.Point(169, 79);
             this.TextBox_ServerName.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_ServerName.Name = "TextBox_ServerName";
-            this.TextBox_ServerName.Size = new System.Drawing.Size(171, 24);
+            this.TextBox_ServerName.Size = new System.Drawing.Size(171, 25);
             this.TextBox_ServerName.TabIndex = 53;
             // 
             // Label_ServerNameUnderbar
             // 
             this.Label_ServerNameUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_ServerNameUnderbar.Location = new System.Drawing.Point(194, 112);
+            this.Label_ServerNameUnderbar.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ServerNameUnderbar.Location = new System.Drawing.Point(169, 106);
             this.Label_ServerNameUnderbar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_ServerNameUnderbar.Name = "Label_ServerNameUnderbar";
             this.Label_ServerNameUnderbar.Size = new System.Drawing.Size(171, 1);
@@ -68,10 +69,10 @@
             // Label_ServerName
             // 
             this.Label_ServerName.AutoSize = true;
-            this.Label_ServerName.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_ServerName.Location = new System.Drawing.Point(12, 79);
+            this.Label_ServerName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ServerName.Location = new System.Drawing.Point(16, 79);
             this.Label_ServerName.Name = "Label_ServerName";
-            this.Label_ServerName.Size = new System.Drawing.Size(175, 32);
+            this.Label_ServerName.Size = new System.Drawing.Size(146, 25);
             this.Label_ServerName.TabIndex = 60;
             this.Label_ServerName.Text = "Server Name :";
             // 
@@ -83,10 +84,10 @@
             this.Button_Save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Save.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Save.Location = new System.Drawing.Point(143, 288);
+            this.Button_Save.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Save.Location = new System.Drawing.Point(152, 288);
             this.Button_Save.Name = "Button_Save";
-            this.Button_Save.Size = new System.Drawing.Size(113, 30);
+            this.Button_Save.Size = new System.Drawing.Size(95, 31);
             this.Button_Save.TabIndex = 64;
             this.Button_Save.Text = "SAVE";
             this.Button_Save.UseVisualStyleBackColor = false;
@@ -95,57 +96,58 @@
             // Label_DatabaseDetailsTitle
             // 
             this.Label_DatabaseDetailsTitle.AutoSize = true;
-            this.Label_DatabaseDetailsTitle.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_DatabaseDetailsTitle.Location = new System.Drawing.Point(44, 18);
+            this.Label_DatabaseDetailsTitle.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_DatabaseDetailsTitle.Location = new System.Drawing.Point(71, 18);
             this.Label_DatabaseDetailsTitle.Name = "Label_DatabaseDetailsTitle";
-            this.Label_DatabaseDetailsTitle.Size = new System.Drawing.Size(310, 32);
+            this.Label_DatabaseDetailsTitle.Size = new System.Drawing.Size(257, 25);
             this.Label_DatabaseDetailsTitle.TabIndex = 65;
             this.Label_DatabaseDetailsTitle.Text = "- Enter Database Details -";
             // 
             // TextBox_UserName
             // 
             this.TextBox_UserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_UserName.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_UserName.Location = new System.Drawing.Point(194, 154);
+            this.TextBox_UserName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_UserName.Location = new System.Drawing.Point(169, 148);
             this.TextBox_UserName.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_UserName.Name = "TextBox_UserName";
-            this.TextBox_UserName.Size = new System.Drawing.Size(171, 24);
+            this.TextBox_UserName.Size = new System.Drawing.Size(171, 25);
             this.TextBox_UserName.TabIndex = 54;
             // 
             // TextBox_Password
             // 
             this.TextBox_Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_Password.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Password.Location = new System.Drawing.Point(194, 223);
+            this.TextBox_Password.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_Password.Location = new System.Drawing.Point(169, 217);
             this.TextBox_Password.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_Password.Name = "TextBox_Password";
-            this.TextBox_Password.Size = new System.Drawing.Size(171, 24);
+            this.TextBox_Password.Size = new System.Drawing.Size(171, 25);
             this.TextBox_Password.TabIndex = 55;
             // 
             // Label_Password
             // 
             this.Label_Password.AutoSize = true;
-            this.Label_Password.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Password.Location = new System.Drawing.Point(56, 217);
+            this.Label_Password.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Password.Location = new System.Drawing.Point(45, 217);
             this.Label_Password.Name = "Label_Password";
-            this.Label_Password.Size = new System.Drawing.Size(131, 32);
+            this.Label_Password.Size = new System.Drawing.Size(117, 25);
             this.Label_Password.TabIndex = 58;
             this.Label_Password.Text = "Password :";
             // 
             // Label_UserName
             // 
             this.Label_UserName.AutoSize = true;
-            this.Label_UserName.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_UserName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_UserName.Location = new System.Drawing.Point(34, 148);
             this.Label_UserName.Name = "Label_UserName";
-            this.Label_UserName.Size = new System.Drawing.Size(153, 32);
+            this.Label_UserName.Size = new System.Drawing.Size(128, 25);
             this.Label_UserName.TabIndex = 59;
             this.Label_UserName.Text = "User Name :";
             // 
             // Label_UserNameUnderbar
             // 
             this.Label_UserNameUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_UserNameUnderbar.Location = new System.Drawing.Point(194, 181);
+            this.Label_UserNameUnderbar.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_UserNameUnderbar.Location = new System.Drawing.Point(169, 175);
             this.Label_UserNameUnderbar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_UserNameUnderbar.Name = "Label_UserNameUnderbar";
             this.Label_UserNameUnderbar.Size = new System.Drawing.Size(171, 1);
@@ -155,7 +157,8 @@
             // Label_PasswordUnderbar
             // 
             this.Label_PasswordUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_PasswordUnderbar.Location = new System.Drawing.Point(194, 250);
+            this.Label_PasswordUnderbar.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PasswordUnderbar.Location = new System.Drawing.Point(169, 244);
             this.Label_PasswordUnderbar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_PasswordUnderbar.Name = "Label_PasswordUnderbar";
             this.Label_PasswordUnderbar.Size = new System.Drawing.Size(171, 1);

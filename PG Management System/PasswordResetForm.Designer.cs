@@ -88,22 +88,22 @@
             this.TextBox_MailID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBox_MailID.BackColor = System.Drawing.Color.White;
             this.TextBox_MailID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_MailID.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_MailID.Enabled = false;
+            this.TextBox_MailID.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_MailID.Location = new System.Drawing.Point(319, 38);
             this.TextBox_MailID.Name = "TextBox_MailID";
             this.TextBox_MailID.Size = new System.Drawing.Size(238, 16);
             this.TextBox_MailID.TabIndex = 0;
-            this.TextBox_MailID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_MailID_KeyPress);
             // 
             // Label_OTP
             // 
             this.Label_OTP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_OTP.BackColor = System.Drawing.Color.Transparent;
             this.Label_OTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_OTP.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_OTP.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_OTP.Image = global::PG_Management_System.Properties.Resources.OTP_Image;
             this.Label_OTP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_OTP.Location = new System.Drawing.Point(274, 97);
+            this.Label_OTP.Location = new System.Drawing.Point(281, 97);
             this.Label_OTP.Name = "Label_OTP";
             this.Label_OTP.Size = new System.Drawing.Size(104, 25);
             this.Label_OTP.TabIndex = 18;
@@ -115,8 +115,8 @@
             this.TextBox_OTP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBox_OTP.BackColor = System.Drawing.Color.White;
             this.TextBox_OTP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_OTP.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_OTP.Location = new System.Drawing.Point(381, 104);
+            this.TextBox_OTP.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_OTP.Location = new System.Drawing.Point(391, 104);
             this.TextBox_OTP.Name = "TextBox_OTP";
             this.TextBox_OTP.Size = new System.Drawing.Size(147, 16);
             this.TextBox_OTP.TabIndex = 1;
@@ -125,7 +125,7 @@
             // 
             this.Label_OTPUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_OTPUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_OTPUnderbar.Location = new System.Drawing.Point(381, 123);
+            this.Label_OTPUnderbar.Location = new System.Drawing.Point(391, 123);
             this.Label_OTPUnderbar.Name = "Label_OTPUnderbar";
             this.Label_OTPUnderbar.Size = new System.Drawing.Size(147, 1);
             this.Label_OTPUnderbar.TabIndex = 20;
@@ -153,7 +153,7 @@
             this.Label_MailID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_MailID.BackColor = System.Drawing.Color.Transparent;
             this.Label_MailID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_MailID.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_MailID.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_MailID.Image = global::PG_Management_System.Properties.Resources.Mail_Image;
             this.Label_MailID.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Label_MailID.Location = new System.Drawing.Point(202, 35);
@@ -194,13 +194,14 @@
             // Label_NewPWD
             // 
             this.Label_NewPWD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_NewPWD.AutoSize = true;
             this.Label_NewPWD.BackColor = System.Drawing.Color.Transparent;
             this.Label_NewPWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_NewPWD.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_NewPWD.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_NewPWD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_NewPWD.Location = new System.Drawing.Point(233, 138);
+            this.Label_NewPWD.Location = new System.Drawing.Point(238, 138);
             this.Label_NewPWD.Name = "Label_NewPWD";
-            this.Label_NewPWD.Size = new System.Drawing.Size(145, 25);
+            this.Label_NewPWD.Size = new System.Drawing.Size(147, 22);
             this.Label_NewPWD.TabIndex = 18;
             this.Label_NewPWD.Text = "New Password :";
             this.Label_NewPWD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -210,8 +211,8 @@
             this.TextBox_NewPWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBox_NewPWD.BackColor = System.Drawing.Color.White;
             this.TextBox_NewPWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_NewPWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_NewPWD.Location = new System.Drawing.Point(381, 145);
+            this.TextBox_NewPWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_NewPWD.Location = new System.Drawing.Point(391, 145);
             this.TextBox_NewPWD.Name = "TextBox_NewPWD";
             this.TextBox_NewPWD.Size = new System.Drawing.Size(147, 16);
             this.TextBox_NewPWD.TabIndex = 2;
@@ -221,7 +222,7 @@
             // 
             this.Label_NewPWDUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_NewPWDUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_NewPWDUnderbar.Location = new System.Drawing.Point(381, 164);
+            this.Label_NewPWDUnderbar.Location = new System.Drawing.Point(391, 164);
             this.Label_NewPWDUnderbar.Name = "Label_NewPWDUnderbar";
             this.Label_NewPWDUnderbar.Size = new System.Drawing.Size(147, 1);
             this.Label_NewPWDUnderbar.TabIndex = 20;
@@ -230,13 +231,14 @@
             // Label_ConfirmPWD
             // 
             this.Label_ConfirmPWD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Label_ConfirmPWD.AutoSize = true;
             this.Label_ConfirmPWD.BackColor = System.Drawing.Color.Transparent;
             this.Label_ConfirmPWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_ConfirmPWD.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ConfirmPWD.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_ConfirmPWD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Label_ConfirmPWD.Location = new System.Drawing.Point(204, 179);
+            this.Label_ConfirmPWD.Location = new System.Drawing.Point(205, 179);
             this.Label_ConfirmPWD.Name = "Label_ConfirmPWD";
-            this.Label_ConfirmPWD.Size = new System.Drawing.Size(174, 25);
+            this.Label_ConfirmPWD.Size = new System.Drawing.Size(180, 22);
             this.Label_ConfirmPWD.TabIndex = 18;
             this.Label_ConfirmPWD.Text = "Confirm Password :";
             this.Label_ConfirmPWD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -246,8 +248,8 @@
             this.TextBox_ConfirmPWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBox_ConfirmPWD.BackColor = System.Drawing.Color.White;
             this.TextBox_ConfirmPWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_ConfirmPWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_ConfirmPWD.Location = new System.Drawing.Point(381, 186);
+            this.TextBox_ConfirmPWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_ConfirmPWD.Location = new System.Drawing.Point(391, 186);
             this.TextBox_ConfirmPWD.Name = "TextBox_ConfirmPWD";
             this.TextBox_ConfirmPWD.Size = new System.Drawing.Size(147, 16);
             this.TextBox_ConfirmPWD.TabIndex = 3;
@@ -256,7 +258,7 @@
             // 
             this.Label_ConfirmPWDUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_ConfirmPWDUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_ConfirmPWDUnderbar.Location = new System.Drawing.Point(381, 205);
+            this.Label_ConfirmPWDUnderbar.Location = new System.Drawing.Point(391, 205);
             this.Label_ConfirmPWDUnderbar.Name = "Label_ConfirmPWDUnderbar";
             this.Label_ConfirmPWDUnderbar.Size = new System.Drawing.Size(147, 1);
             this.Label_ConfirmPWDUnderbar.TabIndex = 20;
@@ -271,10 +273,10 @@
             this.Button_ResetPWD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_ResetPWD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_ResetPWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_ResetPWD.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_ResetPWD.Location = new System.Drawing.Point(453, 227);
+            this.Button_ResetPWD.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_ResetPWD.Location = new System.Drawing.Point(451, 227);
             this.Button_ResetPWD.Name = "Button_ResetPWD";
-            this.Button_ResetPWD.Size = new System.Drawing.Size(75, 30);
+            this.Button_ResetPWD.Size = new System.Drawing.Size(77, 30);
             this.Button_ResetPWD.TabIndex = 4;
             this.Button_ResetPWD.Text = "RESET";
             this.Button_ResetPWD.UseVisualStyleBackColor = false;
@@ -323,8 +325,10 @@
             this.Controls.Add(this.Button_FormClose);
             this.Controls.Add(this.Label_FormTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PasswordResetForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.PasswordResetForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_PGMS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_PasswordResetForm)).EndInit();
             this.ResumeLayout(false);

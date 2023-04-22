@@ -57,7 +57,7 @@
             this.ComboBox_UN.BackColor = System.Drawing.Color.White;
             this.ComboBox_UN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_UN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_UN.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_UN.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_UN.FormattingEnabled = true;
             this.ComboBox_UN.Location = new System.Drawing.Point(161, 292);
             this.ComboBox_UN.MaxDropDownItems = 3;
@@ -71,10 +71,10 @@
             this.TextBox_PWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBox_PWD.BackColor = System.Drawing.Color.White;
             this.TextBox_PWD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_PWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_PWD.Location = new System.Drawing.Point(161, 341);
+            this.TextBox_PWD.Font = new System.Drawing.Font("Cambria", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_PWD.Location = new System.Drawing.Point(161, 342);
             this.TextBox_PWD.Name = "TextBox_PWD";
-            this.TextBox_PWD.Size = new System.Drawing.Size(119, 16);
+            this.TextBox_PWD.Size = new System.Drawing.Size(119, 15);
             this.TextBox_PWD.TabIndex = 1;
             this.TextBox_PWD.UseSystemPasswordChar = true;
             // 
@@ -121,7 +121,7 @@
             this.LinkLabel_ForgotPWD.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.LinkLabel_ForgotPWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LinkLabel_ForgotPWD.BackColor = System.Drawing.Color.Transparent;
-            this.LinkLabel_ForgotPWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabel_ForgotPWD.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LinkLabel_ForgotPWD.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.LinkLabel_ForgotPWD.LinkColor = System.Drawing.Color.Navy;
             this.LinkLabel_ForgotPWD.Location = new System.Drawing.Point(198, 368);
@@ -137,15 +137,16 @@
             // CheckBox_RememberMe
             // 
             this.CheckBox_RememberMe.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CheckBox_RememberMe.AutoSize = true;
             this.CheckBox_RememberMe.BackColor = System.Drawing.Color.Transparent;
             this.CheckBox_RememberMe.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CheckBox_RememberMe.FlatAppearance.BorderSize = 0;
             this.CheckBox_RememberMe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CheckBox_RememberMe.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CheckBox_RememberMe.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckBox_RememberMe.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CheckBox_RememberMe.Location = new System.Drawing.Point(34, 368);
             this.CheckBox_RememberMe.Name = "CheckBox_RememberMe";
-            this.CheckBox_RememberMe.Size = new System.Drawing.Size(100, 19);
+            this.CheckBox_RememberMe.Size = new System.Drawing.Size(103, 19);
             this.CheckBox_RememberMe.TabIndex = 2;
             this.CheckBox_RememberMe.TabStop = false;
             this.CheckBox_RememberMe.Text = "Remember Me";
@@ -232,10 +233,10 @@
             this.Button_LogIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_LogIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_LogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_LogIn.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_LogIn.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_LogIn.Image = global::PG_Management_System.Properties.Resources.Login;
             this.Button_LogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Button_LogIn.Location = new System.Drawing.Point(106, 424);
+            this.Button_LogIn.Location = new System.Drawing.Point(112, 424);
             this.Button_LogIn.Name = "Button_LogIn";
             this.Button_LogIn.Size = new System.Drawing.Size(116, 30);
             this.Button_LogIn.TabIndex = 2;
@@ -250,7 +251,7 @@
             this.Label_PWD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_PWD.BackColor = System.Drawing.Color.Transparent;
             this.Label_PWD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_PWD.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PWD.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_PWD.Image = global::PG_Management_System.Properties.Resources.Password_Image;
             this.Label_PWD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Label_PWD.Location = new System.Drawing.Point(16, 339);
@@ -265,7 +266,7 @@
             this.Label_UN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_UN.BackColor = System.Drawing.Color.Transparent;
             this.Label_UN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_UN.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_UN.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_UN.Image = global::PG_Management_System.Properties.Resources.Username_Image;
             this.Label_UN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Label_UN.Location = new System.Drawing.Point(17, 291);
@@ -297,6 +298,7 @@
             this.Controls.Add(this.Label_PWD);
             this.Controls.Add(this.Label_UN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.LoginForm_Load);

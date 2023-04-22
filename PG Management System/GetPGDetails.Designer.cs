@@ -50,10 +50,10 @@
             this.Button_Save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Save.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Save.Location = new System.Drawing.Point(139, 253);
+            this.Button_Save.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Save.Location = new System.Drawing.Point(143, 244);
             this.Button_Save.Name = "Button_Save";
-            this.Button_Save.Size = new System.Drawing.Size(113, 30);
+            this.Button_Save.Size = new System.Drawing.Size(99, 31);
             this.Button_Save.TabIndex = 71;
             this.Button_Save.Text = "SAVE";
             this.Button_Save.UseVisualStyleBackColor = false;
@@ -62,17 +62,18 @@
             // Label_PGDetailsTitle
             // 
             this.Label_PGDetailsTitle.AutoSize = true;
-            this.Label_PGDetailsTitle.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGDetailsTitle.Location = new System.Drawing.Point(76, 18);
+            this.Label_PGDetailsTitle.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PGDetailsTitle.Location = new System.Drawing.Point(95, 18);
             this.Label_PGDetailsTitle.Name = "Label_PGDetailsTitle";
-            this.Label_PGDetailsTitle.Size = new System.Drawing.Size(239, 32);
+            this.Label_PGDetailsTitle.Size = new System.Drawing.Size(195, 25);
             this.Label_PGDetailsTitle.TabIndex = 72;
             this.Label_PGDetailsTitle.Text = "- Enter PG Details -";
             // 
             // Label_PGAddressUnderbar
             // 
             this.Label_PGAddressUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_PGAddressUnderbar.Location = new System.Drawing.Point(176, 212);
+            this.Label_PGAddressUnderbar.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PGAddressUnderbar.Location = new System.Drawing.Point(151, 208);
             this.Label_PGAddressUnderbar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_PGAddressUnderbar.Name = "Label_PGAddressUnderbar";
             this.Label_PGAddressUnderbar.Size = new System.Drawing.Size(171, 1);
@@ -82,7 +83,8 @@
             // Label_PGNameUnderbar
             // 
             this.Label_PGNameUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_PGNameUnderbar.Location = new System.Drawing.Point(176, 114);
+            this.Label_PGNameUnderbar.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PGNameUnderbar.Location = new System.Drawing.Point(151, 110);
             this.Label_PGNameUnderbar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label_PGNameUnderbar.Name = "Label_PGNameUnderbar";
             this.Label_PGNameUnderbar.Size = new System.Drawing.Size(171, 1);
@@ -92,28 +94,28 @@
             // Label_PGName
             // 
             this.Label_PGName.AutoSize = true;
-            this.Label_PGName.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PGName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_PGName.Location = new System.Drawing.Point(66, 83);
             this.Label_PGName.Name = "Label_PGName";
-            this.Label_PGName.Size = new System.Drawing.Size(93, 32);
+            this.Label_PGName.Size = new System.Drawing.Size(78, 25);
             this.Label_PGName.TabIndex = 76;
             this.Label_PGName.Text = "Name :";
             // 
             // Label_PGAddress
             // 
             this.Label_PGAddress.AutoSize = true;
-            this.Label_PGAddress.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGAddress.Location = new System.Drawing.Point(38, 150);
+            this.Label_PGAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PGAddress.Location = new System.Drawing.Point(40, 146);
             this.Label_PGAddress.Name = "Label_PGAddress";
-            this.Label_PGAddress.Size = new System.Drawing.Size(121, 32);
+            this.Label_PGAddress.Size = new System.Drawing.Size(104, 25);
             this.Label_PGAddress.TabIndex = 75;
             this.Label_PGAddress.Text = "Address :";
             // 
             // TextBox_PGAddress
             // 
             this.TextBox_PGAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_PGAddress.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_PGAddress.Location = new System.Drawing.Point(176, 150);
+            this.TextBox_PGAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_PGAddress.Location = new System.Drawing.Point(151, 146);
             this.TextBox_PGAddress.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_PGAddress.Multiline = true;
             this.TextBox_PGAddress.Name = "TextBox_PGAddress";
@@ -123,11 +125,11 @@
             // TextBox_PGName
             // 
             this.TextBox_PGName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_PGName.Font = new System.Drawing.Font("Comic Sans MS", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_PGName.Location = new System.Drawing.Point(176, 87);
+            this.TextBox_PGName.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_PGName.Location = new System.Drawing.Point(151, 83);
             this.TextBox_PGName.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_PGName.Name = "TextBox_PGName";
-            this.TextBox_PGName.Size = new System.Drawing.Size(171, 24);
+            this.TextBox_PGName.Size = new System.Drawing.Size(171, 25);
             this.TextBox_PGName.TabIndex = 73;
             // 
             // ErrorProvider_GetPGDetailsForm

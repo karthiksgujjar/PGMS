@@ -112,7 +112,7 @@
             this.Button_Next.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Next.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Next.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Next.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Next.Location = new System.Drawing.Point(219, 504);
             this.Button_Next.Name = "Button_Next";
             this.Button_Next.Size = new System.Drawing.Size(113, 30);
@@ -130,7 +130,7 @@
             this.Button_Previous.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Previous.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Previous.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Previous.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Previous.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Previous.Location = new System.Drawing.Point(47, 504);
             this.Button_Previous.Name = "Button_Previous";
             this.Button_Previous.Size = new System.Drawing.Size(113, 30);
@@ -201,6 +201,7 @@
             this.Controls.Add(this.Panel_DetailsCollector);
             this.Controls.Add(this.Label_FormStatusCompleteBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FirstRunForm";

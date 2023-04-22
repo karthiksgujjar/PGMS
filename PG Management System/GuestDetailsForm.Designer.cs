@@ -36,7 +36,7 @@
             // 
             this.ComboBox_Buildings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Buildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Buildings.FormattingEnabled = true;
             this.ComboBox_Buildings.Location = new System.Drawing.Point(12, 12);
             this.ComboBox_Buildings.Name = "ComboBox_Buildings";

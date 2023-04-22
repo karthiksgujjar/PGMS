@@ -9,6 +9,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace PG_Management_System
 {
@@ -54,7 +55,9 @@ namespace PG_Management_System
 
                                "CREATE TABLE guests(id VARCHAR(21) NOT NULL, room_id VARCHAR(9) NOT NULL, name VARCHAR(100) NOT NULL, dob VARCHAR(10) NOT NULL, mob_no INT(10) NOT NULL, mail_id VARCHAR(100) NOT NULL, aadhaar_no INT(12) NOT NULL, blood_group VARCHAR(3) NOT NULL, parent_guardian_name VARCHAR(100) NOT NULL, emergency_contactno INT(10) NOT NULL, doj VARCHAR(10) NOT NULL, p_address VARCHAR(100) NOT NULL, advance_amount INT(10) NOT NULL, amount_per_month INT(10) NOT NULL, guest_image VARCHAR(400) NOT NULL, PRIMARY KEY(id), FOREIGN KEY(room_id) REFERENCES rooms(id));" +
 
-                               "CREATE TABLE fees( guest_id VARCHAR(21) NOT NULL, receipt_no INT NOT NULL, mode VARCHAR(50) NOT NULL, amount INT NOT NULL, PRIMARY KEY(receipt_no), FOREIGN KEY(guest_id) REFERENCES guests(id));" +
+                               "CREATE TABLE fees( guest_id VARCHAR(21) NOT NULL, receipt_no INT NOT NULL, mode VARCHAR(50) NOT NULL, amount INT NOT NULL, dop VARCHAR(20) NOT NULL, PRIMARY KEY(receipt_no), FOREIGN KEY(guest_id) REFERENCES guests(id));" +
+
+                               "CREATE TABLE visitors(poi VARCHAR(25) NOT NULL,guest_id VARCHAR(255) NOT NULL,name VARCHAR(100) NOT NULL,mob_no VARCHAR(10) NOT NULL,relate VARCHAR(50) NOT NULL,visit_date_time VARCHAR(50) NOT NULL,reason VARCHAR(500) NOT NULL,FOREIGN KEY(guest_id) REFERENCES guests(id));" +
 
                                "INSERT INTO login VALUES ('owner','owner');";
 

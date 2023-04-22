@@ -25,31 +25,10 @@ namespace PG_Management_System
             InitializeComponent();
         }
         
-        private void Button_FormClose_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.GuestFormAddGuestButton = false;
-            this.Close();
-        }
-        
         private void AdmissionForm_Load(object sender, EventArgs e)
         {
             Button_RemoveGuest.Visible = false;
             TextBox_GuestName.Focus();
-
-            if (Properties.Settings.Default.GuestFormAddGuestButton)
-            {
-                this.BackColor = Color.LightGray;
-                TextBox_GuestName.BackColor = Color.LightGray;
-                TextBox_GuestMobileNo.BackColor = Color.LightGray;
-                TextBox_GuestMailID.BackColor = Color.LightGray;
-                TextBox_GuestAadhaarNo.BackColor = Color.LightGray;
-                TextBox_GuestParentGuardianName.BackColor = Color.LightGray;
-                TextBox_GuestEmergencyMobNo.BackColor = Color.LightGray;
-                TextBox_GuestPermanentAddress.BackColor = Color.LightGray;
-                TextBox_GuestAdvanceAmountPaid.BackColor = Color.LightGray;
-                TextBox_GuestPayAmountPerMonth.BackColor = Color.LightGray;
-                Button_FormClose.Visible = true;
-            }
 
             if (Properties.Settings.Default.MainFormRemoveGuest)
             {

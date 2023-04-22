@@ -90,24 +90,6 @@ namespace PG_Management_System
             this.Close();
             LoginForm.loginFormInstance.Show();
         }
-
-        private void TextBox_MailID_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Return)
-            {
-                e.Handled = true;
-                if (TextBox_MailID.Text == "")
-                {
-                    MessageBox.Show("Please enter the e-Mail ID.", "INPUT ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    TextBox_MailID.Focus();
-                }
-                else if (SendMail())
-                {
-                    Label_MailSentSuccessfully.Visible = true;
-                    TextBox_OTP.Focus();
-                }
-            }
-        }
         
         private bool SendMail()
         {
@@ -115,8 +97,8 @@ namespace PG_Management_System
             {
                 MailMessage mail = new MailMessage();
 
-                mail.From = new MailAddress("pgms.bca6.project@gmail.com", "PG Management System", Encoding.UTF8);
-                mail.To.Add(new MailAddress(TextBox_MailID.Text.ToString()));
+                mail.From = new MailAddress("gfgctumkur.pgms.bca6.2023@gmail.com", "PG Management System", Encoding.UTF8);
+                mail.To.Add(new MailAddress(Properties.Settings.Default.OwnerMailID));
                 mail.Subject = "OTP for Password Reset";
                 mail.Body = "YOUR OTP IS " + GeneratedOTP.ToString() +". DO NOT SHARE THIS OTP WITH ANYONE.";
                 mail.IsBodyHtml = true;
@@ -124,7 +106,7 @@ namespace PG_Management_System
                 SmtpClient client = new SmtpClient();
                 client.Host = "smtp.gmail.com";
                 client.Port = 587;
-                client.Credentials = new NetworkCredential("pgms.bca6.project@gmail.com", "mpfkvrnezbmqxvkl");
+                client.Credentials = new NetworkCredential("gfgctumkur.pgms.bca6.2023@gmail.com", "ekjxafsbpnsrafnw");
                 client.EnableSsl = true;
 
                 client.Send(mail);
@@ -166,6 +148,16 @@ namespace PG_Management_System
             }
             return false;
             
+        }
+
+        private void PasswordResetForm_Load(object sender, EventArgs e)
+        {
+            TextBox_MailID.Text = Properties.Settings.Default.OwnerMailID;
+            if (SendMail())
+            {
+                Label_MailSentSuccessfully.Visible = true;
+                TextBox_OTP.Focus();
+            }
         }
     }
 }

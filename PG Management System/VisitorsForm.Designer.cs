@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisitorsForm));
             this.TextBox_POI = new System.Windows.Forms.TextBox();
             this.Label_POIUnderbar = new System.Windows.Forms.Label();
             this.Label_POI = new System.Windows.Forms.Label();
@@ -41,9 +43,6 @@
             this.TextBox_VisitorMobileNo = new System.Windows.Forms.TextBox();
             this.Label_VisitorMobileNoUnderbar = new System.Windows.Forms.Label();
             this.Label_VisitorMobileNo = new System.Windows.Forms.Label();
-            this.TextBox_VisitorOTP = new System.Windows.Forms.TextBox();
-            this.Label_VisitorOTPUnderbar = new System.Windows.Forms.Label();
-            this.Label_VisitorOTP = new System.Windows.Forms.Label();
             this.TextBox_Relation = new System.Windows.Forms.TextBox();
             this.Label_RelationUnderbar = new System.Windows.Forms.Label();
             this.Label_Relation = new System.Windows.Forms.Label();
@@ -53,7 +52,6 @@
             this.Label_CurrentDate = new System.Windows.Forms.Label();
             this.Label_DateTitle = new System.Windows.Forms.Label();
             this.Button_Allow = new System.Windows.Forms.Button();
-            this.Button_GenerateOTP = new System.Windows.Forms.Button();
             this.ComboBox_Guests = new System.Windows.Forms.ComboBox();
             this.ComboBox_Rooms = new System.Windows.Forms.ComboBox();
             this.ComboBox_Floors = new System.Windows.Forms.ComboBox();
@@ -62,7 +60,9 @@
             this.PictureBox_GuestImage = new System.Windows.Forms.PictureBox();
             this.Label_GuestName = new System.Windows.Forms.Label();
             this.Label_GuestMobNo = new System.Windows.Forms.Label();
+            this.ErrorProvider_VisitorsForm = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_GuestImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_VisitorsForm)).BeginInit();
             this.SuspendLayout();
             // 
             // TextBox_POI
@@ -71,11 +71,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox_POI.BackColor = System.Drawing.Color.White;
             this.TextBox_POI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_POI.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_POI.Location = new System.Drawing.Point(224, 202);
+            this.TextBox_POI.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_POI.Location = new System.Drawing.Point(224, 199);
             this.TextBox_POI.MaxLength = 10;
             this.TextBox_POI.Name = "TextBox_POI";
-            this.TextBox_POI.Size = new System.Drawing.Size(220, 19);
+            this.TextBox_POI.Size = new System.Drawing.Size(220, 23);
             this.TextBox_POI.TabIndex = 45;
             // 
             // Label_POIUnderbar
@@ -92,10 +92,10 @@
             // 
             this.Label_POI.AutoSize = true;
             this.Label_POI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_POI.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_POI.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_POI.Location = new System.Drawing.Point(26, 199);
             this.Label_POI.Name = "Label_POI";
-            this.Label_POI.Size = new System.Drawing.Size(159, 22);
+            this.Label_POI.Size = new System.Drawing.Size(164, 22);
             this.Label_POI.TabIndex = 50;
             this.Label_POI.Text = "Proof Of Identity :";
             this.Label_POI.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -115,10 +115,10 @@
             this.Label_PGAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label_PGAddress.AutoSize = true;
             this.Label_PGAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_PGAddress.Font = new System.Drawing.Font("Cambria", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGAddress.Location = new System.Drawing.Point(392, 59);
+            this.Label_PGAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PGAddress.Location = new System.Drawing.Point(397, 59);
             this.Label_PGAddress.Name = "Label_PGAddress";
-            this.Label_PGAddress.Size = new System.Drawing.Size(134, 28);
+            this.Label_PGAddress.Size = new System.Drawing.Size(125, 25);
             this.Label_PGAddress.TabIndex = 76;
             this.Label_PGAddress.Text = "PG Address";
             this.Label_PGAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,10 +128,10 @@
             this.Label_PGName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label_PGName.AutoSize = true;
             this.Label_PGName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_PGName.Font = new System.Drawing.Font("Cambria", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGName.Location = new System.Drawing.Point(368, 9);
+            this.Label_PGName.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PGName.Location = new System.Drawing.Point(404, 20);
             this.Label_PGName.Name = "Label_PGName";
-            this.Label_PGName.Size = new System.Drawing.Size(182, 47);
+            this.Label_PGName.Size = new System.Drawing.Size(111, 28);
             this.Label_PGName.TabIndex = 75;
             this.Label_PGName.Text = "PG Name";
             this.Label_PGName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,10 +141,10 @@
             this.Label_VisitorsFormTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label_VisitorsFormTitle.AutoSize = true;
             this.Label_VisitorsFormTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_VisitorsFormTitle.Font = new System.Drawing.Font("Cambria", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_VisitorsFormTitle.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_VisitorsFormTitle.Location = new System.Drawing.Point(378, 130);
             this.Label_VisitorsFormTitle.Name = "Label_VisitorsFormTitle";
-            this.Label_VisitorsFormTitle.Size = new System.Drawing.Size(163, 28);
+            this.Label_VisitorsFormTitle.Size = new System.Drawing.Size(168, 28);
             this.Label_VisitorsFormTitle.TabIndex = 78;
             this.Label_VisitorsFormTitle.Text = "Visitor\'s Form";
             this.Label_VisitorsFormTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -155,10 +155,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox_VisitorName.BackColor = System.Drawing.Color.White;
             this.TextBox_VisitorName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_VisitorName.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_VisitorName.Location = new System.Drawing.Point(227, 268);
+            this.TextBox_VisitorName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_VisitorName.Location = new System.Drawing.Point(227, 265);
             this.TextBox_VisitorName.Name = "TextBox_VisitorName";
-            this.TextBox_VisitorName.Size = new System.Drawing.Size(217, 19);
+            this.TextBox_VisitorName.Size = new System.Drawing.Size(217, 23);
             this.TextBox_VisitorName.TabIndex = 79;
             // 
             // Label_VisitorNameUnderbar
@@ -175,10 +175,10 @@
             // 
             this.Label_VisitorName.AutoSize = true;
             this.Label_VisitorName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_VisitorName.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_VisitorName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_VisitorName.Location = new System.Drawing.Point(117, 268);
             this.Label_VisitorName.Name = "Label_VisitorName";
-            this.Label_VisitorName.Size = new System.Drawing.Size(68, 22);
+            this.Label_VisitorName.Size = new System.Drawing.Size(69, 22);
             this.Label_VisitorName.TabIndex = 80;
             this.Label_VisitorName.Text = "Name :";
             this.Label_VisitorName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -189,11 +189,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox_VisitorMobileNo.BackColor = System.Drawing.Color.White;
             this.TextBox_VisitorMobileNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_VisitorMobileNo.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_VisitorMobileNo.Location = new System.Drawing.Point(224, 337);
+            this.TextBox_VisitorMobileNo.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_VisitorMobileNo.Location = new System.Drawing.Point(224, 334);
             this.TextBox_VisitorMobileNo.MaxLength = 10;
             this.TextBox_VisitorMobileNo.Name = "TextBox_VisitorMobileNo";
-            this.TextBox_VisitorMobileNo.Size = new System.Drawing.Size(220, 19);
+            this.TextBox_VisitorMobileNo.Size = new System.Drawing.Size(220, 23);
             this.TextBox_VisitorMobileNo.TabIndex = 82;
             // 
             // Label_VisitorMobileNoUnderbar
@@ -210,48 +210,13 @@
             // 
             this.Label_VisitorMobileNo.AutoSize = true;
             this.Label_VisitorMobileNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_VisitorMobileNo.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_VisitorMobileNo.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_VisitorMobileNo.Location = new System.Drawing.Point(77, 334);
             this.Label_VisitorMobileNo.Name = "Label_VisitorMobileNo";
-            this.Label_VisitorMobileNo.Size = new System.Drawing.Size(108, 22);
+            this.Label_VisitorMobileNo.Size = new System.Drawing.Size(111, 22);
             this.Label_VisitorMobileNo.TabIndex = 83;
             this.Label_VisitorMobileNo.Text = "Mobile No. :";
             this.Label_VisitorMobileNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // TextBox_VisitorOTP
-            // 
-            this.TextBox_VisitorOTP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBox_VisitorOTP.BackColor = System.Drawing.Color.White;
-            this.TextBox_VisitorOTP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_VisitorOTP.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_VisitorOTP.Location = new System.Drawing.Point(224, 555);
-            this.TextBox_VisitorOTP.MaxLength = 10;
-            this.TextBox_VisitorOTP.Name = "TextBox_VisitorOTP";
-            this.TextBox_VisitorOTP.Size = new System.Drawing.Size(212, 19);
-            this.TextBox_VisitorOTP.TabIndex = 87;
-            // 
-            // Label_VisitorOTPUnderbar
-            // 
-            this.Label_VisitorOTPUnderbar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label_VisitorOTPUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_VisitorOTPUnderbar.Location = new System.Drawing.Point(224, 577);
-            this.Label_VisitorOTPUnderbar.Name = "Label_VisitorOTPUnderbar";
-            this.Label_VisitorOTPUnderbar.Size = new System.Drawing.Size(212, 1);
-            this.Label_VisitorOTPUnderbar.TabIndex = 93;
-            // 
-            // Label_VisitorOTP
-            // 
-            this.Label_VisitorOTP.AutoSize = true;
-            this.Label_VisitorOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_VisitorOTP.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_VisitorOTP.Location = new System.Drawing.Point(117, 552);
-            this.Label_VisitorOTP.Name = "Label_VisitorOTP";
-            this.Label_VisitorOTP.Size = new System.Drawing.Size(62, 22);
-            this.Label_VisitorOTP.TabIndex = 92;
-            this.Label_VisitorOTP.Text = "O T P :";
-            this.Label_VisitorOTP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TextBox_Relation
             // 
@@ -259,11 +224,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox_Relation.BackColor = System.Drawing.Color.White;
             this.TextBox_Relation.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_Relation.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Relation.Location = new System.Drawing.Point(224, 391);
+            this.TextBox_Relation.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_Relation.Location = new System.Drawing.Point(224, 388);
             this.TextBox_Relation.MaxLength = 10;
             this.TextBox_Relation.Name = "TextBox_Relation";
-            this.TextBox_Relation.Size = new System.Drawing.Size(220, 19);
+            this.TextBox_Relation.Size = new System.Drawing.Size(220, 23);
             this.TextBox_Relation.TabIndex = 86;
             // 
             // Label_RelationUnderbar
@@ -280,10 +245,10 @@
             // 
             this.Label_Relation.AutoSize = true;
             this.Label_Relation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_Relation.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Relation.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Relation.Location = new System.Drawing.Point(94, 388);
             this.Label_Relation.Name = "Label_Relation";
-            this.Label_Relation.Size = new System.Drawing.Size(91, 22);
+            this.Label_Relation.Size = new System.Drawing.Size(93, 22);
             this.Label_Relation.TabIndex = 90;
             this.Label_Relation.Text = "Relation :";
             this.Label_Relation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -294,8 +259,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TextBox_ReasonOfVisit.BackColor = System.Drawing.Color.White;
             this.TextBox_ReasonOfVisit.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_ReasonOfVisit.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_ReasonOfVisit.Location = new System.Drawing.Point(224, 442);
+            this.TextBox_ReasonOfVisit.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_ReasonOfVisit.Location = new System.Drawing.Point(224, 443);
             this.TextBox_ReasonOfVisit.Multiline = true;
             this.TextBox_ReasonOfVisit.Name = "TextBox_ReasonOfVisit";
             this.TextBox_ReasonOfVisit.Size = new System.Drawing.Size(220, 83);
@@ -315,33 +280,33 @@
             // 
             this.Label_ReasonOfVisit.AutoSize = true;
             this.Label_ReasonOfVisit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_ReasonOfVisit.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ReasonOfVisit.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_ReasonOfVisit.Location = new System.Drawing.Point(105, 442);
             this.Label_ReasonOfVisit.Name = "Label_ReasonOfVisit";
-            this.Label_ReasonOfVisit.Size = new System.Drawing.Size(80, 22);
+            this.Label_ReasonOfVisit.Size = new System.Drawing.Size(83, 22);
             this.Label_ReasonOfVisit.TabIndex = 88;
             this.Label_ReasonOfVisit.Text = "Reason :";
             this.Label_ReasonOfVisit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Label_CurrentDate
             // 
-            this.Label_CurrentDate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Label_CurrentDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_CurrentDate.AutoSize = true;
             this.Label_CurrentDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_CurrentDate.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_CurrentDate.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_CurrentDate.Location = new System.Drawing.Point(765, 137);
             this.Label_CurrentDate.Name = "Label_CurrentDate";
-            this.Label_CurrentDate.Size = new System.Drawing.Size(116, 22);
+            this.Label_CurrentDate.Size = new System.Drawing.Size(118, 22);
             this.Label_CurrentDate.TabIndex = 95;
             this.Label_CurrentDate.Text = "dd-mm-yyyy";
             this.Label_CurrentDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label_DateTitle
             // 
-            this.Label_DateTitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Label_DateTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_DateTitle.AutoSize = true;
             this.Label_DateTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_DateTitle.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_DateTitle.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_DateTitle.Location = new System.Drawing.Point(712, 136);
             this.Label_DateTitle.Name = "Label_DateTitle";
             this.Label_DateTitle.Size = new System.Drawing.Size(59, 22);
@@ -356,35 +321,21 @@
             this.Button_Allow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Allow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Allow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Allow.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Allow.Location = new System.Drawing.Point(361, 613);
+            this.Button_Allow.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Allow.Location = new System.Drawing.Point(254, 605);
             this.Button_Allow.Name = "Button_Allow";
             this.Button_Allow.Size = new System.Drawing.Size(83, 30);
             this.Button_Allow.TabIndex = 97;
             this.Button_Allow.Text = "ALLOW";
             this.Button_Allow.UseVisualStyleBackColor = false;
-            // 
-            // Button_GenerateOTP
-            // 
-            this.Button_GenerateOTP.BackColor = System.Drawing.Color.Transparent;
-            this.Button_GenerateOTP.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_GenerateOTP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Button_GenerateOTP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Button_GenerateOTP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_GenerateOTP.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_GenerateOTP.Location = new System.Drawing.Point(121, 613);
-            this.Button_GenerateOTP.Name = "Button_GenerateOTP";
-            this.Button_GenerateOTP.Size = new System.Drawing.Size(149, 30);
-            this.Button_GenerateOTP.TabIndex = 96;
-            this.Button_GenerateOTP.Text = "GENERATE OTP";
-            this.Button_GenerateOTP.UseVisualStyleBackColor = false;
+            this.Button_Allow.Click += new System.EventHandler(this.Button_Allow_Click);
             // 
             // ComboBox_Guests
             // 
             this.ComboBox_Guests.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ComboBox_Guests.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Guests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Guests.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Guests.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Guests.FormattingEnabled = true;
             this.ComboBox_Guests.Location = new System.Drawing.Point(640, 406);
             this.ComboBox_Guests.Name = "ComboBox_Guests";
@@ -399,7 +350,7 @@
             this.ComboBox_Rooms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ComboBox_Rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Rooms.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Rooms.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Rooms.FormattingEnabled = true;
             this.ComboBox_Rooms.Location = new System.Drawing.Point(640, 351);
             this.ComboBox_Rooms.Name = "ComboBox_Rooms";
@@ -414,7 +365,7 @@
             this.ComboBox_Floors.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ComboBox_Floors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Floors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Floors.FormattingEnabled = true;
             this.ComboBox_Floors.Location = new System.Drawing.Point(640, 296);
             this.ComboBox_Floors.Name = "ComboBox_Floors";
@@ -429,7 +380,7 @@
             this.ComboBox_Buildings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ComboBox_Buildings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Buildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Buildings.FormattingEnabled = true;
             this.ComboBox_Buildings.Location = new System.Drawing.Point(640, 241);
             this.ComboBox_Buildings.Name = "ComboBox_Buildings";
@@ -443,10 +394,10 @@
             this.Label_SelectGuest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_SelectGuest.AutoSize = true;
             this.Label_SelectGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_SelectGuest.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_SelectGuest.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_SelectGuest.Location = new System.Drawing.Point(653, 199);
             this.Label_SelectGuest.Name = "Label_SelectGuest";
-            this.Label_SelectGuest.Size = new System.Drawing.Size(131, 22);
+            this.Label_SelectGuest.Size = new System.Drawing.Size(135, 22);
             this.Label_SelectGuest.TabIndex = 102;
             this.Label_SelectGuest.Text = "- Select Guest -";
             this.Label_SelectGuest.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -466,26 +417,33 @@
             this.Label_GuestName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_GuestName.AutoSize = true;
             this.Label_GuestName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_GuestName.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_GuestName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestName.Location = new System.Drawing.Point(650, 613);
             this.Label_GuestName.Name = "Label_GuestName";
-            this.Label_GuestName.Size = new System.Drawing.Size(123, 22);
+            this.Label_GuestName.Size = new System.Drawing.Size(127, 22);
             this.Label_GuestName.TabIndex = 104;
             this.Label_GuestName.Text = "Guest\'s Name";
             this.Label_GuestName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Label_GuestName.Visible = false;
             // 
             // Label_GuestMobNo
             // 
             this.Label_GuestMobNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_GuestMobNo.AutoSize = true;
             this.Label_GuestMobNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_GuestMobNo.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_GuestMobNo.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestMobNo.Location = new System.Drawing.Point(648, 644);
             this.Label_GuestMobNo.Name = "Label_GuestMobNo";
-            this.Label_GuestMobNo.Size = new System.Drawing.Size(138, 22);
+            this.Label_GuestMobNo.Size = new System.Drawing.Size(143, 22);
             this.Label_GuestMobNo.TabIndex = 105;
             this.Label_GuestMobNo.Text = "Guest\'s Mob No";
             this.Label_GuestMobNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Label_GuestMobNo.Visible = false;
+            // 
+            // ErrorProvider_VisitorsForm
+            // 
+            this.ErrorProvider_VisitorsForm.ContainerControl = this;
+            this.ErrorProvider_VisitorsForm.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider_VisitorsForm.Icon")));
             // 
             // VisitorsForm
             // 
@@ -503,12 +461,8 @@
             this.Controls.Add(this.ComboBox_Floors);
             this.Controls.Add(this.ComboBox_Buildings);
             this.Controls.Add(this.Button_Allow);
-            this.Controls.Add(this.Button_GenerateOTP);
             this.Controls.Add(this.Label_CurrentDate);
             this.Controls.Add(this.Label_DateTitle);
-            this.Controls.Add(this.TextBox_VisitorOTP);
-            this.Controls.Add(this.Label_VisitorOTPUnderbar);
-            this.Controls.Add(this.Label_VisitorOTP);
             this.Controls.Add(this.TextBox_Relation);
             this.Controls.Add(this.Label_RelationUnderbar);
             this.Controls.Add(this.Label_Relation);
@@ -535,6 +489,7 @@
             this.Text = "VisitorsForm";
             this.Load += new System.EventHandler(this.VisitorsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_GuestImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider_VisitorsForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -554,9 +509,6 @@
         private System.Windows.Forms.TextBox TextBox_VisitorMobileNo;
         private System.Windows.Forms.Label Label_VisitorMobileNoUnderbar;
         private System.Windows.Forms.Label Label_VisitorMobileNo;
-        private System.Windows.Forms.TextBox TextBox_VisitorOTP;
-        private System.Windows.Forms.Label Label_VisitorOTPUnderbar;
-        private System.Windows.Forms.Label Label_VisitorOTP;
         private System.Windows.Forms.TextBox TextBox_Relation;
         private System.Windows.Forms.Label Label_RelationUnderbar;
         private System.Windows.Forms.Label Label_Relation;
@@ -566,7 +518,6 @@
         private System.Windows.Forms.Label Label_CurrentDate;
         private System.Windows.Forms.Label Label_DateTitle;
         private System.Windows.Forms.Button Button_Allow;
-        private System.Windows.Forms.Button Button_GenerateOTP;
         private System.Windows.Forms.ComboBox ComboBox_Guests;
         private System.Windows.Forms.ComboBox ComboBox_Rooms;
         private System.Windows.Forms.ComboBox ComboBox_Floors;
@@ -575,5 +526,6 @@
         private System.Windows.Forms.PictureBox PictureBox_GuestImage;
         private System.Windows.Forms.Label Label_GuestName;
         private System.Windows.Forms.Label Label_GuestMobNo;
+        private System.Windows.Forms.ErrorProvider ErrorProvider_VisitorsForm;
     }
 }

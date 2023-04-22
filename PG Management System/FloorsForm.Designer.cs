@@ -36,11 +36,12 @@
             // 
             this.Label_FLOORS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Label_FLOORS.AutoSize = true;
             this.Label_FLOORS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_FLOORS.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_FLOORS.Location = new System.Drawing.Point(271, 9);
+            this.Label_FLOORS.Font = new System.Drawing.Font("Cambria", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_FLOORS.Location = new System.Drawing.Point(268, 9);
             this.Label_FLOORS.Name = "Label_FLOORS";
-            this.Label_FLOORS.Size = new System.Drawing.Size(258, 70);
+            this.Label_FLOORS.Size = new System.Drawing.Size(265, 75);
             this.Label_FLOORS.TabIndex = 7;
             this.Label_FLOORS.Text = "FLOORS";
             this.Label_FLOORS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -76,6 +77,7 @@
             this.Text = "PGMS - Floors";
             this.Load += new System.EventHandler(this.FloorsForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

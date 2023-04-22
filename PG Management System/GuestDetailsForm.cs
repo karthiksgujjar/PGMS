@@ -215,8 +215,6 @@ namespace PG_Management_System
                                         TextAlign = ContentAlignment.MiddleCenter,
                                     };
 
-                                    
-
                                     Label Label_GuestMobNo = new Label
                                     {
                                         Anchor = AnchorStyles.None,
@@ -233,7 +231,6 @@ namespace PG_Management_System
                                         AutoSize = true,
                                         BackColor = Color.White,
                                         Font = new Font("Cambria", 14, FontStyle.Bold),
-                                        //Text = "Paid", // Fee Payment(Paid or Not Paid) with Receipt no. will be displayed i.e., Paid (036) or Not Paid 
                                         TextAlign = ContentAlignment.MiddleCenter,
                                     };
 
@@ -250,7 +247,7 @@ namespace PG_Management_System
                                         }
                                         else
                                         {
-                                            Label_FeePaymentStatus.Text = " Not Paid";
+                                            Label_FeePaymentStatus.Text = "Not Paid";
                                         }
                                         con.Close();
                                     }

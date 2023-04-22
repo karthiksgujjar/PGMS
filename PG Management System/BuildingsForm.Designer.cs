@@ -37,10 +37,10 @@
             this.Label_BUILDINGS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_BUILDINGS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_BUILDINGS.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_BUILDINGS.Location = new System.Drawing.Point(224, 9);
+            this.Label_BUILDINGS.Font = new System.Drawing.Font("Cambria", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_BUILDINGS.Location = new System.Drawing.Point(219, 9);
             this.Label_BUILDINGS.Name = "Label_BUILDINGS";
-            this.Label_BUILDINGS.Size = new System.Drawing.Size(352, 70);
+            this.Label_BUILDINGS.Size = new System.Drawing.Size(363, 70);
             this.Label_BUILDINGS.TabIndex = 5;
             this.Label_BUILDINGS.Text = "BUILDINGS";
             this.Label_BUILDINGS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

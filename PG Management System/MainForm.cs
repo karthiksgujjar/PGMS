@@ -59,6 +59,7 @@ namespace PG_Management_System
                 Button_Settings.Visible = false;
                 Button_AdmitGuest.Location = new Point(2, 330);
                 Button_GuestDetails.Location = new Point(2, 390);
+                Button_Visitors.Location = new Point(2, 450);
             }
         }
 
@@ -326,15 +327,24 @@ namespace PG_Management_System
 
             Button_FormMaximize.Enabled = true;
 
+            Button_Settings.BackColor = Color.FromArgb(255, 128, 0);
             Button_OverviewPG.BackColor = Color.FromArgb(255, 128, 0);
             Button_AcceptPayment.BackColor = Color.FromArgb(255, 128, 0);
             Button_AddRemoveBuildingData.BackColor = Color.FromArgb(255, 128, 0);
             Button_AdmitGuest.BackColor = Color.FromArgb(255, 128, 0);
             Button_GuestDetails.BackColor = Color.FromArgb(255, 128, 0);
             Button_RemoveGuest.BackColor = Color.FromArgb(255, 128, 0);
+            Button_Visitors.BackColor = Color.FromArgb(255, 128, 0);
 
             Properties.Settings.Default.MainFormRemoveGuest = false;
         }
 
+        private void Button_Settings_Click(object sender, EventArgs e)
+        {
+            ControlsInvisibler_TabsBackColorSetter();
+            Button_Settings.BackColor = Color.White;
+            PGSettingsForm.pgSettingsFormInstance.Close();
+            LoadForm(new PGSettingsForm());
+        }
     }
 }

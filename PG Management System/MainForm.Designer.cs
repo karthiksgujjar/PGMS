@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Button_FormClose = new System.Windows.Forms.Button();
             this.Button_FormMinimize = new System.Windows.Forms.Button();
             this.Label_Header = new System.Windows.Forms.Label();
@@ -122,7 +123,7 @@
             // 
             this.ComboBox_Buildings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Buildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Buildings.FormattingEnabled = true;
             this.ComboBox_Buildings.Location = new System.Drawing.Point(127, 16);
             this.ComboBox_Buildings.Name = "ComboBox_Buildings";
@@ -155,7 +156,7 @@
             // 
             this.ComboBox_Floors.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Floors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Floors.FormattingEnabled = true;
             this.ComboBox_Floors.Location = new System.Drawing.Point(325, 16);
             this.ComboBox_Floors.Name = "ComboBox_Floors";
@@ -169,7 +170,7 @@
             // 
             this.ComboBox_Rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ComboBox_Rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Rooms.Font = new System.Drawing.Font("Cambria", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Rooms.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Rooms.FormattingEnabled = true;
             this.ComboBox_Rooms.Location = new System.Drawing.Point(523, 16);
             this.ComboBox_Rooms.Name = "ComboBox_Rooms";
@@ -227,7 +228,7 @@
             this.Button_AddRemoveBuildingData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_AddRemoveBuildingData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_AddRemoveBuildingData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_AddRemoveBuildingData.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AddRemoveBuildingData.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_AddRemoveBuildingData.Location = new System.Drawing.Point(2, 329);
             this.Button_AddRemoveBuildingData.Name = "Button_AddRemoveBuildingData";
             this.Button_AddRemoveBuildingData.Size = new System.Drawing.Size(117, 51);
@@ -243,7 +244,7 @@
             this.Button_RemoveGuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_RemoveGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_RemoveGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_RemoveGuest.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_RemoveGuest.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_RemoveGuest.Location = new System.Drawing.Point(2, 526);
             this.Button_RemoveGuest.Name = "Button_RemoveGuest";
             this.Button_RemoveGuest.Size = new System.Drawing.Size(117, 25);
@@ -259,7 +260,7 @@
             this.Button_GuestDetails.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_GuestDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_GuestDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_GuestDetails.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_GuestDetails.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_GuestDetails.Location = new System.Drawing.Point(2, 469);
             this.Button_GuestDetails.Name = "Button_GuestDetails";
             this.Button_GuestDetails.Size = new System.Drawing.Size(117, 25);
@@ -275,7 +276,7 @@
             this.Button_AdmitGuest.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_AdmitGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_AdmitGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_AdmitGuest.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AdmitGuest.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_AdmitGuest.Location = new System.Drawing.Point(2, 412);
             this.Button_AdmitGuest.Name = "Button_AdmitGuest";
             this.Button_AdmitGuest.Size = new System.Drawing.Size(117, 25);
@@ -292,7 +293,7 @@
             this.Button_Logout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Logout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Logout.Font = new System.Drawing.Font("Cambria", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Logout.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Logout.Image = global::PG_Management_System.Properties.Resources.Logout;
             this.Button_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Button_Logout.Location = new System.Drawing.Point(2, 668);
@@ -330,6 +331,7 @@
             this.Button_Settings.TabIndex = 9;
             this.Button_Settings.TabStop = false;
             this.Button_Settings.UseVisualStyleBackColor = false;
+            this.Button_Settings.Click += new System.EventHandler(this.Button_Settings_Click);
             // 
             // Button_Previous
             // 
@@ -374,7 +376,7 @@
             this.Button_OverviewPG.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_OverviewPG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_OverviewPG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_OverviewPG.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_OverviewPG.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_OverviewPG.Location = new System.Drawing.Point(2, 197);
             this.Button_OverviewPG.Name = "Button_OverviewPG";
             this.Button_OverviewPG.Size = new System.Drawing.Size(117, 25);
@@ -390,7 +392,7 @@
             this.Button_AcceptPayment.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_AcceptPayment.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_AcceptPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_AcceptPayment.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AcceptPayment.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_AcceptPayment.Location = new System.Drawing.Point(2, 254);
             this.Button_AcceptPayment.Name = "Button_AcceptPayment";
             this.Button_AcceptPayment.Size = new System.Drawing.Size(117, 43);
@@ -406,7 +408,7 @@
             this.Button_Visitors.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Visitors.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.Button_Visitors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Visitors.Font = new System.Drawing.Font("Cambria", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Visitors.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Visitors.Location = new System.Drawing.Point(2, 583);
             this.Button_Visitors.Name = "Button_Visitors";
             this.Button_Visitors.Size = new System.Drawing.Size(117, 25);
@@ -445,6 +447,7 @@
             this.Controls.Add(this.Button_Home);
             this.Controls.Add(this.Label_Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PGMS";

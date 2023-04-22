@@ -37,7 +37,7 @@
             this.Label_ROOMS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_ROOMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_ROOMS.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ROOMS.Font = new System.Drawing.Font("Cambria", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_ROOMS.Location = new System.Drawing.Point(271, 9);
             this.Label_ROOMS.Name = "Label_ROOMS";
             this.Label_ROOMS.Size = new System.Drawing.Size(258, 70);

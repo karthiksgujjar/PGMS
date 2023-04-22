@@ -15,7 +15,7 @@ namespace PG_Management_System
     public partial class VisitorsForm : Form
     {
         public static VisitorsForm visitorsFormInstance = new VisitorsForm();
-
+        int OTP;
         public VisitorsForm()
         {
             InitializeComponent();
@@ -23,6 +23,7 @@ namespace PG_Management_System
 
         private void VisitorsForm_Load(object sender, EventArgs e)
         {
+            Label_CurrentDate.Text = DateTime.Now.ToLongDateString();
 
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
             string query = "SELECT id,building_name FROM buildings;";
@@ -173,6 +174,8 @@ namespace PG_Management_System
                 {
                     Label_GuestName.Text = GuestDetails["name"].ToString();
                     Label_GuestMobNo.Text = GuestDetails["mob_no"].ToString();
+                    Label_GuestName.Visible = true;
+                    Label_GuestMobNo.Visible = true;
                     PictureBox_GuestImage.ImageLocation = GuestDetails["guest_imageRPath"].ToString() + GuestDetails["name"].ToString() + " Image.jpg";
                 }
                 con.Close();
@@ -183,5 +186,68 @@ namespace PG_Management_System
             }
         }
 
+        private void Button_Allow_Click(object sender, EventArgs e)
+        {
+            ErrorProvider_VisitorsForm.Clear();
+
+            if(TextBox_POI.Text == "")
+            {
+                ErrorProvider_VisitorsForm.SetError(TextBox_POI,"Enter POI");
+                TextBox_POI.Focus();
+            }
+            else if(TextBox_VisitorName.Text == "")
+            {
+                ErrorProvider_VisitorsForm.SetError(TextBox_VisitorName, "Enter POI");
+                TextBox_VisitorName.Focus();
+            }
+            else if (TextBox_VisitorMobileNo.Text == "")
+            {
+                ErrorProvider_VisitorsForm.SetError(TextBox_VisitorMobileNo, "Enter POI");
+                TextBox_VisitorMobileNo.Focus();
+            }
+            else if (TextBox_Relation.Text == "")
+            {
+                ErrorProvider_VisitorsForm.SetError(TextBox_Relation, "Enter POI");
+                TextBox_Relation.Focus();
+            }
+            else if (TextBox_ReasonOfVisit.Text == "")
+            {
+                ErrorProvider_VisitorsForm.SetError(TextBox_ReasonOfVisit, "Enter POI");
+                TextBox_ReasonOfVisit.Focus();
+            }
+            else
+            {
+                try
+                {
+                    MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
+                    string query = "INSERT INTO visitors VALUES(@POI,@GuestID,@Name,@MobNo,@Relation,@DOV,@Reason);";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@POI", TextBox_POI.Text);
+                    cmd.Parameters.AddWithValue("@GuestID", Properties.Settings.Default.SelectedGuestID);
+                    cmd.Parameters.AddWithValue("@Name", TextBox_VisitorName.Text);
+                    cmd.Parameters.AddWithValue("@MobNo", TextBox_VisitorMobileNo.Text);
+                    cmd.Parameters.AddWithValue("@Relation", TextBox_Relation.Text);
+                    cmd.Parameters.AddWithValue("@DOV", Label_CurrentDate.Text);
+                    cmd.Parameters.AddWithValue("@Reason", TextBox_ReasonOfVisit.Text);
+
+                    con.Open();
+                    int res = cmd.ExecuteNonQuery();
+                    if (res > 0)
+                    {
+                        MessageBox.Show("Visitor Details Stored Successfully. Allow the Visitor.", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Unable to store Visitor details. Don't allow the Visitor.", "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    con.Close();
+                }
+                catch (Exception Err)
+                {
+                    
+                    MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

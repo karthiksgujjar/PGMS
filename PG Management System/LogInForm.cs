@@ -71,41 +71,27 @@ namespace PG_Management_System
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            if(Properties.Settings.Default.FirstRunStatus)
+            try
             {
-                try
+                MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
+                string query = "SELECT username from login";
+                MySqlCommand cmd = new MySqlCommand(query, con);
+                con.Open();
+                MySqlDataReader DB_UserNames = cmd.ExecuteReader();
+                while (DB_UserNames.Read())
                 {
-                    MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-                    string query = "SELECT username from login";
-                    MySqlCommand cmd = new MySqlCommand(query, con);
-                    con.Open();
-                    MySqlDataReader DB_UserNames = cmd.ExecuteReader();
-                    while (DB_UserNames.Read())
-                    {
-                        ComboBox_UN.Items.Add(DB_UserNames["username"]);
-                    }
-                    ComboBox_UN.SelectedIndex = 0;
-                    con.Close();
+                    ComboBox_UN.Items.Add(DB_UserNames["username"]);
                 }
-                catch (Exception Err)
-                {
-                    MessageBox.Show("Unable to make connection to Database\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                    //Run Database Connection Details Collector Form
-                }
+                ComboBox_UN.SelectedIndex = 0;
+                con.Close();
             }
-            else
+            catch (Exception Err)
             {
-                //Run FirstRunSetup Form, To collect 
-                //1. owner password and save it in properties.settings.default.ownerPassword;
-                //2. database connection details;
-                //3. pg details
-                
-                // The Form should have 2 panels:
-                // 1st panel should display progression of setup
-                // 2nd panel should host diffrent forms 
+                MessageBox.Show("Unable to make connection to Database\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Hide();
+                FirstRunForm firstRunForm = new FirstRunForm();
+                firstRunForm.ShowDialog();
             }
-            
         }
 
         private void Button_FormClose_Click(object sender, EventArgs e)

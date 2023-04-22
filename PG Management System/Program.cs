@@ -17,16 +17,16 @@ namespace PG_Management_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            /*if(Properties.Settings.Default.FirstRunStatus == true )
+            if(Properties.Settings.Default.FirstRunStatus)
             {
                 FirstRunForm firstRunForm = new FirstRunForm();
                 firstRunForm.ShowDialog();
             }
             else
-            {*/
+            {
                 LoginForm loginForm = new LoginForm();
                 loginForm.ShowDialog();
-            //}
+            }
 
             Application.Run();
         }

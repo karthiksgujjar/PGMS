@@ -92,8 +92,8 @@
             this.Button_Save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Button_Save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Save.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Save.Location = new System.Drawing.Point(126, 420);
+            this.Button_Save.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Save.Location = new System.Drawing.Point(133, 420);
             this.Button_Save.Name = "Button_Save";
             this.Button_Save.Size = new System.Drawing.Size(75, 30);
             this.Button_Save.TabIndex = 2;
@@ -106,10 +106,10 @@
             this.TextBox_BuildingDataName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBox_BuildingDataName.BackColor = System.Drawing.Color.LightGray;
             this.TextBox_BuildingDataName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_BuildingDataName.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_BuildingDataName.Location = new System.Drawing.Point(123, 357);
+            this.TextBox_BuildingDataName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_BuildingDataName.Location = new System.Drawing.Point(123, 350);
             this.TextBox_BuildingDataName.Name = "TextBox_BuildingDataName";
-            this.TextBox_BuildingDataName.Size = new System.Drawing.Size(139, 16);
+            this.TextBox_BuildingDataName.Size = new System.Drawing.Size(139, 23);
             this.TextBox_BuildingDataName.TabIndex = 1;
             this.TextBox_BuildingDataName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_BuildingDataName_KeyPress);
             // 
@@ -117,6 +117,7 @@
             // 
             this.Label_BuildingDataNameUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_BuildingDataNameUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_BuildingDataNameUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_BuildingDataNameUnderbar.Location = new System.Drawing.Point(123, 376);
             this.Label_BuildingDataNameUnderbar.Name = "Label_BuildingDataNameUnderbar";
             this.Label_BuildingDataNameUnderbar.Size = new System.Drawing.Size(139, 1);
@@ -126,6 +127,7 @@
             // 
             this.Label_BuildingDataIDUnderbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Label_BuildingDataIDUnderbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_BuildingDataIDUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_BuildingDataIDUnderbar.Location = new System.Drawing.Point(123, 330);
             this.Label_BuildingDataIDUnderbar.Name = "Label_BuildingDataIDUnderbar";
             this.Label_BuildingDataIDUnderbar.Size = new System.Drawing.Size(139, 1);
@@ -137,11 +139,11 @@
             this.Label_BuildingDataName.AutoSize = true;
             this.Label_BuildingDataName.BackColor = System.Drawing.Color.Transparent;
             this.Label_BuildingDataName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_BuildingDataName.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_BuildingDataName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_BuildingDataName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Label_BuildingDataName.Location = new System.Drawing.Point(42, 352);
             this.Label_BuildingDataName.Name = "Label_BuildingDataName";
-            this.Label_BuildingDataName.Size = new System.Drawing.Size(68, 22);
+            this.Label_BuildingDataName.Size = new System.Drawing.Size(69, 22);
             this.Label_BuildingDataName.TabIndex = 19;
             this.Label_BuildingDataName.Text = "Name :";
             this.Label_BuildingDataName.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -152,11 +154,11 @@
             this.Label_BuildingDataID.AutoSize = true;
             this.Label_BuildingDataID.BackColor = System.Drawing.Color.Transparent;
             this.Label_BuildingDataID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Label_BuildingDataID.Font = new System.Drawing.Font("Cambria", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_BuildingDataID.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_BuildingDataID.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Label_BuildingDataID.Location = new System.Drawing.Point(74, 306);
             this.Label_BuildingDataID.Name = "Label_BuildingDataID";
-            this.Label_BuildingDataID.Size = new System.Drawing.Size(38, 22);
+            this.Label_BuildingDataID.Size = new System.Drawing.Size(39, 22);
             this.Label_BuildingDataID.TabIndex = 20;
             this.Label_BuildingDataID.Text = "ID :";
             this.Label_BuildingDataID.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -166,10 +168,10 @@
             this.TextBox_BuildingDataID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TextBox_BuildingDataID.BackColor = System.Drawing.Color.LightGray;
             this.TextBox_BuildingDataID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_BuildingDataID.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_BuildingDataID.Location = new System.Drawing.Point(123, 311);
+            this.TextBox_BuildingDataID.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_BuildingDataID.Location = new System.Drawing.Point(123, 304);
             this.TextBox_BuildingDataID.Name = "TextBox_BuildingDataID";
-            this.TextBox_BuildingDataID.Size = new System.Drawing.Size(139, 16);
+            this.TextBox_BuildingDataID.Size = new System.Drawing.Size(139, 23);
             this.TextBox_BuildingDataID.TabIndex = 0;
             this.TextBox_BuildingDataID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_BuildingDataID_KeyPress);
             // 
@@ -223,6 +225,7 @@
             this.Controls.Add(this.Label_BuildingDataName);
             this.Controls.Add(this.Label_BuildingDataID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddBuildingData";
