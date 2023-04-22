@@ -170,6 +170,7 @@
             this.TextBox_BuildingDataID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TextBox_BuildingDataID.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_BuildingDataID.Location = new System.Drawing.Point(123, 304);
+            this.TextBox_BuildingDataID.MaxLength = 3;
             this.TextBox_BuildingDataID.Name = "TextBox_BuildingDataID";
             this.TextBox_BuildingDataID.Size = new System.Drawing.Size(139, 23);
             this.TextBox_BuildingDataID.TabIndex = 0;
