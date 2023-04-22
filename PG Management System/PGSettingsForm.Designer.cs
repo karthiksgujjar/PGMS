@@ -130,7 +130,7 @@
             this.TextBox_PGAddress.Multiline = true;
             this.TextBox_PGAddress.Name = "TextBox_PGAddress";
             this.TextBox_PGAddress.Size = new System.Drawing.Size(171, 58);
-            this.TextBox_PGAddress.TabIndex = 81;
+            this.TextBox_PGAddress.TabIndex = 2;
             // 
             // TextBox_PGName
             // 
@@ -142,7 +142,7 @@
             this.TextBox_PGName.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_PGName.Name = "TextBox_PGName";
             this.TextBox_PGName.Size = new System.Drawing.Size(171, 23);
-            this.TextBox_PGName.TabIndex = 80;
+            this.TextBox_PGName.TabIndex = 1;
             // 
             // Button_Save
             // 
@@ -158,7 +158,7 @@
             this.Button_Save.Location = new System.Drawing.Point(609, 394);
             this.Button_Save.Name = "Button_Save";
             this.Button_Save.Size = new System.Drawing.Size(113, 30);
-            this.Button_Save.TabIndex = 79;
+            this.Button_Save.TabIndex = 7;
             this.Button_Save.Text = "SAVE";
             this.Button_Save.UseVisualStyleBackColor = false;
             this.Button_Save.Click += new System.EventHandler(this.Button_Save_Click);
@@ -198,7 +198,7 @@
             this.Button_Edit.Location = new System.Drawing.Point(419, 394);
             this.Button_Edit.Name = "Button_Edit";
             this.Button_Edit.Size = new System.Drawing.Size(113, 30);
-            this.Button_Edit.TabIndex = 99;
+            this.Button_Edit.TabIndex = 0;
             this.Button_Edit.Text = "EDIT";
             this.Button_Edit.UseVisualStyleBackColor = false;
             this.Button_Edit.Click += new System.EventHandler(this.Button_Edit_Click);
@@ -224,7 +224,7 @@
             this.TextBox_OwnerLoginPassword.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_OwnerLoginPassword.Name = "TextBox_OwnerLoginPassword";
             this.TextBox_OwnerLoginPassword.Size = new System.Drawing.Size(171, 23);
-            this.TextBox_OwnerLoginPassword.TabIndex = 96;
+            this.TextBox_OwnerLoginPassword.TabIndex = 6;
             // 
             // TextBox_OwnerMailID
             // 
@@ -236,7 +236,7 @@
             this.TextBox_OwnerMailID.Location = new System.Drawing.Point(560, 238);
             this.TextBox_OwnerMailID.Name = "TextBox_OwnerMailID";
             this.TextBox_OwnerMailID.Size = new System.Drawing.Size(171, 23);
-            this.TextBox_OwnerMailID.TabIndex = 91;
+            this.TextBox_OwnerMailID.TabIndex = 5;
             // 
             // Label_OwnerMailIDUnderbar
             // 
@@ -259,7 +259,7 @@
             this.TextBox_OwnerMobileNo.MaxLength = 10;
             this.TextBox_OwnerMobileNo.Name = "TextBox_OwnerMobileNo";
             this.TextBox_OwnerMobileNo.Size = new System.Drawing.Size(171, 23);
-            this.TextBox_OwnerMobileNo.TabIndex = 90;
+            this.TextBox_OwnerMobileNo.TabIndex = 4;
             // 
             // Label_OwnerMobileNoUnderbar
             // 
@@ -307,7 +307,7 @@
             this.TextBox_OwnerName.Location = new System.Drawing.Point(560, 163);
             this.TextBox_OwnerName.Name = "TextBox_OwnerName";
             this.TextBox_OwnerName.Size = new System.Drawing.Size(171, 23);
-            this.TextBox_OwnerName.TabIndex = 87;
+            this.TextBox_OwnerName.TabIndex = 3;
             // 
             // Label_OwnerNameUnderbar
             // 

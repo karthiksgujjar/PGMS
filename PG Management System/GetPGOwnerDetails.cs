@@ -62,6 +62,7 @@ namespace PG_Management_System
                         Properties.Settings.Default.Save();
 
                         MessageBox.Show("Successfully Saved Owner Details!!\nNow Restart the application.", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Application.Exit();
                     }
                     con.Close();
                 }

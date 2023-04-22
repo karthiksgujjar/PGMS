@@ -27,6 +27,9 @@ namespace PG_Management_System
         
         private void AdmissionForm_Load(object sender, EventArgs e)
         {
+            Label_PGName.Text = Properties.Settings.Default.PGName;
+            Label_PGAddress.Text = Properties.Settings.Default.PGAddress;
+
             Button_RemoveGuest.Visible = false;
             TextBox_GuestName.Focus();
 
@@ -47,7 +50,6 @@ namespace PG_Management_System
                 PictureBox_GuestImage.Enabled = false;
                 
                 Button_AdmitGuest.Visible = false;
-                Button_PrintGuestAdmissionForm.Visible = false;
                 Button_ResetGuestAdmissionForm.Visible = false;
             }
 
@@ -317,6 +319,9 @@ namespace PG_Management_System
             TextBox_GuestAdvanceAmountPaid.Text = "";
             TextBox_GuestPayAmountPerMonth.Text = "";
             PictureBox_GuestImage.Image = Properties.Resources.Add_Image;
+            ComboBox_Floors.Visible = false;
+            ComboBox_Rooms.Visible = false;
+            ComboBox_Guests.Visible = false;
 
             TextBox_GuestName.Focus();
         }
@@ -472,5 +477,6 @@ namespace PG_Management_System
             }
         }
 
+        
     }
 }

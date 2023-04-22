@@ -76,7 +76,7 @@
             this.TextBox_POI.MaxLength = 10;
             this.TextBox_POI.Name = "TextBox_POI";
             this.TextBox_POI.Size = new System.Drawing.Size(220, 23);
-            this.TextBox_POI.TabIndex = 45;
+            this.TextBox_POI.TabIndex = 0;
             // 
             // Label_POIUnderbar
             // 
@@ -112,26 +112,26 @@
             // 
             // Label_PGAddress
             // 
-            this.Label_PGAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Label_PGAddress.AutoSize = true;
+            this.Label_PGAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_PGAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_PGAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGAddress.Location = new System.Drawing.Point(397, 59);
+            this.Label_PGAddress.Location = new System.Drawing.Point(23, 59);
             this.Label_PGAddress.Name = "Label_PGAddress";
-            this.Label_PGAddress.Size = new System.Drawing.Size(125, 25);
+            this.Label_PGAddress.Size = new System.Drawing.Size(887, 25);
             this.Label_PGAddress.TabIndex = 76;
             this.Label_PGAddress.Text = "PG Address";
             this.Label_PGAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label_PGName
             // 
-            this.Label_PGName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Label_PGName.AutoSize = true;
+            this.Label_PGName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_PGName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_PGName.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGName.Location = new System.Drawing.Point(404, 20);
+            this.Label_PGName.Location = new System.Drawing.Point(30, 20);
             this.Label_PGName.Name = "Label_PGName";
-            this.Label_PGName.Size = new System.Drawing.Size(111, 28);
+            this.Label_PGName.Size = new System.Drawing.Size(873, 28);
             this.Label_PGName.TabIndex = 75;
             this.Label_PGName.Text = "PG Name";
             this.Label_PGName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,7 +142,7 @@
             this.Label_VisitorsFormTitle.AutoSize = true;
             this.Label_VisitorsFormTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_VisitorsFormTitle.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_VisitorsFormTitle.Location = new System.Drawing.Point(378, 130);
+            this.Label_VisitorsFormTitle.Location = new System.Drawing.Point(375, 130);
             this.Label_VisitorsFormTitle.Name = "Label_VisitorsFormTitle";
             this.Label_VisitorsFormTitle.Size = new System.Drawing.Size(168, 28);
             this.Label_VisitorsFormTitle.TabIndex = 78;
@@ -159,7 +159,7 @@
             this.TextBox_VisitorName.Location = new System.Drawing.Point(227, 265);
             this.TextBox_VisitorName.Name = "TextBox_VisitorName";
             this.TextBox_VisitorName.Size = new System.Drawing.Size(217, 23);
-            this.TextBox_VisitorName.TabIndex = 79;
+            this.TextBox_VisitorName.TabIndex = 1;
             // 
             // Label_VisitorNameUnderbar
             // 
@@ -194,7 +194,7 @@
             this.TextBox_VisitorMobileNo.MaxLength = 10;
             this.TextBox_VisitorMobileNo.Name = "TextBox_VisitorMobileNo";
             this.TextBox_VisitorMobileNo.Size = new System.Drawing.Size(220, 23);
-            this.TextBox_VisitorMobileNo.TabIndex = 82;
+            this.TextBox_VisitorMobileNo.TabIndex = 2;
             // 
             // Label_VisitorMobileNoUnderbar
             // 
@@ -229,7 +229,7 @@
             this.TextBox_Relation.MaxLength = 10;
             this.TextBox_Relation.Name = "TextBox_Relation";
             this.TextBox_Relation.Size = new System.Drawing.Size(220, 23);
-            this.TextBox_Relation.TabIndex = 86;
+            this.TextBox_Relation.TabIndex = 3;
             // 
             // Label_RelationUnderbar
             // 
@@ -264,7 +264,7 @@
             this.TextBox_ReasonOfVisit.Multiline = true;
             this.TextBox_ReasonOfVisit.Name = "TextBox_ReasonOfVisit";
             this.TextBox_ReasonOfVisit.Size = new System.Drawing.Size(220, 83);
-            this.TextBox_ReasonOfVisit.TabIndex = 85;
+            this.TextBox_ReasonOfVisit.TabIndex = 4;
             // 
             // Label_ReasonOfVisitUnderbar
             // 
@@ -294,7 +294,7 @@
             this.Label_CurrentDate.AutoSize = true;
             this.Label_CurrentDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_CurrentDate.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_CurrentDate.Location = new System.Drawing.Point(765, 137);
+            this.Label_CurrentDate.Location = new System.Drawing.Point(785, 116);
             this.Label_CurrentDate.Name = "Label_CurrentDate";
             this.Label_CurrentDate.Size = new System.Drawing.Size(118, 22);
             this.Label_CurrentDate.TabIndex = 95;
@@ -307,7 +307,7 @@
             this.Label_DateTitle.AutoSize = true;
             this.Label_DateTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_DateTitle.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_DateTitle.Location = new System.Drawing.Point(712, 136);
+            this.Label_DateTitle.Location = new System.Drawing.Point(732, 115);
             this.Label_DateTitle.Name = "Label_DateTitle";
             this.Label_DateTitle.Size = new System.Drawing.Size(59, 22);
             this.Label_DateTitle.TabIndex = 94;
@@ -325,7 +325,7 @@
             this.Button_Allow.Location = new System.Drawing.Point(254, 605);
             this.Button_Allow.Name = "Button_Allow";
             this.Button_Allow.Size = new System.Drawing.Size(83, 30);
-            this.Button_Allow.TabIndex = 97;
+            this.Button_Allow.TabIndex = 9;
             this.Button_Allow.Text = "ALLOW";
             this.Button_Allow.UseVisualStyleBackColor = false;
             this.Button_Allow.Click += new System.EventHandler(this.Button_Allow_Click);
@@ -337,11 +337,11 @@
             this.ComboBox_Guests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Guests.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Guests.FormattingEnabled = true;
-            this.ComboBox_Guests.Location = new System.Drawing.Point(640, 406);
+            this.ComboBox_Guests.Location = new System.Drawing.Point(643, 407);
             this.ComboBox_Guests.Name = "ComboBox_Guests";
             this.ComboBox_Guests.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Guests.Sorted = true;
-            this.ComboBox_Guests.TabIndex = 101;
+            this.ComboBox_Guests.TabIndex = 8;
             this.ComboBox_Guests.Visible = false;
             this.ComboBox_Guests.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Guests_SelectedIndexChanged);
             // 
@@ -352,11 +352,11 @@
             this.ComboBox_Rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Rooms.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Rooms.FormattingEnabled = true;
-            this.ComboBox_Rooms.Location = new System.Drawing.Point(640, 351);
+            this.ComboBox_Rooms.Location = new System.Drawing.Point(643, 352);
             this.ComboBox_Rooms.Name = "ComboBox_Rooms";
             this.ComboBox_Rooms.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Rooms.Sorted = true;
-            this.ComboBox_Rooms.TabIndex = 100;
+            this.ComboBox_Rooms.TabIndex = 7;
             this.ComboBox_Rooms.Visible = false;
             this.ComboBox_Rooms.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Rooms_SelectedIndexChanged);
             // 
@@ -367,11 +367,11 @@
             this.ComboBox_Floors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Floors.FormattingEnabled = true;
-            this.ComboBox_Floors.Location = new System.Drawing.Point(640, 296);
+            this.ComboBox_Floors.Location = new System.Drawing.Point(643, 297);
             this.ComboBox_Floors.Name = "ComboBox_Floors";
             this.ComboBox_Floors.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Floors.Sorted = true;
-            this.ComboBox_Floors.TabIndex = 99;
+            this.ComboBox_Floors.TabIndex = 6;
             this.ComboBox_Floors.Visible = false;
             this.ComboBox_Floors.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Floors_SelectedIndexChanged);
             // 
@@ -382,11 +382,11 @@
             this.ComboBox_Buildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Buildings.FormattingEnabled = true;
-            this.ComboBox_Buildings.Location = new System.Drawing.Point(640, 241);
+            this.ComboBox_Buildings.Location = new System.Drawing.Point(643, 242);
             this.ComboBox_Buildings.Name = "ComboBox_Buildings";
             this.ComboBox_Buildings.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Buildings.Sorted = true;
-            this.ComboBox_Buildings.TabIndex = 98;
+            this.ComboBox_Buildings.TabIndex = 5;
             this.ComboBox_Buildings.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Buildings_SelectedIndexChanged);
             // 
             // Label_SelectGuest
@@ -395,7 +395,7 @@
             this.Label_SelectGuest.AutoSize = true;
             this.Label_SelectGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_SelectGuest.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_SelectGuest.Location = new System.Drawing.Point(653, 199);
+            this.Label_SelectGuest.Location = new System.Drawing.Point(656, 200);
             this.Label_SelectGuest.Name = "Label_SelectGuest";
             this.Label_SelectGuest.Size = new System.Drawing.Size(135, 22);
             this.Label_SelectGuest.TabIndex = 102;

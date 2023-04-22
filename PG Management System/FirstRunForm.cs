@@ -53,6 +53,7 @@ namespace PG_Management_System
                 Label_FormStatusCompleteBar2.BackColor = Color.FromArgb(255, 128, 0);
                 Label_FormProgress3.Enabled = true;
                 LoadForm(new GetPGOwnerDetails());
+                Button_Next.Visible = false;
             }
             else
             {
@@ -72,6 +73,7 @@ namespace PG_Management_System
                 Label_FormStatusCompleteBar2.BackColor = Color.LightGray;
                 Label_FormProgress3.Enabled = false;
                 LoadForm(new GetPGDetails());
+                Button_Next.Visible = true;
             }
             else
             {

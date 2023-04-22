@@ -36,6 +36,8 @@ namespace PG_Management_System
 
         private void AcceptPaymentForm_Load(object sender, EventArgs e)
         {
+            Label_PGName.Text = Properties.Settings.Default.PGName;
+            Label_PGAddress.Text = Properties.Settings.Default.PGAddress;
             Label_ReceiptNo.Text = Properties.Settings.Default.ReceiptNo.ToString();
             Label_CurrentDate.Text = DateTime.Today.ToString("dd-MM-yyyy");
             TextBox_CurrentMonth.Text = DateTime.Today.ToString("MMMM");

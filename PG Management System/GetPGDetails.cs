@@ -34,6 +34,9 @@ namespace PG_Management_System
                 Properties.Settings.Default.PGName = TextBox_PGName.Text;
                 Properties.Settings.Default.PGAddress = TextBox_PGAddress.Text;
                 Properties.Settings.Default.Save();
+
+                MessageBox.Show("Successfully Saved PG Details!!", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
         }
     }

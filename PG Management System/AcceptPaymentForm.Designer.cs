@@ -118,26 +118,26 @@
             // 
             // Label_PGAddress
             // 
-            this.Label_PGAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Label_PGAddress.AutoSize = true;
+            this.Label_PGAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_PGAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_PGAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGAddress.Location = new System.Drawing.Point(366, 99);
+            this.Label_PGAddress.Location = new System.Drawing.Point(16, 99);
             this.Label_PGAddress.Name = "Label_PGAddress";
-            this.Label_PGAddress.Size = new System.Drawing.Size(125, 25);
+            this.Label_PGAddress.Size = new System.Drawing.Size(828, 25);
             this.Label_PGAddress.TabIndex = 76;
             this.Label_PGAddress.Text = "PG Address";
             this.Label_PGAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Label_PGName
             // 
-            this.Label_PGName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Label_PGName.AutoSize = true;
+            this.Label_PGName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Label_PGName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_PGName.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_PGName.Location = new System.Drawing.Point(373, 55);
+            this.Label_PGName.Location = new System.Drawing.Point(23, 55);
             this.Label_PGName.Name = "Label_PGName";
-            this.Label_PGName.Size = new System.Drawing.Size(111, 28);
+            this.Label_PGName.Size = new System.Drawing.Size(814, 28);
             this.Label_PGName.TabIndex = 75;
             this.Label_PGName.Text = "PG Name";
             this.Label_PGName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

@@ -23,6 +23,8 @@ namespace PG_Management_System
 
         private void VisitorsForm_Load(object sender, EventArgs e)
         {
+            Label_PGName.Text = Properties.Settings.Default.PGName;
+            Label_PGAddress.Text = Properties.Settings.Default.PGAddress;
             Label_CurrentDate.Text = DateTime.Now.ToLongDateString();
 
             MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
