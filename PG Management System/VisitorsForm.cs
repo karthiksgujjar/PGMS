@@ -21,6 +21,20 @@ namespace PG_Management_System
             InitializeComponent();
         }
 
+        private void AcceptOnlyDigits(KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            
+            if (Char.IsDigit(ch) || ch == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
         private void VisitorsForm_Load(object sender, EventArgs e)
         {
             Label_PGName.Text = Properties.Settings.Default.PGName;
@@ -250,6 +264,11 @@ namespace PG_Management_System
                     MessageBox.Show("- Error -\n" + Err.Message, "DATABASE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void TextBox_VisitorMobileNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            AcceptOnlyDigits(e);
         }
     }
 }

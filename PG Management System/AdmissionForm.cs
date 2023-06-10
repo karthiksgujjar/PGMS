@@ -272,7 +272,7 @@ namespace PG_Management_System
             if (confirmation == DialogResult.Yes)
             {
                 MySqlConnection con = new MySqlConnection(Properties.Settings.Default.constring);
-                string query = "DELETE FROM guests WHERE id=@ID;";
+                string query = "DELETE FROM fees WHERE guest_id=@ID; DELETE FROM visitors WHERE guest_id=@ID; DELETE FROM guests WHERE id=@ID;";
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@ID", Properties.Settings.Default.SelectedGuestID);
                 try
@@ -287,7 +287,6 @@ namespace PG_Management_System
                         }
                         MessageBox.Show("Guest Deleted Successfully", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Button_ResetGuestAdmissionForm_Click(sender, e);
-                        ComboBox_Rooms_SelectedIndexChanged(sender, e);
                         Button_RemoveGuest.Visible = false;
                     }
                     else
@@ -477,6 +476,9 @@ namespace PG_Management_System
             }
         }
 
-        
+        private void ComboBox_GuestBloodGroup_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
     }
 }

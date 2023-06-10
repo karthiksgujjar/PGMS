@@ -130,11 +130,9 @@ namespace PG_Management_System
                         PdfDocument pdf = new PdfDocument(writer);
                         Document document = new Document(pdf, PageSize.A4);
 
-                        Properties.Settings.Default.PGName = "Dummy Name--Sagar PG";
                         Paragraph PGName = new Paragraph(Properties.Settings.Default.PGName).SetTextAlignment(TextAlignment.CENTER).SetFontSize(20);
                         document.Add(PGName);
 
-                        Properties.Settings.Default.PGAddress = "Dummy Address--SIT Backgate Road, Near More SuperMarket, SIT Extension, Tumakuru-572103";
                         Paragraph PGAddress = new Paragraph(Properties.Settings.Default.PGAddress).SetTextAlignment(TextAlignment.CENTER).SetFontSize(16);
                         document.Add(PGAddress);
 

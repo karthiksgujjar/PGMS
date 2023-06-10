@@ -195,6 +195,7 @@
             this.TextBox_VisitorMobileNo.Name = "TextBox_VisitorMobileNo";
             this.TextBox_VisitorMobileNo.Size = new System.Drawing.Size(220, 23);
             this.TextBox_VisitorMobileNo.TabIndex = 2;
+            this.TextBox_VisitorMobileNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_VisitorMobileNo_KeyPress);
             // 
             // Label_VisitorMobileNoUnderbar
             // 

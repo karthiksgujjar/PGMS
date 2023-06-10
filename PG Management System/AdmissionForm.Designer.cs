@@ -90,7 +90,7 @@
             this.Button_AdmitGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_AdmitGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_AdmitGuest.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_AdmitGuest.Location = new System.Drawing.Point(610, 689);
+            this.Button_AdmitGuest.Location = new System.Drawing.Point(593, 689);
             this.Button_AdmitGuest.Name = "Button_AdmitGuest";
             this.Button_AdmitGuest.Size = new System.Drawing.Size(96, 30);
             this.Button_AdmitGuest.TabIndex = 16;
@@ -107,7 +107,7 @@
             this.Button_ResetGuestAdmissionForm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_ResetGuestAdmissionForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_ResetGuestAdmissionForm.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_ResetGuestAdmissionForm.Location = new System.Drawing.Point(688, 744);
+            this.Button_ResetGuestAdmissionForm.Location = new System.Drawing.Point(671, 744);
             this.Button_ResetGuestAdmissionForm.Name = "Button_ResetGuestAdmissionForm";
             this.Button_ResetGuestAdmissionForm.Size = new System.Drawing.Size(96, 30);
             this.Button_ResetGuestAdmissionForm.TabIndex = 19;
@@ -122,7 +122,7 @@
             this.PictureBox_GuestImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBox_GuestImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PictureBox_GuestImage.Image = global::PG_Management_System.Properties.Resources.Add_Image;
-            this.PictureBox_GuestImage.Location = new System.Drawing.Point(610, 129);
+            this.PictureBox_GuestImage.Location = new System.Drawing.Point(593, 129);
             this.PictureBox_GuestImage.Name = "PictureBox_GuestImage";
             this.PictureBox_GuestImage.Size = new System.Drawing.Size(250, 250);
             this.PictureBox_GuestImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,7 +200,7 @@
             this.TextBox_GuestName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_GuestName.Location = new System.Drawing.Point(302, 132);
             this.TextBox_GuestName.Name = "TextBox_GuestName";
-            this.TextBox_GuestName.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestName.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestName.TabIndex = 0;
             // 
             // TextBox_GuestMobileNo
@@ -213,7 +213,7 @@
             this.TextBox_GuestMobileNo.Location = new System.Drawing.Point(302, 240);
             this.TextBox_GuestMobileNo.MaxLength = 10;
             this.TextBox_GuestMobileNo.Name = "TextBox_GuestMobileNo";
-            this.TextBox_GuestMobileNo.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestMobileNo.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestMobileNo.TabIndex = 2;
             this.TextBox_GuestMobileNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_GuestMobileNo_KeyPress);
             // 
@@ -225,7 +225,7 @@
             this.Label_GuestMobileNoUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestMobileNoUnderbar.Location = new System.Drawing.Point(302, 265);
             this.Label_GuestMobileNoUnderbar.Name = "Label_GuestMobileNoUnderbar";
-            this.Label_GuestMobileNoUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestMobileNoUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestMobileNoUnderbar.TabIndex = 35;
             // 
             // Label_GuestNameUnderbar
@@ -236,7 +236,7 @@
             this.Label_GuestNameUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestNameUnderbar.Location = new System.Drawing.Point(302, 157);
             this.Label_GuestNameUnderbar.Name = "Label_GuestNameUnderbar";
-            this.Label_GuestNameUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestNameUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestNameUnderbar.TabIndex = 34;
             // 
             // TextBox_GuestMailID
@@ -248,7 +248,7 @@
             this.TextBox_GuestMailID.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_GuestMailID.Location = new System.Drawing.Point(302, 294);
             this.TextBox_GuestMailID.Name = "TextBox_GuestMailID";
-            this.TextBox_GuestMailID.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestMailID.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestMailID.TabIndex = 3;
             // 
             // TextBox_GuestPermanentAddress
@@ -261,7 +261,7 @@
             this.TextBox_GuestPermanentAddress.Location = new System.Drawing.Point(302, 621);
             this.TextBox_GuestPermanentAddress.Multiline = true;
             this.TextBox_GuestPermanentAddress.Name = "TextBox_GuestPermanentAddress";
-            this.TextBox_GuestPermanentAddress.Size = new System.Drawing.Size(221, 83);
+            this.TextBox_GuestPermanentAddress.Size = new System.Drawing.Size(204, 83);
             this.TextBox_GuestPermanentAddress.TabIndex = 9;
             // 
             // Label_GuestPermanentAddressUnderbar
@@ -272,7 +272,7 @@
             this.Label_GuestPermanentAddressUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestPermanentAddressUnderbar.Location = new System.Drawing.Point(302, 707);
             this.Label_GuestPermanentAddressUnderbar.Name = "Label_GuestPermanentAddressUnderbar";
-            this.Label_GuestPermanentAddressUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestPermanentAddressUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestPermanentAddressUnderbar.TabIndex = 42;
             // 
             // Label_GuestMailIDUnderbar
@@ -283,7 +283,7 @@
             this.Label_GuestMailIDUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestMailIDUnderbar.Location = new System.Drawing.Point(302, 319);
             this.Label_GuestMailIDUnderbar.Name = "Label_GuestMailIDUnderbar";
-            this.Label_GuestMailIDUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestMailIDUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestMailIDUnderbar.TabIndex = 41;
             // 
             // TextBox_GuestAadhaarNo
@@ -296,7 +296,7 @@
             this.TextBox_GuestAadhaarNo.Location = new System.Drawing.Point(303, 347);
             this.TextBox_GuestAadhaarNo.MaxLength = 12;
             this.TextBox_GuestAadhaarNo.Name = "TextBox_GuestAadhaarNo";
-            this.TextBox_GuestAadhaarNo.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestAadhaarNo.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestAadhaarNo.TabIndex = 4;
             this.TextBox_GuestAadhaarNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_GuestAadhaarNo_KeyPress);
             // 
@@ -308,7 +308,7 @@
             this.Label_GuestAadhaarNoUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestAadhaarNoUnderbar.Location = new System.Drawing.Point(302, 372);
             this.Label_GuestAadhaarNoUnderbar.Name = "Label_GuestAadhaarNoUnderbar";
-            this.Label_GuestAadhaarNoUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestAadhaarNoUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestAadhaarNoUnderbar.TabIndex = 44;
             // 
             // ComboBox_Rooms
@@ -318,7 +318,7 @@
             this.ComboBox_Rooms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Rooms.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Rooms.FormattingEnabled = true;
-            this.ComboBox_Rooms.Location = new System.Drawing.Point(656, 555);
+            this.ComboBox_Rooms.Location = new System.Drawing.Point(639, 555);
             this.ComboBox_Rooms.Name = "ComboBox_Rooms";
             this.ComboBox_Rooms.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Rooms.Sorted = true;
@@ -333,7 +333,7 @@
             this.ComboBox_Floors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Floors.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Floors.FormattingEnabled = true;
-            this.ComboBox_Floors.Location = new System.Drawing.Point(656, 500);
+            this.ComboBox_Floors.Location = new System.Drawing.Point(639, 500);
             this.ComboBox_Floors.Name = "ComboBox_Floors";
             this.ComboBox_Floors.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Floors.Sorted = true;
@@ -348,7 +348,7 @@
             this.ComboBox_Buildings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Buildings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Buildings.FormattingEnabled = true;
-            this.ComboBox_Buildings.Location = new System.Drawing.Point(656, 445);
+            this.ComboBox_Buildings.Location = new System.Drawing.Point(639, 445);
             this.ComboBox_Buildings.Name = "ComboBox_Buildings";
             this.ComboBox_Buildings.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Buildings.Sorted = true;
@@ -413,6 +413,7 @@
             this.ComboBox_GuestBloodGroup.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_GuestBloodGroup.Sorted = true;
             this.ComboBox_GuestBloodGroup.TabIndex = 5;
+            this.ComboBox_GuestBloodGroup.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ComboBox_GuestBloodGroup_KeyPress);
             // 
             // Label_GuestParentGuardianName
             // 
@@ -435,7 +436,7 @@
             this.TextBox_GuestParentGuardianName.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_GuestParentGuardianName.Location = new System.Drawing.Point(303, 456);
             this.TextBox_GuestParentGuardianName.Name = "TextBox_GuestParentGuardianName";
-            this.TextBox_GuestParentGuardianName.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestParentGuardianName.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestParentGuardianName.TabIndex = 6;
             // 
             // Label_GuestParentGuardianNameUnderbar
@@ -446,7 +447,7 @@
             this.Label_GuestParentGuardianNameUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestParentGuardianNameUnderbar.Location = new System.Drawing.Point(302, 481);
             this.Label_GuestParentGuardianNameUnderbar.Name = "Label_GuestParentGuardianNameUnderbar";
-            this.Label_GuestParentGuardianNameUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestParentGuardianNameUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestParentGuardianNameUnderbar.TabIndex = 58;
             // 
             // TextBox_GuestEmergencyMobNo
@@ -459,7 +460,7 @@
             this.TextBox_GuestEmergencyMobNo.Location = new System.Drawing.Point(302, 510);
             this.TextBox_GuestEmergencyMobNo.MaxLength = 10;
             this.TextBox_GuestEmergencyMobNo.Name = "TextBox_GuestEmergencyMobNo";
-            this.TextBox_GuestEmergencyMobNo.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestEmergencyMobNo.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestEmergencyMobNo.TabIndex = 7;
             this.TextBox_GuestEmergencyMobNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_GuestEmergencyMobNo_KeyPress);
             // 
@@ -471,7 +472,7 @@
             this.Label_GuestEmergencyMobNoUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestEmergencyMobNoUnderbar.Location = new System.Drawing.Point(302, 535);
             this.Label_GuestEmergencyMobNoUnderbar.Name = "Label_GuestEmergencyMobNoUnderbar";
-            this.Label_GuestEmergencyMobNoUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestEmergencyMobNoUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestEmergencyMobNoUnderbar.TabIndex = 61;
             // 
             // Label_GuestEmergencyMobNo
@@ -508,7 +509,7 @@
             this.TextBox_GuestAdvanceAmountPaid.Location = new System.Drawing.Point(302, 732);
             this.TextBox_GuestAdvanceAmountPaid.MaxLength = 10;
             this.TextBox_GuestAdvanceAmountPaid.Name = "TextBox_GuestAdvanceAmountPaid";
-            this.TextBox_GuestAdvanceAmountPaid.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestAdvanceAmountPaid.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestAdvanceAmountPaid.TabIndex = 10;
             this.TextBox_GuestAdvanceAmountPaid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_GuestAdvanceAmountPaid_KeyPress);
             // 
@@ -520,7 +521,7 @@
             this.Label_GuestAdvanceAmountPaidUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestAdvanceAmountPaidUnderbar.Location = new System.Drawing.Point(302, 757);
             this.Label_GuestAdvanceAmountPaidUnderbar.Name = "Label_GuestAdvanceAmountPaidUnderbar";
-            this.Label_GuestAdvanceAmountPaidUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestAdvanceAmountPaidUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestAdvanceAmountPaidUnderbar.TabIndex = 66;
             // 
             // Label_GuestAdvanceAmountPaid
@@ -545,7 +546,7 @@
             this.TextBox_GuestPayAmountPerMonth.Location = new System.Drawing.Point(302, 786);
             this.TextBox_GuestPayAmountPerMonth.MaxLength = 10;
             this.TextBox_GuestPayAmountPerMonth.Name = "TextBox_GuestPayAmountPerMonth";
-            this.TextBox_GuestPayAmountPerMonth.Size = new System.Drawing.Size(221, 23);
+            this.TextBox_GuestPayAmountPerMonth.Size = new System.Drawing.Size(204, 23);
             this.TextBox_GuestPayAmountPerMonth.TabIndex = 11;
             this.TextBox_GuestPayAmountPerMonth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_GuestPayAmountPerMonth_KeyPress);
             // 
@@ -557,7 +558,7 @@
             this.Label_GuestPayAmountPerMonthUnderbar.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_GuestPayAmountPerMonthUnderbar.Location = new System.Drawing.Point(302, 811);
             this.Label_GuestPayAmountPerMonthUnderbar.Name = "Label_GuestPayAmountPerMonthUnderbar";
-            this.Label_GuestPayAmountPerMonthUnderbar.Size = new System.Drawing.Size(221, 1);
+            this.Label_GuestPayAmountPerMonthUnderbar.Size = new System.Drawing.Size(204, 1);
             this.Label_GuestPayAmountPerMonthUnderbar.TabIndex = 69;
             // 
             // Label_GuestPayAmountPerMonth
@@ -579,7 +580,7 @@
             this.ComboBox_Guests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ComboBox_Guests.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_Guests.FormattingEnabled = true;
-            this.ComboBox_Guests.Location = new System.Drawing.Point(656, 610);
+            this.ComboBox_Guests.Location = new System.Drawing.Point(639, 610);
             this.ComboBox_Guests.Name = "ComboBox_Guests";
             this.ComboBox_Guests.Size = new System.Drawing.Size(158, 23);
             this.ComboBox_Guests.Sorted = true;
@@ -593,7 +594,7 @@
             this.Label_GuestRoomAllotted.AutoSize = true;
             this.Label_GuestRoomAllotted.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_GuestRoomAllotted.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_GuestRoomAllotted.Location = new System.Drawing.Point(666, 392);
+            this.Label_GuestRoomAllotted.Location = new System.Drawing.Point(649, 392);
             this.Label_GuestRoomAllotted.Name = "Label_GuestRoomAllotted";
             this.Label_GuestRoomAllotted.Size = new System.Drawing.Size(145, 22);
             this.Label_GuestRoomAllotted.TabIndex = 71;
@@ -609,7 +610,7 @@
             this.Button_RemoveGuest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Button_RemoveGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_RemoveGuest.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_RemoveGuest.Location = new System.Drawing.Point(764, 689);
+            this.Button_RemoveGuest.Location = new System.Drawing.Point(747, 689);
             this.Button_RemoveGuest.Name = "Button_RemoveGuest";
             this.Button_RemoveGuest.Size = new System.Drawing.Size(96, 30);
             this.Button_RemoveGuest.TabIndex = 17;
@@ -625,7 +626,7 @@
             this.Label_PGName.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_PGName.Location = new System.Drawing.Point(16, 22);
             this.Label_PGName.Name = "Label_PGName";
-            this.Label_PGName.Size = new System.Drawing.Size(843, 28);
+            this.Label_PGName.Size = new System.Drawing.Size(826, 28);
             this.Label_PGName.TabIndex = 10;
             this.Label_PGName.Text = "PG Name";
             this.Label_PGName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -638,7 +639,7 @@
             this.Label_PGAddress.Font = new System.Drawing.Font("Cambria", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_PGAddress.Location = new System.Drawing.Point(12, 59);
             this.Label_PGAddress.Name = "Label_PGAddress";
-            this.Label_PGAddress.Size = new System.Drawing.Size(857, 25);
+            this.Label_PGAddress.Size = new System.Drawing.Size(840, 25);
             this.Label_PGAddress.TabIndex = 73;
             this.Label_PGAddress.Text = "PG Address";
             this.Label_PGAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -651,7 +652,7 @@
             this.Label_TitleSeparator.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_TitleSeparator.Location = new System.Drawing.Point(0, 99);
             this.Label_TitleSeparator.Name = "Label_TitleSeparator";
-            this.Label_TitleSeparator.Size = new System.Drawing.Size(869, 1);
+            this.Label_TitleSeparator.Size = new System.Drawing.Size(852, 1);
             this.Label_TitleSeparator.TabIndex = 74;
             // 
             // DateTimePicker_GuestDateOfJoining

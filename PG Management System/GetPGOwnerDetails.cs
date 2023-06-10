@@ -56,7 +56,7 @@ namespace PG_Management_System
                     con.Open();
                     int res = cmd.ExecuteNonQuery();
 
-                    if (res == 1)
+                    if (res > 0)
                     {
                         Properties.Settings.Default.FirstRunStatus = false;
                         Properties.Settings.Default.Save();
@@ -71,6 +71,24 @@ namespace PG_Management_System
                     MessageBox.Show("Unable to Connect to the Server\n" + Err.Message, "FAILURE", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void AcceptOnlyDigits(KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (Char.IsDigit(ch) || ch == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBox_OwnerMobileNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            AcceptOnlyDigits(e);
         }
     }
 }

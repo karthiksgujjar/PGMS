@@ -118,6 +118,7 @@
             this.TextBox_OwnerMobileNo.Name = "TextBox_OwnerMobileNo";
             this.TextBox_OwnerMobileNo.Size = new System.Drawing.Size(171, 25);
             this.TextBox_OwnerMobileNo.TabIndex = 42;
+            this.TextBox_OwnerMobileNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_OwnerMobileNo_KeyPress);
             // 
             // Label_OwnerMobileNoUnderbar
             // 

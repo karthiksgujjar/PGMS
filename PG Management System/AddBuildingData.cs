@@ -54,7 +54,7 @@ namespace PG_Management_System
             {
                 try
                 {
-                    if (!(Convert.ToInt32(TextBox_BuildingDataID.Text) > 0))
+                    if (!(Convert.ToInt32(TextBox_BuildingDataID.Text) >= 0))
                     {
                         throw new FormatException();
                     }

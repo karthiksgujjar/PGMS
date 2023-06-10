@@ -53,7 +53,7 @@ namespace PG_Management_System
 
                                "CREATE TABLE rooms(id VARCHAR(9) NOT NULL, floor_id VARCHAR(6) NOT NULL, room_no SMALLINT NOT NULL, room_imageRPath VARCHAR(300) NOT NULL, PRIMARY KEY(id), FOREIGN KEY(floor_id) REFERENCES floors(id));" +
 
-                               "CREATE TABLE guests(id VARCHAR(21) NOT NULL, room_id VARCHAR(9) NOT NULL, name VARCHAR(100) NOT NULL, dob VARCHAR(50) NOT NULL, mob_no INT(10) NOT NULL, mail_id VARCHAR(100) NOT NULL, aadhaar_no INT(12) NOT NULL, blood_group VARCHAR(3) NOT NULL, parent_guardian_name VARCHAR(100) NOT NULL, emergency_contactno INT(10) NOT NULL, doj VARCHAR(50) NOT NULL, p_address VARCHAR(200) NOT NULL, advance_amount INT(10) NOT NULL, amount_per_month INT(10) NOT NULL, guest_imageRPath VARCHAR(400) NOT NULL, PRIMARY KEY(id), FOREIGN KEY(room_id) REFERENCES rooms(id));" +
+                               "CREATE TABLE guests(id VARCHAR(21) NOT NULL, room_id VARCHAR(9) NOT NULL, name VARCHAR(100) NOT NULL, dob VARCHAR(50) NOT NULL, mob_no VARCHAR(10) NOT NULL, mail_id VARCHAR(100) NOT NULL, aadhaar_no VARCHAR(12) NOT NULL, blood_group VARCHAR(3) NOT NULL, parent_guardian_name VARCHAR(100) NOT NULL, emergency_contactno VARCHAR(10) NOT NULL, doj VARCHAR(50) NOT NULL, p_address VARCHAR(200) NOT NULL, advance_amount INT(10) NOT NULL, amount_per_month INT(10) NOT NULL, guest_imageRPath VARCHAR(400) NOT NULL, PRIMARY KEY(id), FOREIGN KEY(room_id) REFERENCES rooms(id));" +
 
                                "CREATE TABLE fees( guest_id VARCHAR(21) NOT NULL, receipt_no INT NOT NULL, mode VARCHAR(50) NOT NULL, amount INT NOT NULL, dop VARCHAR(20) NOT NULL, PRIMARY KEY(receipt_no), FOREIGN KEY(guest_id) REFERENCES guests(id));" +
 
