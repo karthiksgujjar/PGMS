@@ -93,3 +93,98 @@ E:\PG Management System\PG Management System\bin\Debug\System.Threading.Tasks.Ex
 E:\PG Management System\PG Management System\bin\Debug\System.ValueTuple.xml
 E:\PG Management System\PG Management System\bin\Debug\RawPrint.dll
 E:\PG Management System\PG Management System\obj\Debug\PG_Management_System.PGSettingsForm.resources
+D:\PGMS\PG Management System\bin\Debug\PG Management System.exe.config
+D:\PGMS\PG Management System\bin\Debug\PG Management System.exe
+D:\PGMS\PG Management System\bin\Debug\PG Management System.pdb
+D:\PGMS\PG Management System\bin\Debug\BouncyCastle.Crypto.dll
+D:\PGMS\PG Management System\bin\Debug\Google.Protobuf.dll
+D:\PGMS\PG Management System\bin\Debug\itext.barcodes.dll
+D:\PGMS\PG Management System\bin\Debug\itext.commons.dll
+D:\PGMS\PG Management System\bin\Debug\itext.forms.dll
+D:\PGMS\PG Management System\bin\Debug\itext.io.dll
+D:\PGMS\PG Management System\bin\Debug\itext.kernel.dll
+D:\PGMS\PG Management System\bin\Debug\itext.layout.dll
+D:\PGMS\PG Management System\bin\Debug\itext.pdfa.dll
+D:\PGMS\PG Management System\bin\Debug\itext.sign.dll
+D:\PGMS\PG Management System\bin\Debug\itext.styledxmlparser.dll
+D:\PGMS\PG Management System\bin\Debug\itext.svg.dll
+D:\PGMS\PG Management System\bin\Debug\K4os.Compression.LZ4.dll
+D:\PGMS\PG Management System\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\PGMS\PG Management System\bin\Debug\K4os.Hash.xxHash.dll
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Options.dll
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\PGMS\PG Management System\bin\Debug\MySql.Data.dll
+D:\PGMS\PG Management System\bin\Debug\Newtonsoft.Json.dll
+D:\PGMS\PG Management System\bin\Debug\RawPrint.dll
+D:\PGMS\PG Management System\bin\Debug\System.Buffers.dll
+D:\PGMS\PG Management System\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\PGMS\PG Management System\bin\Debug\System.IO.Pipelines.dll
+D:\PGMS\PG Management System\bin\Debug\System.Memory.dll
+D:\PGMS\PG Management System\bin\Debug\System.Numerics.Vectors.dll
+D:\PGMS\PG Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PGMS\PG Management System\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PGMS\PG Management System\bin\Debug\System.ValueTuple.dll
+D:\PGMS\PG Management System\bin\Debug\BouncyCastle.Crypto.xml
+D:\PGMS\PG Management System\bin\Debug\Google.Protobuf.pdb
+D:\PGMS\PG Management System\bin\Debug\Google.Protobuf.xml
+D:\PGMS\PG Management System\bin\Debug\itext.barcodes.xml
+D:\PGMS\PG Management System\bin\Debug\itext.commons.xml
+D:\PGMS\PG Management System\bin\Debug\itext.forms.xml
+D:\PGMS\PG Management System\bin\Debug\itext.io.xml
+D:\PGMS\PG Management System\bin\Debug\itext.kernel.xml
+D:\PGMS\PG Management System\bin\Debug\itext.layout.xml
+D:\PGMS\PG Management System\bin\Debug\itext.pdfa.xml
+D:\PGMS\PG Management System\bin\Debug\itext.sign.xml
+D:\PGMS\PG Management System\bin\Debug\itext.styledxmlparser.xml
+D:\PGMS\PG Management System\bin\Debug\itext.svg.xml
+D:\PGMS\PG Management System\bin\Debug\K4os.Compression.LZ4.xml
+D:\PGMS\PG Management System\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\PGMS\PG Management System\bin\Debug\K4os.Hash.xxHash.xml
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Options.xml
+D:\PGMS\PG Management System\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\PGMS\PG Management System\bin\Debug\MySql.Data.xml
+D:\PGMS\PG Management System\bin\Debug\Newtonsoft.Json.xml
+D:\PGMS\PG Management System\bin\Debug\System.Buffers.xml
+D:\PGMS\PG Management System\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\PGMS\PG Management System\bin\Debug\System.IO.Pipelines.xml
+D:\PGMS\PG Management System\bin\Debug\System.Memory.xml
+D:\PGMS\PG Management System\bin\Debug\System.Numerics.Vectors.xml
+D:\PGMS\PG Management System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PGMS\PG Management System\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PGMS\PG Management System\bin\Debug\System.ValueTuple.xml
+D:\PGMS\PG Management System\obj\Debug\PG Management System.csproj.AssemblyReference.cache
+D:\PGMS\PG Management System\obj\Debug\PG Management System.csproj.SuggestedBindingRedirects.cache
+D:\PGMS\PG Management System\obj\Debug\PG Management System.exe.config
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.AcceptPaymentForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.AddBuildingData.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.AdmissionForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.FirstRunForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.GetDBDetailsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.GetPGDetails.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.GetPGOwnerDetails.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.GuestDetailsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.GuestsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.BuildingsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.FloorsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.LoginForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.MainForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.PasswordResetForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.PGSettingsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.Properties.Resources.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.RoomsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG_Management_System.VisitorsForm.resources
+D:\PGMS\PG Management System\obj\Debug\PG Management System.csproj.GenerateResource.cache
+D:\PGMS\PG Management System\obj\Debug\PG Management System.csproj.CoreCompileInputs.cache
+D:\PGMS\PG Management System\obj\Debug\PG Management System.csproj.CopyComplete
+D:\PGMS\PG Management System\obj\Debug\PG Management System.exe
+D:\PGMS\PG Management System\obj\Debug\PG Management System.pdb

@@ -308,7 +308,7 @@
             // PictureBox_PGMSLogo
             // 
             this.PictureBox_PGMSLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PictureBox_PGMSLogo.Image = global::PG_Management_System.Properties.Resources.PGFMS_Logo;
+            this.PictureBox_PGMSLogo.Image = global::PG_Management_System.Properties.Resources.PGMS_Logo;
             this.PictureBox_PGMSLogo.Location = new System.Drawing.Point(3, 57);
             this.PictureBox_PGMSLogo.Name = "PictureBox_PGMSLogo";
             this.PictureBox_PGMSLogo.Size = new System.Drawing.Size(116, 117);

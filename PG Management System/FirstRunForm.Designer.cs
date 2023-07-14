@@ -173,8 +173,8 @@
             this.Label_FormTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.Label_FormTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Label_FormTitle.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_FormTitle.Image = ((System.Drawing.Image)(resources.GetObject("Label_FormTitle.Image")));
-            this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Label_FormTitle.Image = global::PG_Management_System.Properties.Resources.PGMS_Logo_Small;
+            this.Label_FormTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Label_FormTitle.Location = new System.Drawing.Point(0, 0);
             this.Label_FormTitle.Name = "Label_FormTitle";
             this.Label_FormTitle.Size = new System.Drawing.Size(394, 20);
