@@ -1,0 +1,12 @@
+{
+  "name": "pgms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind" : "npx tailwindcss -i ./input.css -o ../assets/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

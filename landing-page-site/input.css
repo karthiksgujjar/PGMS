@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-radial-blue{
+    background-image: radial-gradient(lightblue,skyblue);
+ }
+
+ .list-circle{
+    list-style: circle;
+ }
+
+
+@keyframes fadeIn {  
+    from {  
+        opacity:0;  
+    }  
+    to {  
+        opacity:1;  
+    }  
+ }
