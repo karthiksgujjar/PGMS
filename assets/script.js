@@ -6,7 +6,7 @@ let imageNumber = 0;
 setInterval(() =>{
     images[imageNumber].setAttribute("hidden", true);
     imageBubbles[imageNumber].innerHTML = '&bullet;';
-    showImage((imageNumber != 4)?++imageNumber:imageNumber=0);
+    showImage((imageNumber != 9)?++imageNumber:imageNumber=0);
 },3000);
 
 function showImage(imageNumber){

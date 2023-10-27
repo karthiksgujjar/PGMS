@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-radial-blue{
-    background-image: radial-gradient(lightblue,skyblue);
+    background-image: radial-gradient(rgb(220, 174, 88),orange);
  }
 
  .list-circle{

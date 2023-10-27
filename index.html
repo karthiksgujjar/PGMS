@@ -1,21 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            text-align: center;
-            color: gray;
-        }
-        a {
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js" defer></script>
+  <title>PGMS - Homepage</title>
 </head>
-<body>
-    <h1>Site under maintenance</h1>
-    <h3>Here's the link to the <a href="https://github.com/karthiksgujjar/PGMS">GitHub Repo</a></h3>
+
+<body class="bg-radial-blue bg-no-repeat bg-fixed px-2 pt-2 font-robotoSlab h-screen">
+  <header class="w-full flex items-center justify-between">
+    <img src="assets/Images/PGMS Logo.webp" alt="PGMS Logo" class="w-16 brightness-150" />
+    <h1 class="font-extrabold text-[1.3rem] text-white sm:text-3xl text-center">
+      Paying Guest Management System
+    </h1>
+    <div class="flex flex-wrap sm:flex-nowrap gap-2 w-min justify-end">
+      <a href="#about" class=" rounded-md bg-orange-500 px-1">About</a>
+
+    </div>
+  </header>
+  <main class="flex flex-col gap-20 mt-6">
+    <section class="flex flex-wrap lg:flex-nowrap gap-4">
+      <section id="screenshots-slider" class="flex flex-col justify-center items-center">
+        <div class="w-11/12 lg:w-2/4 overflow-hidden rounded-lg shadow-md shadow-slate-600">
+          <img src="assets/Images/PGMS Login Form.webp" alt="PGMS Login Form" />
+          <img src="assets/Images/PGMS Overview PG Form.webp" alt="PGMS Overview PG Form" hidden />
+          <img src="assets/Images/PGMS Accept Payment Form.webp" alt="PGMS Accept Payment Form" hidden />
+          <img src="assets/Images/PGMS Add or Remove Building Form.webp" alt="PGMS Add or Remove Building Form"
+            hidden />
+          <img src="assets/Images/PGMS Admit Guest Form.webp" alt="PGMS Admit Guest Form" hidden />
+          <img src="assets/Images/PGMS Guest Details Form.webp" alt="PGMS Guest Details Form" hidden />
+          <img src="assets/Images/PGMS Remove Guest Form.webp" alt="PGMS Remove Guest Form" hidden />
+          <img src="assets/Images/PGMS Visitors Form.webp" alt="PGMS Visitors Form" hidden />
+          <img src="assets/Images/PGMS Settings Form.webp" alt="PGMS Settings Form" hidden />
+          <img src="assets/Images/PGMS Password Reset Form.webp" alt="PGMS Password Reset Form" hidden />
+        </div>
+        <div>
+          <span class="font-extrabold text-2xl">&bigodot;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+          <span class="font-extrabold text-2xl">&bullet;</span>
+        </div>
+      </section>
+      <section class="min-w-max self-center mr-12">
+        <p class="font-bold">Pre-Requesites</p>
+        <ul>
+          <li class="list-inside list-disc ml-6  mb-10">MySQL Server 8.0.34</li>
+        </ul>
+        <a href="PGMS Installer/Debug/setup.exe" download="PGMS Setup.exe"
+          class="flex bg-orange-500 drop-shadow-2xl shadow-xl flex-col items-center rounded-md w-40 p-1">
+          <img src="assets/Images/Windows Logo.png" alt="Windows Logo">
+          Download Installer</a>
+
+        <a href="https://github.com/karthiksgujjar/PGMS" target="_blank"
+          class="flex bg-orange-500 drop-shadow-2xl shadow-xl flex-col items-center rounded-md w-40 p-1 mt-8">
+          <img src="assets/Images/GitHub Logo.png" alt="GitHub Logo">
+          Source Code</a>
+      </section>
+    </section>
+    <section>
+      <p class="font-bold">How to use?</p>
+      <ol>
+        <li class="list-inside list-decimal">Make sure 'MySQL Server' Latest Version is installed
+          <ul>
+            <li class="list-inside list-disc ml-10">Remember the password given during MySQL installation (By
+              default, Username: root)
+            </li>
+            <li class="list-inside list-disc ml-10">Server Name will be localhost or 127.0.0.1
+            </li>
+          </ul>
+        </li>
+        <li class="list-inside list-decimal">Install the application using PGMS Installer.
+        </li>
+        <li class="list-inside list-decimal">Enter the database details you've used while installing the MySQL server.
+          <ul>
+            <li class="list-inside list-disc ml-10">Enter the Server Name (localhost), User Name (root) and
+              Password (Given during MySQL installation) of MySQL Server
+            </li>
+          </ul>
+        </li>
+        <li class="list-inside list-decimal">Enter the Details of the PG, Owner details (Only on First Run).
+        </li>
+        <li class="list-inside list-decimal">Enter the login details and use the application.
+        </li>
+      </ol>
+    </section>
+    <section>
+      <h2 id="about" class="font-extrabold text-2xl">About</h2>
+      <p>
+        PGMS (Paying Guests Management System) is a guest management software which is made on the owner's perspective.
+        It provides a user friendly interface, using this the owner of the paying guest will be able to manage the
+        information of the paying guests staying in their building. Paying guest owner can admits the guest by getting
+        all the required information of the guest and he can add the Building details
+      </p>
+      <p class="mt-8">
+        This application allows the PG managing department to manages the
+        Guests instead of physical ledgers, it computerizes the work and eases the productive time of the owner. It
+        allows the administrator/owner to:
+      </p>
+      <ul class="mt-4">
+        <li class="list-disc list-inside">Add/Remove Buildings, Floors, Rooms</li>
+        <li class="list-disc list-inside"> Add/Remove (Maximum 2 Staffs</li>
+        <li class="list-disc list-inside">Admit/Remove Guests</li>
+        <li class="list-disc list-inside">Overview the PG</li>
+        <li class="list-disc list-inside">Accept Monthly Fees</li>
+        <li class="list-disc list-inside">Keep track of Visitors</li>
+        <li class="list-disc list-inside">View and Generate Report on Guests of selected Building</li>
+      </ul>
+    </section>
+    <section>
+      <form action="#" onsubmit="openMailTo()">
+        <fieldset class="flex flex-col gap-5">
+          <legend class="font-extrabold text-2xl">Leave a comment</legend>
+          <div class="mt-4">
+            <label for="name"><span class="text-red-600">*</span> Name:</label>
+            <input type="text" name="name" required id="name"
+              class="rounded-md bg-transparent border-2 border-gray-700 ml-7" />
+          </div>
+          <div class="flex flex-wrap">
+            <label for="comment" class="mr-1"><span class="text-red-600">*</span> Comment:</label>
+            <textarea name="comment" id="comment" required cols="30" rows="5"
+              class="rounded-md bg-transparent border-2 border-gray-700"></textarea>
+          </div>
+          <div class="ml-12 mb-4">
+            <input type="submit" value="Comment" class="rounded-md px-1 mr-16 bg-green-900 text-white cursor-pointer" />
+            <input type="reset" value="Clear" class="rounded-md px-2 bg-red-700 text-white cursor-pointer" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
 </body>
+
 </html>
